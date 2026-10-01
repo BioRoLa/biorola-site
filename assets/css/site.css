@@ -1,0 +1,224 @@
+/* BioRoLa site styles. Recreates the original 900px black frame, grey menu,
+   and hexagon sidebar (formerly one PNG per page) in plain CSS. */
+
+:root {
+  --frame: 900px;
+  --menu-bg: #ccc;
+  --menu-hover: #666;
+  --content-bg: #fff;
+  --text: #111;
+  --muted: #555;
+  --link: #1a4f9c;
+  --focus: #ffd200;
+
+  /* Hexagon sidebar */
+  --hex-w: 100px;
+  --hex-h: 86px;
+  --hex-step: 92px;            /* vertical distance between rows */
+  --hex-col: 80px;             /* horizontal offset of the right column */
+  --hex-border: 3px;
+  --hex-filler: #0f233e;
+
+  font-family: Arial, Helvetica, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #000;
+  color: var(--text);
+}
+
+.frame {
+  max-width: var(--frame);
+  margin: 0 auto;
+  background: #000;
+}
+
+img { max-width: 100%; height: auto; }
+
+a { color: var(--link); }
+a:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+
+/* ---------- Masthead ---------- */
+
+.masthead a { display: block; }
+.masthead img { display: block; width: 100%; }
+
+/* ---------- Top menu ---------- */
+
+.menu { background: var(--menu-bg); position: relative; z-index: 10; }
+
+.menu ul { list-style: none; margin: 0; padding: 0; }
+
+.menu__bar { display: flex; flex-wrap: wrap; }
+
+.menu__item, .menu__lang { position: relative; flex: 1 1 auto; }
+
+.menu a {
+  display: block;
+  padding: 0.5em 0.75em;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.menu a:hover,
+.menu a:focus-visible,
+.menu li:focus-within > a { background: var(--menu-hover); color: #fff; outline: none; }
+
+.menu__item.is-current > a { font-weight: bold; }
+
+.menu__lang a { background: #999; color: #fff; }
+
+.menu__drop,
+.menu__fly {
+  display: none;
+  position: absolute;
+  min-width: 12em;
+  background: var(--menu-bg);
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.35);
+}
+.menu__drop { top: 100%; left: 0; }
+.menu__fly { top: 0; left: 100%; }
+.menu__drop a, .menu__fly a { text-align: left; }
+
+.menu li:hover > ul,
+.menu li:focus-within > ul { display: block; }
+
+/* ---------- Page: sidebar + content ---------- */
+
+.page {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  align-items: start;
+}
+
+.content {
+  background: var(--content-bg);
+  min-height: calc(var(--hex-step) * 7.5 + 10px);
+  padding: 0.5rem 1.5rem 2rem;
+  line-height: 1.7;
+}
+
+.content h1 {
+  font-size: 1.4rem;
+  margin: 0.6rem 0 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #999;
+}
+
+.content p { margin: 0 0 1em; }
+:lang(zh-Hant-TW) .content p { text-align: justify; }
+
+/* Coloured words used on the introduction page. */
+.accent-orange { color: #c93; font-size: 1.5em; }
+.accent-green { color: #0c6; font-size: 1.5em; }
+
+/* ---------- Hexagon sidebar ---------- */
+
+.honeycomb {
+  position: relative;
+  height: calc(var(--hex-step) * var(--rows) + var(--hex-step) / 2);
+  margin-top: 5px;
+}
+
+.hex {
+  --dark: var(--hex-filler);
+  --light: var(--hex-filler);
+  --fill: var(--dark);
+  --edge: #fff;
+  position: absolute;
+  left: calc(var(--col) * var(--hex-col));
+  top: calc(var(--row) * var(--hex-step) + var(--col) * var(--hex-step) / 2);
+  width: var(--hex-w);
+  height: var(--hex-h);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  background: var(--edge);
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.15;
+  hyphens: auto;
+  text-align: center;
+  text-decoration: none;
+}
+
+.hex::before {
+  content: "";
+  position: absolute;
+  inset: var(--hex-border);
+  clip-path: inherit;
+  background: var(--fill);
+}
+
+.hex span { position: relative; }
+
+.hex--filler { --edge: var(--hex-filler); }
+
+.hex--blue   { --dark: #17355d; --light: #548bd4; }
+.hex--green  { --dark: #50632a; --light: #9dbb61; }
+.hex--red    { --dark: #612621; --light: #c05046; }
+.hex--grey   { --dark: #262626; --light: #7f7f7f; }
+.hex--purple { --dark: #54426a; --light: #ab9ac0; }
+
+.hex.is-current,
+a.hex:hover { --fill: var(--light); }
+
+a.hex:focus-visible { --edge: var(--focus); outline: none; }
+
+/* ---------- Footer ---------- */
+
+.footer {
+  background: #000 url(/pic/logo/box.png) repeat-x left top;
+  background-size: auto 100%;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.9rem 1rem;
+}
+.footer p { margin: 0.15rem 0; }
+.footer a { color: #fff; }
+
+/* ---------- Narrow screens ---------- */
+
+@media (max-width: 760px) {
+  .page { display: block; }
+
+  .honeycomb {
+    height: auto;
+    margin: 0;
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .hex {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0.4rem 0.8rem;
+    clip-path: none;
+    border-radius: 999px;
+    background: var(--fill);
+    font-size: 14px;
+  }
+  .hex::before { content: none; }
+  .hex--filler { display: none; }
+  a.hex:focus-visible { outline: 3px solid var(--focus); }
+
+  .content { min-height: 0; padding: 0.5rem 1rem 1.5rem; }
+
+  .menu__item, .menu__lang { flex: 1 1 33%; }
+  .menu__drop, .menu__fly { position: static; box-shadow: none; }
+  .menu li:hover > ul { display: none; }
+  .menu li:focus-within > ul { display: block; }
+}

@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+---
+{%- set hc = nav | honeycomb(navUrl, lang) %}
+<div class="page">
+  {%- if hc %}
+  <nav class="honeycomb" style="--rows: {{ hc.rows }}" aria-label="{{ '本區選單' if lang == 'zh' else 'In this section' }}">
+    {%- for c in hc.cells %}
+    {%- if c.filler %}
+    <span class="hex hex--filler" style="--col: {{ c.col }}; --row: {{ c.row }}" aria-hidden="true"></span>
+    {%- else %}
+    <a class="hex hex--{{ c.color }}{% if c.current %} is-current{% endif %}" style="--col: {{ c.col }}; --row: {{ c.row }}"
+       href="{{ c.href }}"{% if c.isPage %} aria-current="page"{% endif %}><span>{{ c.label }}</span></a>
+    {%- endif %}
+    {%- endfor %}
+  </nav>
+  {%- endif %}
+  <article class="content">
+    <h1>{{ pageTitle }}</h1>
+    {{ content | safe }}
+  </article>
+</div>

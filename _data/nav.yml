@@ -1,0 +1,110 @@
+# Site navigation: drives the top menu and the hexagon sidebar.
+#
+# section -> groups (left column of hexagons) -> pages (right column).
+# `url` is the file name only; Chinese pages are served at /<url>,
+# English pages at /english/<url>. Colours are defined in assets/css/site.css.
+# Sections with no `groups` link straight to their `url`.
+
+- id: home
+  label: { en: "Home", zh: "首頁" }
+  url: index.html
+
+- id: news
+  label: { en: "News", zh: "最新消息" }
+  url: news.html
+  groups:
+    - label: { en: "News", zh: "最新消息" }
+      color: green
+      pages:
+        - { url: news.html, label: { en: "News", zh: "最新消息" } }
+
+- id: about
+  label: { en: "About Us", zh: "關於我們" }
+  groups:
+    - label: { en: "About Us", zh: "關於我們" }
+      color: blue
+      pages:
+        - { url: aboutus_introduction.html, label: { en: "Introduction", zh: "實驗室簡介" } }
+        - { url: aboutus_labtour.html, label: { en: "Lab Tour", zh: "實驗室導覽" } }
+        - { url: aboutus_honors.html, label: { en: "Honors", zh: "榮譽" } }
+        - { url: aboutus_perspective.html, label: { en: "Prospective Students", zh: "招生資訊" } }
+        - { url: aboutus_contactus.html, label: { en: "Contact Us", zh: "聯絡我們" } }
+
+- id: members
+  label: { en: "Members", zh: "成員" }
+  groups:
+    - label: { en: "Director", zh: "指導教授" }
+      color: blue
+      pages:
+        - { url: members_director.html, label: { en: "Pei-Chun Lin", zh: "林沛群" } }
+    - label: { en: "Students", zh: "學生" }
+      color: green
+      pages:
+        - { url: members_stu_gra.html, label: { en: "Graduate", zh: "研究生" } }
+        - { url: members_stu_under.html, label: { en: "Under­graduate", zh: "大學部" } }
+    - label: { en: "Alumni", zh: "畢業校友" }
+      color: red
+      pages:
+        - { url: members_alu_ms.html, label: { en: "M.S. Degree", zh: "碩士" } }
+        - { url: members_alu_bs.html, label: { en: "B.S. Degree", zh: "學士" } }
+        - { url: members_alu_ra.html, label: { en: "R.A.", zh: "研究助理" } }
+
+- id: research
+  label: { en: "Research", zh: "研究" }
+  groups:
+    - label: { en: "Legged Robots", zh: "足式機器人" }
+      color: blue
+      pages:
+        - { url: research_legged_quadruped.html, label: { en: "Quadruped", zh: "四足機器人" } }
+        - { url: research_legged_rhex.html, label: { en: "RHex", zh: "RHex" } }
+        - { url: research_legged_biped.html, label: { en: "Biped", zh: "雙足機器人" } }
+    - label: { en: "Wheeled Robots", zh: "輪型機器人" }
+      color: grey
+      pages:
+        - { url: research_wheeled_twowheels.html, label: { en: "Two-Wheels", zh: "兩輪機器人" } }
+        - { url: research_wheeled_cartamigo.html, label: { en: "CartAmigo", zh: "CartAmigo" } }
+    - label: { en: "Climbing Robots", zh: "攀爬機器人" }
+      color: green
+      pages:
+        - { url: research_climbing_climbingtree.html, label: { en: "Tree Climbing", zh: "爬樹機器人" } }
+        - { url: research_climbing_climbingwall.html, label: { en: "Wall Climbing", zh: "爬牆機器人" } }
+    - label: { en: "Spherical Robots", zh: "球形機器人" }
+      color: red
+      pages:
+        - { url: research_spherical_omnicron.html, label: { en: "Omnicron", zh: "Omnicron" } }
+        - { url: research_spherical_omniqiu.html, label: { en: "OmniQiu", zh: "OmniQiu" } }
+    - label: { en: "Others", zh: "其他" }
+      color: purple
+      pages:
+        - { url: research_others_imu.html, label: { en: "9-axis IMU", zh: "九軸 IMU" } }
+
+- id: publication
+  label: { en: "Publication", zh: "論文發表" }
+  groups:
+    - label: { en: "Publication", zh: "論文發表" }
+      color: grey
+      pages:
+        - { url: publication_journals.html, label: { en: "Journals", zh: "期刊論文" } }
+        - { url: publication_conference.html, label: { en: "Conference", zh: "研討會論文" } }
+        - { url: publication_theses.html, label: { en: "Theses", zh: "學位論文" } }
+        - { url: publication_patents.html, label: { en: "Patents", zh: "專利" } }
+        - { url: publication_others.html, label: { en: "Others", zh: "其他" } }
+
+- id: media
+  label: { en: "Media", zh: "媒體" }
+  groups:
+    - label: { en: "Media", zh: "媒體" }
+      color: red
+      pages:
+        - { url: media_movies.html, label: { en: "Movies", zh: "影片" } }
+        - { url: media_press.html, label: { en: "Press", zh: "媒體報導" } }
+        - { url: media_album.html, label: { en: "Album", zh: "相簿" } }
+
+- id: links
+  label: { en: "Links", zh: "相關連結" }
+  url: links.html
+  groups:
+    - label: { en: "Links", zh: "相關連結" }
+      color: purple
+      pages:
+        - { url: links.html, label: { en: "Links", zh: "相關連結" } }

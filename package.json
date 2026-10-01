@@ -8,6 +8,7 @@
     "check": "eleventy && node scripts/check-urls.mjs"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.6"
+    "@11ty/eleventy": "^3.1.6",
+    "js-yaml": "^4.3.2"
   }
 }

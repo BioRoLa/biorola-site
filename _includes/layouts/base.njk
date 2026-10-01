@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="{{ 'zh-Hant-TW' if lang == 'zh' else 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if pageTitle %}{{ pageTitle }} | {% endif %}{{ site.short_name }} {{ site.name[lang] }}</title>
+  <link rel="icon" href="/pic/home/favicon.ico">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="alternate" hreflang="zh-Hant-TW" href="{{ navUrl | langUrl('zh') }}">
+  <link rel="alternate" hreflang="en" href="{{ navUrl | langUrl('en') }}">
+</head>
+<body>
+  <div class="frame">
+    <header class="masthead">
+      <a href="{{ 'index.html' | langUrl(lang) }}">
+        <img src="/pic/logo/logo.png" width="900" height="170"
+             alt="BioRoLa · {{ site.name.en }} · {{ site.affiliation.en }}">
+      </a>
+    </header>
+
+    <nav class="menu" aria-label="{{ '主選單' if lang == 'zh' else 'Main' }}">
+      <ul class="menu__bar">
+        {%- for section in nav %}
+        {%- set first = section.url or section.groups[0].pages[0].url %}
+        <li class="menu__item{% if section.id == currentSection %} is-current{% endif %}">
+          <a href="{{ first | langUrl(lang) }}">{{ section.label[lang] }}</a>
+          {%- set groups = section.groups | default([]) %}
+          {%- if groups | length > 1 %}
+          <ul class="menu__drop">
+            {%- for group in groups %}
+            <li>
+              <a href="{{ group.pages[0].url | langUrl(lang) }}">{{ group.label[lang] }}</a>
+              {%- if section.id == 'research' %}
+              <ul class="menu__fly">
+                {%- for p in group.pages %}<li><a href="{{ p.url | langUrl(lang) }}">{{ p.label[lang] }}</a></li>{% endfor %}
+              </ul>
+              {%- endif %}
+            </li>
+            {%- endfor %}
+          </ul>
+          {%- elif groups | length == 1 and groups[0].pages | length > 1 %}
+          <ul class="menu__drop">
+            {%- for p in groups[0].pages %}<li><a href="{{ p.url | langUrl(lang) }}">{{ p.label[lang] }}</a></li>{% endfor %}
+          </ul>
+          {%- endif %}
+        </li>
+        {%- endfor %}
+        <li class="menu__lang">
+          {%- if lang == 'zh' %}
+          <a href="{{ navUrl | langUrl('en') }}" hreflang="en" lang="en">English</a>
+          {%- else %}
+          <a href="{{ navUrl | langUrl('zh') }}" hreflang="zh-Hant-TW" lang="zh-Hant-TW">中文</a>
+          {%- endif %}
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      {{ content | safe }}
+    </main>
+
+    <footer class="footer">
+      <p>{{ site.address[lang] }}</p>
+      <p>
+        {{ 'Lab phone' if lang == 'en' else '實驗室電話' }}: {{ site.phone }}
+        · Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </p>
+      <p>© {{ build.year }} {{ site.name[lang] }}, {{ site.affiliation[lang] }}</p>
+    </footer>
+  </div>
+</body>
+</html>
