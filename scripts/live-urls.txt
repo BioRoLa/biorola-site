@@ -110,13 +110,6 @@ ChunKaiHuang/pic/travels/yilan.png
 ChunKaiHuang/publication.html
 ChunKaiHuang/research.html
 ChunKaiHuang/travels.html
-Honors and Award.docx
-Honors and Awards2 paper.docx
-Ken_Burns_Slideshow.mxp
-M14_JYLai.jpg
-M14_LJChen.jpg
-M14_YHChen.jpg
-M14_YJLiu.JPG
 SpryAssets/SpryAccordion.css
 SpryAssets/SpryAccordion.js
 SpryAssets/SpryEffects.js
@@ -131,19 +124,13 @@ SpryAssets/SpryTabbedPanels.css
 SpryAssets/SpryTabbedPanels.js
 Templates/biped1.png
 Templates/templete.dwt
-_Curriculum Vitae_Chinese.docx
-_Curriculum Vitae_English.docx
 aboutus_contactus.html
 aboutus_honors.html
 aboutus_honors2.html
 aboutus_honors3.html
 aboutus_introduction.html
 aboutus_labtour.html
-aboutus_labtour_pic.html
 aboutus_perspective.html
-cover_graduate.JPG
-cover_under.JPG
-english/Ken_Burns_Slideshow.mxp
 english/aboutus_contactus.html
 english/aboutus_honors.html
 english/aboutus_introduction.html
@@ -176,7 +163,6 @@ english/research_spherical_omnicron.html
 english/research_spherical_omniqiu.html
 english/research_wheeled_cartamigo.html
 english/research_wheeled_twowheels.html
-english/turboquad.html
 framework/mootools.js
 images/1.jpg
 images/1t.jpg
@@ -199,11 +185,6 @@ images/pic/DSC00924.JPG
 images/pic/rhex.jpg
 index.html
 links.html
-media/Human following .html
-media/Quattroped.html
-media/Rhexleap.html
-media/Rhexleapditch.html
-media/Target following.html
 media_album.html
 media_movies.html
 media_press.html
@@ -213,7 +194,6 @@ members_alu_ra.html
 members_director.html
 members_stu_gra.html
 members_stu_under.html
-membersinfo/A10_AAA.html
 membersinfo/A10_YHChiu.html
 membersinfo/A11_HMChen.html
 membersinfo/A12_WYChien.html
@@ -232,7 +212,6 @@ membersinfo/D13_YCChiu.html
 membersinfo/D13_YLChu.html
 membersinfo/D14_TChen.html
 membersinfo/D16_CCChen.html
-membersinfo/D18_JWHShiau.html
 membersinfo/D18_JWShiau.html
 membersinfo/D18_YTHuang.html
 membersinfo/D6_YanDeZhou.html
@@ -322,7 +301,6 @@ membersinfo/M9_ChungShengChen.html
 membersinfo/M9_JinRongCai.html
 membersinfo/M9_WeiJheWu.html
 membersinfo/M9_YunMengLin.html
-membersinfo/M9_test.html
 membersinfo/alums_welcome.html
 membersinfo/profile/A10_YHChiu.jpg
 membersinfo/profile/A11_HMChen.jpg
@@ -456,8 +434,6 @@ membersinfo/profile/stu_welcome7.JPG
 membersinfo/profile/stu_welcome8.JPG
 membersinfo/profile/stu_welcome9.JPG
 membersinfo/stu_welcome.html
-membersinfo/temp.html
-membersinfo/untitled.html
 news.html
 pdf/Journal papers/2005_TRO.pdf
 pdf/Journal papers/2005_TRO_Erratum.pdf
@@ -707,7 +683,6 @@ publication_journals.html
 publication_others.html
 publication_patents.html
 publication_theses.html
-readme.txt
 research_climbing_climbingtree.html
 research_climbing_climbingwall.html
 research_legged_biped.html
@@ -739,5 +714,3 @@ slideshow/css/loader-9.png
 slideshow/css/slideshow.css
 slideshow/js/slideshow.js
 slideshow/js/slideshow.kenburns.js
-turboquad.html
-upload_record/1.txt
