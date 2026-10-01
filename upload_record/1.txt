@@ -1,0 +1,144 @@
+﻿開始於: 2015/12/1 下午 03:19
+
+members_alu_bs.html - 正在傳送
+pic\home\favicon.ico - 正在傳送
+SpryAssets\SpryMenuBar.js - 正在傳送
+SpryAssets\SpryMenuBarHorizontal.css - 正在傳送
+members_alu_bs.html - 上傳作業成功
+SpryAssets\SpryMenuBarDown.gif - 正在傳送
+SpryAssets\SpryMenuBarRight.gif - 正在傳送
+SpryAssets\SpryMenuBarDownHover.gif - 正在傳送
+SpryAssets\SpryMenuBarRightHover.gif - 正在傳送
+pic\logo\box.png - 正在傳送
+SpryAssets\SpryMenuBarDown.gif - 上傳作業成功
+pic\logo\logo.png - 正在傳送
+pic\members\alubs.png - 正在傳送
+members_stu_gra.html - 正在傳送
+pic\members\stugra.png - 正在傳送
+members_director.html - 正在傳送
+pic\logo\logo.png - 上傳作業成功
+pic\members\PCLin.png - 正在傳送
+members_alu_ms.html - 正在傳送
+pic\members\PCLin.png - 上傳作業成功
+pic\members\alums.png - 正在傳送
+pic\members\alums.png - 上傳作業成功
+membersinfo\alums_welcome.html - 正在傳送
+members_alu_ra.html - 正在傳送
+membersinfo\alums_welcome.html - 上傳作業成功
+pic\members\alura.png - 正在傳送
+pic\logo\downpage.png - 正在傳送
+pic\members\alura.png - 上傳作業成功
+research_legged_biped.html - 正在傳送
+pic\robots new\biped2.png - 正在傳送
+pic\robots new\biped.png - 正在傳送
+research_legged_biped.html - 上傳作業成功
+pic\home\favicon.ico - 上傳作業成功
+SpryAssets\SpryMenuBarHorizontal.css - 上傳作業成功
+research_spherical_omnicron.html - 正在傳送
+research_spherical_omnicron.html - 上傳作業成功
+pic\robots new\omnicron.png - 正在傳送
+research_climbing_climbingtree.html - 正在傳送
+pic\robots new\climbtree2.png - 正在傳送
+pic\robots new\omnicron.png - 上傳作業成功
+pic\robots new\climbtree.png - 正在傳送
+pic\robots new\climbtree2.png - 上傳作業成功
+research_climbing_climbingwall.html - 正在傳送
+research_climbing_climbingwall.html - 上傳作業成功
+pic\robots new\climbwall2.png - 正在傳送
+pic\robots new\climbwall.png - 正在傳送
+pic\robots new\climbwall2.png - 上傳作業成功
+research_others_imu.html - 正在傳送
+pic\robots new\9axisimu.png - 正在傳送
+pic\robots new\climbwall.png - 上傳作業成功
+research_wheeled_twowheels.html - 正在傳送
+research_wheeled_twowheels.html - 上傳作業成功
+pic\members\alubs.png - 上傳作業成功
+pic\robots new\twowheels.png - 正在傳送
+research_wheeled_cartamigo.html - 正在傳送
+pic\robots new\twowheels.png - 上傳作業成功
+pic\robots new\cartamigo.png - 正在傳送
+pic\members\stugra.png - 上傳作業成功
+research_spherical_omniqiu.html - 正在傳送
+research_spherical_omniqiu.html - 上傳作業成功
+pic\robots new\omniqiu.png - 正在傳送
+members_director.html - 上傳作業成功
+pic\photo\robots\Figure 09.jpg - 正在傳送
+pic\photo\robots\Omnicron.jpg - 正在傳送
+members_alu_ms.html - 上傳作業成功
+research_legged_rhex.html - 正在傳送
+pic\photo\robots\Omnicron.jpg - 上傳作業成功
+pic\robots new\hexapod.png - 正在傳送
+research_legged_quadruped.html - 正在傳送
+pic\robots new\quatruped.png - 正在傳送
+pic\photo\robots\Quattroped.jpg - 正在傳送
+pic\robots new\hexapod.png - 上傳作業成功
+pic\photo\robots\TurboQuad.jpg - 正在傳送
+pic\photo\robots\RHex.jpg - 正在傳送
+pic\photo\robots\DSC05388.JPG - 正在傳送
+pic\photo\robots\TurboQuad.jpg - 上傳作業成功
+SpryAssets\SpryMenuBar.js - 上傳作業成功
+SpryAssets\SpryMenuBarDownHover.gif - 上傳作業成功
+pic\robots new\climbtree.png - 上傳作業成功
+pic\teacher.jpg - 正在傳送
+pic\teacher.jpg - 上傳作業成功
+membersinfo\stu_welcome.html - 正在傳送
+membersinfo\stu_welcome.html - 上傳作業成功
+membersinfo\profile\stu_welcome2.jpg - 正在傳送
+SpryAssets\SpryMenuBarRight.gif - 發生錯誤 - 發生 一個 FTP 錯誤 - 無法上傳 SpryMenuBarRight.gif。 已達使用者限制，或者由於本機防火牆封鎖 FTP 資料，因此，無法獲得授權進行連線。
+pic\logo\box.png - 發生錯誤 - 發生 一個 FTP 錯誤 - 無法上傳 box.png。 已達使用者限制，或者由於本機防火牆封鎖 FTP 資料，因此，無法獲得授權進行連線。
+members_stu_under.html - 正在傳送
+pic\members\stuunder.png - 正在傳送
+SpryAssets\SpryMenuBarRightHover.gif - 發生錯誤 - 發生 一個 FTP 錯誤 - 無法上傳 SpryMenuBarRightHover.gif。 已達使用者限制，或者由於本機防火牆封鎖 FTP 資料，因此，無法獲得授權進行連線。
+members_stu_gra.html - 發生錯誤 - 發生 一個 FTP 錯誤 - 無法上傳 members_stu_gra.html。 已達使用者限制，或者由於本機防火牆封鎖 FTP 資料，因此，無法獲得授權進行連線。
+pic\logo\downpage.png - 發生錯誤 - 發生 一個 FTP 錯誤 - 無法上傳 downpage.png。 已達使用者限制，或者由於本機防火牆封鎖 FTP 資料，因此，無法獲得授權進行連線。
+members_alu_ra.html - 發生錯誤 - 發生 一個 FTP 錯誤 - 無法上傳 members_alu_ra.html。 已達使用者限制，或者由於本機防火牆封鎖 FTP 資料，因此，無法獲得授權進行連線。
+pic\robots new\biped2.png - 發生錯誤 - 發生 一個 FTP 錯誤 - 無法上傳 biped2.png。 已達使用者限制，或者由於本機防火牆封鎖 FTP 資料，因此，無法獲得授權進行連線。
+pic\robots new\biped.png - 發生錯誤 - 發生 一個 FTP 錯誤 - 無法上傳 biped.png。 已達使用者限制，或者由於本機防火牆封鎖 FTP 資料，因此，無法獲得授權進行連線。
+membersinfo\profile\stu_welcome2.jpg - 上傳作業成功
+research_others_imu.html - 發生錯誤 - 發生 一個 FTP 錯誤 - 無法上傳 research_others_imu.html。 已達使用者限制，或者由於本機防火牆封鎖 FTP 資料，因此，無法獲得授權進行連線。
+pic\robots new\9axisimu.png - 發生錯誤 - 發生 一個 FTP 錯誤 - 無法上傳 9axisimu.png。 已達使用者限制，或者由於本機防火牆封鎖 FTP 資料，因此，無法獲得授權進行連線。
+research_wheeled_cartamigo.html - 發生錯誤 - 發生 一個 FTP 錯誤 - 無法上傳 research_wheeled_cartamigo.html。 已達使用者限制，或者由於本機防火牆封鎖 FTP 資料，因此，無法獲得授權進行連線。
+pic\robots new\cartamigo.png - 發生錯誤 - 發生 一個 FTP 錯誤 - 無法上傳 cartamigo.png。 已達使用者限制，或者由於本機防火牆封鎖 FTP 資料，因此，無法獲得授權進行連線。
+pic\photo\robots\Figure 09.jpg - 發生錯誤 - 發生 一個 FTP 錯誤 - 無法上傳 Figure 09.jpg。 已達使用者限制，或者由於本機防火牆封鎖 FTP 資料，因此，無法獲得授權進行連線。
+pic\robots new\omniqiu.png - 上傳作業成功
+research_legged_rhex.html - 發生錯誤 - 發生 一個 FTP 錯誤 - 無法上傳 research_legged_rhex.html。 已達使用者限制，或者由於本機防火牆封鎖 FTP 資料，因此，無法獲得授權進行連線。
+research_legged_quadruped.html - 發生錯誤 - 發生 一個 FTP 錯誤 - 無法上傳 research_legged_quadruped.html。 已達使用者限制，或者由於本機防火牆封鎖 FTP 資料，因此，無法獲得授權進行連線。
+pic\robots new\quatruped.png - 發生錯誤 - 發生 一個 FTP 錯誤 - 無法上傳 quatruped.png。 已達使用者限制，或者由於本機防火牆封鎖 FTP 資料，因此，無法獲得授權進行連線。
+pic\photo\robots\Quattroped.jpg - 發生錯誤 - 發生 一個 FTP 錯誤 - 無法上傳 Quattroped.jpg。 已達使用者限制，或者由於本機防火牆封鎖 FTP 資料，因此，無法獲得授權進行連線。
+research_climbing_climbingtree.html - 發生錯誤 - 發生 一個 FTP 錯誤 - 無法上傳 research_climbing_climbingtree.html。 已達使用者限制，或者由於本機防火牆封鎖 FTP 資料，因此，無法獲得授權進行連線。
+pic\photo\robots\RHex.jpg - 發生錯誤 - 發生 一個 FTP 錯誤 - 無法上傳 RHex.jpg。 已達使用者限制，或者由於本機防火牆封鎖 FTP 資料，因此，無法獲得授權進行連線。
+pic\photo\robots\DSC05388.JPG - 發生錯誤 - 發生 一個 FTP 錯誤 - 無法上傳 DSC05388.JPG。 已達使用者限制，或者由於本機防火牆封鎖 FTP 資料，因此，無法獲得授權進行連線。
+members_stu_under.html - 發生錯誤 - 發生 一個 FTP 錯誤 - 無法上傳 members_stu_under.html。 已達使用者限制，或者由於本機防火牆封鎖 FTP 資料，因此，無法獲得授權進行連線。
+pic\members\stuunder.png - 發生錯誤 - 發生 一個 FTP 錯誤 - 無法上傳 stuunder.png。 已達使用者限制，或者由於本機防火牆封鎖 FTP 資料，因此，無法獲得授權進行連線。
+
+檔案活動未完成。22 個檔案或資料夾未完成。
+已更新的檔案:33
+
+由於下列原因，發生檔案傳送失敗:
+- 已達使用者限制，或者由於本機防火牆封鎖 FTP 資料，因此，無法獲得授權進行連線。
+
+有錯誤的檔案: 22
+SpryAssets\SpryMenuBarRight.gif
+pic\logo\box.png
+SpryAssets\SpryMenuBarRightHover.gif
+members_stu_gra.html
+pic\logo\downpage.png
+members_alu_ra.html
+pic\robots new\biped2.png
+pic\robots new\biped.png
+research_others_imu.html
+pic\robots new\9axisimu.png
+research_wheeled_cartamigo.html
+pic\robots new\cartamigo.png
+pic\photo\robots\Figure 09.jpg
+research_legged_rhex.html
+research_legged_quadruped.html
+pic\robots new\quatruped.png
+pic\photo\robots\Quattroped.jpg
+research_climbing_climbingtree.html
+pic\photo\robots\RHex.jpg
+pic\photo\robots\DSC05388.JPG
+members_stu_under.html
+pic\members\stuunder.png
+
+已完成: 2015/12/1 下午 03:20

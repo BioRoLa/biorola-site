@@ -1,0 +1,15 @@
+# secrets and server software, never commit
+.ssh/
+phpMyAdmin/
+
+# Synology / Dreamweaver / Windows junk
+@eaDir/
+_notes/
+Thumbs.db
+~$*
+*.vsd
+
+# build output
+node_modules/
+_site/
+movie/
