@@ -595,7 +595,9 @@ a.hex:focus-visible { --edge: var(--focus); outline: none; }
 /* ---------- Tablet: hexagons in a row above the content ---------- */
 
 @media (max-width: 1023px) {
-  .page { display: block; }
+  /* Stacked: hexagons, then the content panel, which reaches down to the footer. */
+  .page { display: flex; flex-direction: column; }
+  .page > .content { flex: 1; }
 
   .page > .honeycomb, .honeycomb {
     width: auto;
