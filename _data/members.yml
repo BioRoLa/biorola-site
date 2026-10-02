@@ -925,25 +925,25 @@
   email: "LukeWeiChiaEn@gmail.com"
 
 - id: "M17_WTChen"
-  name: {en: "Wei-Tin Chen", zh: "陳威廷"}
+  name: {en: "Wei-Ting Chen", zh: "陳威廷"}
   photo: "profile/M17_WTChen.jpeg"
   hobby: "Basketball"
   email: "r12522844@ntu.edu.tw"
 
 - id: "M17_YJLee"
-  name: {en: "Yi-Jung, Lee", zh: "李奕融"}
+  name: {en: "Yi-Jung Lee", zh: "李奕融"}
   photo: "profile/M17_YJLee.jpg"
   hobby: "吃零食、打音遊"
   email: "R12522831@ntu.edu.tw"
 
 - id: "M17_YLLai"
-  name: {en: "Lai, Yen-Li", zh: "賴彥澧"}
+  name: {en: "Yen-Li Lai", zh: "賴彥澧"}
   photo: "profile/M17_YLLai.jpg"
   hobby: "Anime"
   email: "R11522865@ntu.edu.tw"
 
 - id: "M17_YSShen"
-  name: {en: "Yi-Syuan, Shen", zh: "沈意軒"}
+  name: {en: "Yi-Syuan Shen", zh: "沈意軒"}
   photo: "profile/M17_YSShen.jpg"
   hobby: "Travelling, Hand-writing, Dancing"
   email: "R12522823@ntu.edu.tw"
@@ -955,7 +955,7 @@
   email: "R12522806@ntu.edu.tw"
 
 - id: "M17_YTHuang"
-  name: {en: "Yuan-tao Huang", zh: "黃淵濤"}
+  name: {en: "Yuan-Tao Huang", zh: "黃淵濤"}
   photo: "profile/M17_YTHuang.jpg"
   hobby: "Cooking"
   email: "R12522836@ntu.edu.tw"
