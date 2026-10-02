@@ -176,7 +176,7 @@ a.hex:focus-visible { --edge: var(--focus); outline: none; }
 /* ---------- Footer ---------- */
 
 .footer {
-  background: #000 url(/pic/logo/box.png) repeat-x left top;
+  background: #000 url(../../pic/logo/box.png) repeat-x left top;
   background-size: auto 100%;
   color: #fff;
   font-size: 13px;
