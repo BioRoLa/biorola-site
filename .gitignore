@@ -13,3 +13,6 @@ Thumbs.db
 node_modules/
 _site/
 movie/
+
+# Incoming students' personal data forms (source material only, never publish)
+新生資料/

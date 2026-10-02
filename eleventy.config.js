@@ -1,4 +1,5 @@
 import { execFileSync } from "node:child_process";
+import { existsSync } from "node:fs";
 import path from "node:path";
 import yaml from "js-yaml";
 import MarkdownIt from "markdown-it";
@@ -26,10 +27,12 @@ export default function (eleventyConfig) {
   // The legacy site is copied through untouched. Only git-tracked files are
   // published, so ignored server software and secrets (.ssh/, phpMyAdmin/)
   // can never end up in _site even though they sit in the working tree.
-  const tracked = execFileSync("git", ["ls-files", "-z"])
+  // New files that aren't committed yet are included too (so `npm start` shows
+  // them), but anything .gitignore excludes never is.
+  const tracked = execFileSync("git", ["ls-files", "-z", "--cached", "--others", "--exclude-standard", "--deduplicate"])
     .toString()
     .split("\0")
-    .filter((f) => f && !NOT_LEGACY.some((re) => re.test(f)));
+    .filter((f) => f && existsSync(f) && !NOT_LEGACY.some((re) => re.test(f)));
   // Passthrough keys are globs; old filenames like "RHex (1).jpg" need escaping,
   // and an escaped (glob) source is copied *into* its target, so target its folder.
   for (const f of tracked) {
