@@ -110,20 +110,6 @@ ChunKaiHuang/pic/travels/yilan.png
 ChunKaiHuang/publication.html
 ChunKaiHuang/research.html
 ChunKaiHuang/travels.html
-SpryAssets/SpryAccordion.css
-SpryAssets/SpryAccordion.js
-SpryAssets/SpryEffects.js
-SpryAssets/SpryMenuBar.js
-SpryAssets/SpryMenuBarDown.gif
-SpryAssets/SpryMenuBarDownHover.gif
-SpryAssets/SpryMenuBarHorizontal.css
-SpryAssets/SpryMenuBarRight.gif
-SpryAssets/SpryMenuBarRightHover.gif
-SpryAssets/SpryMenuBarVertical.css
-SpryAssets/SpryTabbedPanels.css
-SpryAssets/SpryTabbedPanels.js
-Templates/biped1.png
-Templates/templete.dwt
 aboutus_contactus.html
 aboutus_honors.html
 aboutus_introduction.html
@@ -161,26 +147,15 @@ english/research_spherical_omnicron.html
 english/research_spherical_omniqiu.html
 english/research_wheeled_cartamigo.html
 english/research_wheeled_twowheels.html
-framework/mootools.js
 images/1.jpg
-images/1t.jpg
 images/2.jpg
-images/2t.jpg
 images/3.jpg
-images/3t.jpg
 images/4.jpg
-images/4t.jpg
 images/5.JPG
-images/5t.jpg
 images/6.jpg
-images/6t.jpg
 images/7.JPG
-images/7t.jpg
 images/pic/2.jpg
-images/pic/3.jpg
-images/pic/DSC00154.JPG
 images/pic/DSC00924.JPG
-images/pic/rhex.jpg
 index.html
 links.html
 media_album.html
@@ -307,22 +282,18 @@ membersinfo/profile/A2_YWWang.JPG
 membersinfo/profile/A3_YiHsiangChiu.jpg
 membersinfo/profile/A4_WTYang.JPG
 membersinfo/profile/A5_WJChang.jpg
-membersinfo/profile/A6_YCChang .jpg
 membersinfo/profile/A6_YCChang.jpg
 membersinfo/profile/A7_WDHwangFu.jpg
 membersinfo/profile/A8_NYLi.jpeg
 membersinfo/profile/A9_LSLee.jpeg
-membersinfo/profile/D06_WCCheng.jpg
 membersinfo/profile/D10_CLiu.jpg
 membersinfo/profile/D10_JHShih.jpg
 membersinfo/profile/D11_WCCheng.jpg
 membersinfo/profile/D13_YCChiu.jpg
 membersinfo/profile/D13_YLChu.jpg
 membersinfo/profile/D14_TChen.jpg
-membersinfo/profile/D16_CCChen.JPG
 membersinfo/profile/D16_CCChen.jpg
 membersinfo/profile/D6_YanDeZhou.JPG
-membersinfo/profile/Hanlin.jpg
 membersinfo/profile/M10_BSChen.jpg
 membersinfo/profile/M10_David.jpg
 membersinfo/profile/M10_THWang.jpg
@@ -361,7 +332,6 @@ membersinfo/profile/M17_WTChen.jpeg
 membersinfo/profile/M17_YJLee.jpg
 membersinfo/profile/M17_YLLai.jpg
 membersinfo/profile/M17_YSShen.jpg
-membersinfo/profile/M17_YTHsu.JPG
 membersinfo/profile/M17_YTHsu.jpg
 membersinfo/profile/M17_YTHuang.jpg
 membersinfo/profile/M18_ECTsui.jpg
@@ -374,7 +344,6 @@ membersinfo/profile/M2_ChengHsinLee.JPG
 membersinfo/profile/M2_ChihChungCheng.jpg
 membersinfo/profile/M2_JauchingLu.JPG
 membersinfo/profile/M2_ShaoFanWang.jpg
-membersinfo/profile/M3_ChenShenChiang.jpg
 membersinfo/profile/M3_ChunShengChen.jpg
 membersinfo/profile/M3_ShenChiangChen.jpg
 membersinfo/profile/M4_JingYiChen.jpg
@@ -389,16 +358,11 @@ membersinfo/profile/M5_WeiHsiChen.jpg
 membersinfo/profile/M6_ChiaJuiHu.JPG
 membersinfo/profile/M6_ChingKaiChou.JPG
 membersinfo/profile/M6_ChunKaiHuang.JPG
-membersinfo/profile/M6_YuChenLin(1).JPG
 membersinfo/profile/M6_YuChenLin.JPG
 membersinfo/profile/M7_HanLin.jpg
 membersinfo/profile/M7_HungSheng.jpg
-membersinfo/profile/M7_HungShengLin.jpg
 membersinfo/profile/M7_PoWei.jpg
 membersinfo/profile/M7_YiTungShen.jpg
-membersinfo/profile/M7_sammylin.jpg
-membersinfo/profile/M7_tammy.jpg
-membersinfo/profile/M7_拍雄.jpg
 membersinfo/profile/M8_CLChen.jpg
 membersinfo/profile/M8_LiYenHuang.jpg
 membersinfo/profile/M8_RFtseng.jpg
@@ -419,8 +383,6 @@ membersinfo/profile/alums_r10.JPG
 membersinfo/profile/alums_r11.JPG
 membersinfo/profile/alums_r98.JPG
 membersinfo/profile/alums_r99.JPG
-membersinfo/profile/bank/DSC_0105.JPG
-membersinfo/profile/sammylin
 membersinfo/profile/stu_welcome.JPG
 membersinfo/profile/stu_welcome10.JPG
 membersinfo/profile/stu_welcome2.jpg
@@ -463,8 +425,6 @@ pdf/Journal papers/2014 BB.pdf
 pdf/Journal papers/2014 JBE.pdf
 pdf/Journal papers/2014 SMS.pdf
 pdf/Journal papers/頁面擷取自-_Curriculum Vitae_Chinese.pdf
-pic/2.png
-pic/3.png
 pic/album/cover_Akihiro Aoyama.jpg
 pic/album/cover_Ali.JPG
 pic/album/cover_Fulong.JPG
@@ -472,21 +432,13 @@ pic/album/cover_Hehuan.JPG
 pic/album/cover_Hualien.jpg
 pic/album/cover_Hualien2017.jpg
 pic/album/cover_Hualien2023.JPG
-pic/album/cover_Hualien2023.jpg
 pic/album/cover_Lanyu.JPG
 pic/album/cover_Matsu.JPG
 pic/album/cover_Okinawa.JPG
-pic/album/cover_Okinawa.jpg
-pic/album/cover_Penghu_2022.JPG
 pic/album/cover_Penghu_2022.jpg
 pic/album/cover_Ryo Abe.JPG
 pic/album/cover_TB2024_a.JPG
-pic/album/cover_TB2024_a.jpg
 pic/album/cover_Yuanshan.JPG
-pic/album/cover_Yuanshan.jpg
-pic/album/cover_comming soon.JPG
-pic/album/cover_comming soon.jpg
-pic/album/cover_eat.jpg
 pic/album/cover_eat2015.JPG
 pic/album/cover_eat2016.JPG
 pic/album/cover_eat2017.jpg
@@ -496,7 +448,6 @@ pic/album/cover_eat2020.jpg
 pic/album/cover_eat2021_1.jpg
 pic/album/cover_eat2021_2.jpg
 pic/album/cover_eat2022_a.jpg
-pic/album/cover_eat2022_b.JPG
 pic/album/cover_eat2022_b.jpg
 pic/album/cover_eat2023_a.jpg
 pic/album/cover_eat2023_b.jpg
@@ -508,13 +459,11 @@ pic/album/cover_kait2017.JPG
 pic/album/cover_under.JPG
 pic/album/cover_under2023.jpg
 pic/biorola.jpg
-pic/home.png
 pic/home/ICON.txt
 pic/home/biped1.png
 pic/home/biped2.png
 pic/home/biped3.png
 pic/home/biped4.png
-pic/home/black.png
 pic/home/cartamigo1.png
 pic/home/cartamigo2.png
 pic/home/cartamigo3.png
@@ -536,9 +485,6 @@ pic/home/director2.png
 pic/home/director3.png
 pic/home/director4.png
 pic/home/favicon.ico
-pic/home/frame.png
-pic/home/frame2.png
-pic/home/frame3.png
 pic/home/imu1.png
 pic/home/imu2.png
 pic/home/imu3.png
@@ -563,7 +509,6 @@ pic/home/rhex1.png
 pic/home/rhex2.png
 pic/home/rhex3.png
 pic/home/rhex4.png
-pic/home/robot.png
 pic/home/tour1.png
 pic/home/tour2.png
 pic/home/tour3.png
@@ -572,26 +517,6 @@ pic/home/twowheels1.png
 pic/home/twowheels2.png
 pic/home/twowheels3.png
 pic/home/twowheels4.png
-pic/homepage.png
-pic/lab pic/DSC_0174.JPG
-pic/lab pic/DSC_0175.JPG
-pic/lab pic/DSC_0176.JPG
-pic/lab pic/DSC_0177.JPG
-pic/lab pic/DSC_0178.JPG
-pic/lab pic/DSC_0179.JPG
-pic/lab pic/DSC_0180.JPG
-pic/lab pic/DSC_0182.JPG
-pic/lab pic/DSC_0183.JPG
-pic/lab pic/DSC_0187.JPG
-pic/lab pic/DSC_0188.JPG
-pic/lab pic/DSC_0190.JPG
-pic/lab pic/DSC_0192.JPG
-pic/lab pic/DSC_0194.JPG
-pic/lab pic/DSC_0195.JPG
-pic/lab pic/DSC_0197.JPG
-pic/lab pic/DSC_0198.JPG
-pic/lab pic/DSC_0201.JPG
-pic/lab pic/DSC_0202.JPG
 pic/lab pic/nDSC_0174.JPG
 pic/lab pic/nDSC_0175.JPG
 pic/lab pic/nDSC_0176.JPG
@@ -611,70 +536,20 @@ pic/lab pic/nDSC_0197.JPG
 pic/lab pic/nDSC_0198.JPG
 pic/lab pic/nDSC_0201.JPG
 pic/lab pic/nDSC_0202.JPG
-pic/lab tour.png
-pic/logo/background.png
 pic/logo/box.png
-pic/logo/downpage.png
-pic/logo/downpage10.png
-pic/logo/downpage2.png
-pic/logo/downpage2025.png
-pic/logo/home.png
 pic/logo/logo.png
-pic/logo/logoC.png
-pic/logo/logoE.png
-pic/logo/logoin.png
-pic/logo/members.png
-pic/members/PCLin.png
-pic/members/alubs.png
-pic/members/alums.png
-pic/members/alura.png
-pic/members/stugra.png
-pic/members/stuunder.png
 pic/nlab tour.png
-pic/ntumap_My Lab.png
 pic/ntumap_My Lab_2024.jpg
-pic/others/album.png
-pic/others/conference.png
-pic/others/contactus.png
-pic/others/honors.png
-pic/others/introduction.png
-pic/others/journals.png
-pic/others/labtour.png
-pic/others/links.png
-pic/others/movies.png
-pic/others/news.png
-pic/others/others.png
-pic/others/patents.png
-pic/others/perspective.png
-pic/others/press.png
-pic/others/theses.png
-pic/photo/robots/175569_543495628999109_1481807064_o.jpg
 pic/photo/robots/5.png
 pic/photo/robots/DSC05388.JPG
 pic/photo/robots/Figure 09.jpg
 pic/photo/robots/Omnicron.jpg
 pic/photo/robots/Quattroped.jpg
-pic/photo/robots/RHex (1).jpg
 pic/photo/robots/RHex.jpg
 pic/photo/robots/TWIX.jpg
 pic/photo/robots/TurboQuad.jpg
 pic/photo/robots/mini-RHex.jpg
 pic/photo/robots/read me.txt
-pic/robots new/9axisimu.png
-pic/robots new/biped.png
-pic/robots new/biped2.png
-pic/robots new/cartamigo.png
-pic/robots new/climbtree.png
-pic/robots new/climbtree2.png
-pic/robots new/climbwall.png
-pic/robots new/climbwall2.png
-pic/robots new/hexapod.png
-pic/robots new/hexapod2.png
-pic/robots new/omnicron.png
-pic/robots new/omniqiu.png
-pic/robots new/quatruped.png
-pic/robots new/quatruped2.png
-pic/robots new/twowheels.png
 pic/teacher.jpg
 publication_conference.html
 publication_journals.html
@@ -691,24 +566,3 @@ research_spherical_omnicron.html
 research_spherical_omniqiu.html
 research_wheeled_cartamigo.html
 research_wheeled_twowheels.html
-slideshow/css/controller-first.gif
-slideshow/css/controller-last.gif
-slideshow/css/controller-next.gif
-slideshow/css/controller-pause.gif
-slideshow/css/controller-prev.gif
-slideshow/css/controller.png
-slideshow/css/loader-0.png
-slideshow/css/loader-1.png
-slideshow/css/loader-10.png
-slideshow/css/loader-11.png
-slideshow/css/loader-2.png
-slideshow/css/loader-3.png
-slideshow/css/loader-4.png
-slideshow/css/loader-5.png
-slideshow/css/loader-6.png
-slideshow/css/loader-7.png
-slideshow/css/loader-8.png
-slideshow/css/loader-9.png
-slideshow/css/slideshow.css
-slideshow/js/slideshow.js
-slideshow/js/slideshow.kenburns.js
