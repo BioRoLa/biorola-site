@@ -110,6 +110,8 @@ ChunKaiHuang/pic/travels/yilan.png
 ChunKaiHuang/publication.html
 ChunKaiHuang/research.html
 ChunKaiHuang/travels.html
+SpryAssets/SpryMenuBarDownHover.gif
+SpryAssets/SpryMenuBarRightHover.gif
 aboutus_contactus.html
 aboutus_honors.html
 aboutus_introduction.html
