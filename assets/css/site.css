@@ -160,9 +160,11 @@ main:focus { outline: none; }
   background: var(--menu-bg);
   box-shadow: 0 4px 10px rgb(0 0 0 / 0.35);
 }
-.menu__drop { top: 100%; left: 0; }
+/* A dropdown lines up with its menu cell: the same width, items centred under the label. */
+.menu__drop { top: 100%; left: 0; min-width: max(12em, 100%); }
 .menu__fly { top: 0; left: 100%; }
-.menu__drop a, .menu__fly a { text-align: left; }
+.menu__drop a { text-align: center; }
+.menu__fly a { text-align: left; }
 
 .menu li:hover > ul,
 .menu li:focus-within > ul,
