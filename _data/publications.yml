@@ -5,8 +5,15 @@
 # and is shown as-is.
 
 journals:
-- "T. I. Su, Y. T. Huang, and P. C. Lin*, “Legged robot running using a data-driven neural-network motion template,” IEEE/ASME Transactions on Mechatronics (accepted)"
-- "I. C. Chang and P. C. Lin*, “Energy-efficient and stride-level hybrid locomotion of a leg-wheel transformable robot,” ASME Journal of Mechanisms and Robotics, DOI: 10.1115/1.4070596"
+- "P. Y. Chang, C. H. Chou, Y. P. Chang, and <u>P. C. Lin</u>*, “Development of a dual-mode spherical robot using a differential drive,” *IEEE Access*, 2026, DOI: 10.1109/ACCESS.2026.3729752, vol. 14, pp137017-137026"
+- "Y. L. Chu, W. S. Yu, R. F. Ding, and <u>P. C. Lin</u>*, “A novel 3-PU(R)U dual-mode parallel mechanism: design, optimization, and experimental validation,” *ASME Journal of Mechanical Design*, Jun. 2026, DOI: 10.1115/1.4071912, Nov. 2026, vol. 148, no. 11, 113306"
+- "Y. H. Chen, T. Chen, S. T. Chen, and <u>P. C. Lin</u>*, “Out-of-distribution image detection with classified generative adversarial network (C-GAN) in an industrial system,” *IEEE Robotics and Automation Practice*, 2026, DOI: 10.1109/RAP.2026.3700968, vol. 1, pp113-117"
+- "T. Chen, J. X. Liu, Y. Y. Tsai, and <u>P. C. Lin</u>*, “A novel and real-time 6-DoF pose estimation method using a 2-D laser profiler in a single scan,” *IEEE/ASME Transactions on Mechatronics* (early access), 2026, DOI: 10.1109/TMECH.2026.3678182"
+- "W. T. Chen, E. C. Tsui, W. S. Yu, S. Y. Chien, B. R. Chen, and <u>P. C. Lin</u>*, “Stair-climbing strategy in a novel wheel-legged hybrid robot,” *IEEE Access*, 2026, DOI: 10.1109/ACCESS.2026.3695701, vol. 14, pp80782-80801"
+- "T. I. Su, Y. T. Huang, and <u>P. C. Lin</u>*, “Legged robot running using a data-driven neural-network motion template,” *IEEE/ASME Transactions on Mechatronics*, DOI: 10.1109/TMECH.2025.3646077, Jun. 2026, vol. 31, no. 3, pp3323-3333"
+- "T. Chen and <u>P. C. Lin</u>*, “A real-time 6-DoF posture estimation method for high-speed 6-axis industrial manipulator control using a 2D laser profiler,” *IEEE Robotics and Automation Letters (RA-L)*, DOI: 10.1109/LRA.2026.3655301, Mar. 2026, vol. 11, no. 3, pp2975-2982"
+- "I. C. Chang and <u>P. C. Lin</u>*, “Energy-efficient and stride-level hybrid locomotion of a leg-wheel transformable robot,” *ASME Journal of Mechanisms and Robotics*, Jan. 2026, DOI: 10.1115/1.4070596, Mar. 2026, vol. 18, no. 3, 031003"
+- "Y. L. Lai, W. S. Yu, and <u>P. C. Lin</u>*, “Stair-climbing strategy of a leg-wheel transformable robot using visual feedback and varying leg-wheel contact points,” *IEEE Access*, Jan. 2026, DOI: 10.1109/ACCESS.2026.3651768, vol. 14, pp7631-7648"
 - "J. X. Liu, T. Chen, Y. Y. Tsai, and <u>P. C. Lin</u>*, “A kinematic parameter calibration method of a 6-axis industrial robot using an eye-in-hand 2D laser profiler,” IEEE Sensors Letters, DOI: 10.1109/LSENS.2025.3574161, Jul. 2025, vol.9 no.7, pp1-4"
 - "W. T. Yang, J. M, Liao, and <u>P. C. Lin</u>*, “Physics-data hybrid dynamic model of a multi-axis manipulator for sensorless dexterous manipulation and high-performance motion planning,” *International Journal of Advanced Robotic Systems*, Nov. 22, 2024, DOI: 10.1177/17298806241306812, Mar. 2025, vol. 22, no.2, pp1-20"
 - "C. H. Lin, C. C. Lin, <u>P. C. Lin</u>, and F. L. Yang*, “A prototype of a biomimetic scallop robot with bivalve propulsion and a hydrodynamic model for its velocity,” *Journal of Applied Science and Engineering*, Nov. 24, 2024, vol. 28, no 8, pp1837-1848"
@@ -75,6 +82,8 @@ journals:
 - "P. C. Lin, H. Komsuoglu, and D. E. Koditschek, “Sensor data fusion for body state estimation in a hexapod robot with dynamical gaits,” IEEE Transactions on Robotics (T-RO), Oct. 2006, vol.22, no.5, pp932-943 [[PDF]](/pdf/Journal%20papers/2006_TRO.pdf)"
 - "P. C. Lin, H. Komsuoglu, and D. E. Koditschek, “A leg configuration measurement system for full body pose estimates in a hexapod robot,” IEEE Transactions on Robotics (T-RO), Jun. 2005, vol.21, no.3, pp411-422 [[PDF]](/pdf/Journal%20papers/2005_TRO.pdf)"
 conference:
+- "S. L. Chien, F. C. Kao, C. S. Shih, S. H. Lu, and <u>P. C. Lin</u>*, “Robotic wire assembly via data-driven modeling, policy learning, and sim-to-real transfer,” in Proc. IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM), Jul. 2026, Genova, Italy, pp1-6"
+- "Y. A. Xiao, Y. S. Shen, W. S. Yu, and <u>P. C. Lin</u>*, “Terrain stiffness estimation on a leg-wheel transformable robot,” in Proc. IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM), Jul. 2026, Genova, Italy, pp1-6"
 - "P. Y. Tseng, J. J. Yeh, Y. Y. Lai, H. Y. Hsu and P. C. Lin*, “Bio-Inspired Locomotion: Design and Control of Snail Robot. 2025 International Conference on Advanced Robotics and Intelligent Systems (ARIS), Aug. 2025, Taipei, Taiwan."
 - "P. Y. Chang, C. H. Chou, T. J. Wang, Y. P. Chang and P. C. Lin*, “A Two Degree of Freedom Pendulum Driven Spherical Robot Platform. 2025 International Conference on Advanced Robotics and Intelligent Systems (ARIS), Aug. 2025, Taipei, Taiwan."
 - "Y. C. Chiu and P. C. Lin*, “Active Control of Spindle Microvibration via Piezoelectric Fiber-Excited Bearing Modes. 2025 International Conference on Advanced Robotics and Intelligent Systems (ARIS), Aug. 2025, Taipei, Taiwan."
