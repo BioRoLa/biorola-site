@@ -1,0 +1,68 @@
+# Research projects, shown on the research_*.html pages in both languages.
+# Keyed by page; each project has a name, years, photo, and description
+# paragraphs in English (en) and Chinese (zh), in Markdown. Either language
+# falls back to the other when missing. movies: true adds a link to the Movies page.
+# A page with no projects shows a "coming soon" note.
+
+research_climbing_climbingtree.html: []
+research_climbing_climbingwall.html: []
+research_legged_biped.html:
+- name: "Biped Robot"
+  years: "2008 – 2013"
+  photo: "/pic/photo/robots/DSC05388.JPG"
+  en: |
+    It is a child-size robot designed for exploring bipedal locomotion mechanism. It can perform walking, turning in place, and simultaneous walking and turning.
+research_legged_quadruped.html:
+- name: "TurboQuad"
+  years: "2012 – now"
+  photo: "/pic/photo/robots/TurboQuad.jpg"
+  en: |
+    TurboQuad is a successor of the Quattroped. Our aim was to develop a mobile leg-wheel transformable robot with smooth transitions between wheeled mode, which is suitable for quick and smooth movement on flat terrain, and legged mode, which can stably negotiate uneven terrain. With the novel transformation mechanism and model-based control strategies aided by sensor feedback, *TurboQuad*can smoothly perform fast leg-wheel transformation and utilize multiple bio-inspired gaits to adapt to varying terrain smoothness efficiently.
+  zh: |
+    TurboQuad 為一輪腳複合型機器人，可根據需求在行進間作平滑的模式切換，使用輪模式可以有效率的在平坦地形上快速移動；使用腳模式則可使用不同仿生步態以克服地形障礙。該平台以物理模型佐以感測器回授作為控制架構，運用特殊設計之變型機構，TurboQuad可以執行快速的輪腳變換，並有效率的在不同地形上移動。
+  movies: true
+- name: "Quattroped"
+  years: "2007 – 2012"
+  photo: "/pic/photo/robots/Quattroped.jpg"
+  en: |
+    Quattroped is a 4-leg/4-wheel transformable mobile robot. In contrast to most hybrid platforms which have separate mechanisms and actuators for wheels and legs, this robot is implemented with a unique transformation mechanism which directly switches the morphology of the driving mechanism between the wheels (i.e. a full circle) and a 2 degree-of-freedom leg (i.e. combining two half-circles as a leg), so the same system of actuation power can be efficiently utilized in both wheeled and legged modes. Taking advantage of the leg-wheel combination, the robot is capable of performing different behaviors, including wheeled driving, step and bar crossing, irregular terrain passing, stair climbing, etc.
+  movies: true
+research_legged_rhex.html:
+- name: "TWIX"
+  years: "2014 – now"
+  photo: "/pic/photo/robots/TWIX.jpg"
+  en: |
+    In biology, hexapods can walk stably in complicated terrain with tripod gait, and quadrupeds (cheetah in particular) stretch and contract their waist to run faster. These ideas are implemented on the modular robot, TWIX. TWIX is a special RHex-style robot which can switch between two modes, the hexapedal mode and the quadrupedal mode. Switching can be easily achieved because of the modular design. In the study of dynamic locomotion, TWIX is operated to approach two kinds of problems:
+
+    (1) model-based hexapod and quadruped running behaviors
+
+    (2) the effect of the waist on running behaviors
+  zh: |
+    生物界中，六足動物可以三點著地的tripod步態穩定行走於複雜地形中，而四足動物（特別是獵豹）則可藉由腰部之伸展收縮，使其跑動更加快速。TWIX機器人即是利用這些生物之啟發所設計的。TWIX是一臺RHex型式之機器人，可以在六足模式與四足模式間切換，其模組化的設計使模式間的切換十分容易。 在動態運動的研究中，TWIX用以探討兩種動態問題：
+
+    (1)六足與四足以模型為基礎的跑步行為
+
+    (2)腰部對跑步行為之影響
+- name: "Mini-RHex"
+  years: "2010 – now"
+  photo: "/pic/photo/robots/mini-RHex.jpg"
+  en: |
+    mini- RHex is a RHex-style hexapod robot which is designed for exploring two types of locomotion problems: Rough terrain negotiability and dynamic locomotion capability. In addition to ordinary tripod walking and turning behaviors, the robot can perform several different behaviors, including (1) fully autonomous step-climbing maneuver, which enables it to reliably climb a step up to 230% higher than the length of its leg; (2) model-based running behavior, which enables it to run from 1 m/s to 2 m/s without tuning or optimization efforts; (3) fully autonomous running-to-leaping maneuver.
+  zh: |
+    mini-RHex 是以RHex為模板開發的六足機器人，設計的目的是要探討兩種機器人動態上的問題： 崎嶇地上的移動性能和動態能力。除了原先以tripod步態行走和轉彎，機器人本身還能表現出不同的行為模式，包括：(1)全自動爬樓梯，每一階可以爬到比機器人腳長2.3倍的階梯；(2)model-based下的步態，他跑動的速度可以從每秒1公尺到每秒2公尺，過程中不用任何的設定或者優化；(3)全自動往前跑然後跳躍。
+  movies: true
+research_others_imu.html: []
+research_spherical_omnicron.html:
+- name: "Omnicron"
+  years: "2011 – now"
+  photo: "/pic/photo/robots/Omnicron.jpg"
+  en: |
+    Omnicron is a spherical robot with singularity-free omnidirectional locomotion ability. Instead of using a single driven ball as in its predessor OmniQiu, the robot utilizes three omnidirectional wheels to drive its spherical shell. Three wheels are controlled independently, thus achieving 3-DOF planar locomotion by simple 3 to 3 mapping.
+research_spherical_omniqiu.html:
+- name: "OmniQiu"
+  years: "2010 – 2013"
+  photo: "/pic/photo/robots/Figure 09.jpg"
+  en: |
+    OmniQue is a novel omnidirectional spherical robot. Instead of using wheels or flywheels as driving mechanism, the robot uses two orthogonally-mounted rollers to drive a ball installed inside a spherical shell. Because the ball rolls on the shell, the robot performs omnidirectional and singularity-free locomotion.
+research_wheeled_cartamigo.html: []
+research_wheeled_twowheels.html: []

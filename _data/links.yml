@@ -1,0 +1,21 @@
+# Links page (links.html), in groups.
+
+- group: { en: "Lab Related", zh: "實驗室相關" }
+  links:
+    - { label: { en: "Laser cutter reservation", zh: "預約雷切機" }, url: "https://docs.google.com/spreadsheets/d/1eqyKw4R4soPKww9_zEz6Jl-2HoyVbdCwQ7t1k711ul0/edit#gid=0" }
+    - { label: { en: "Pei-Chun Lin homepage", zh: "林沛群教授個人網頁" }, url: "http://peichunlin.me.ntu.edu.tw/" }
+
+- group: { en: "Research Related", zh: "研究相關" }
+  links:
+    - { label: { en: "IEEE Xplore", zh: "IEEE Xplore" }, url: "https://ieeexplore.ieee.org/" }
+    - { label: { en: "Web of Science", zh: "Web of Science" }, url: "https://www.webofscience.com/" }
+    - { label: { en: "Engineering Village", zh: "Engineering Village" }, url: "https://www.engineeringvillage.com/" }
+
+- group: { en: "Academic Related", zh: "學術相關" }
+  links:
+    - { label: { en: "National Taiwan University (NTU)", zh: "國立臺灣大學" }, url: "https://www.ntu.edu.tw/" }
+    - { label: { en: "Department of Mechanical Engineering, NTU", zh: "國立臺灣大學 機械工程學系" }, url: "https://www.me.ntu.edu.tw/" }
+
+- group: { en: "Information", zh: "資訊" }
+  links:
+    - { label: { en: "Purchasing Information", zh: "採購資訊" }, url: "https://docs.google.com/spreadsheet/pub?key=0AqRci4tfdzjedEduLXFiaENoM2dNdGVRLVQ1LXMxcUE&singl" }

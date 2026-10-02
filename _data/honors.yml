@@ -1,0 +1,282 @@
+# Honors and awards, shown on aboutus_honors.html in both languages.
+# Newest first; order follows this file. year is text ("2024" or "2018-2020"); text is Markdown.
+
+- {year: "2025", text: "Y. T. Hsu, Dean's Award for CoE Graduate Students, NTU"}
+- {year: "2025", text: "S. C. Lin, Y. T. Huang, G. Y. Lee, S. W. Yang, Third Place, Best Student Paper Award, International Conference on Advanced Robotics and Intelligent Systems (ARIS)"}
+- {year: "2025", text: "X. K Huang, Y. Y. Tseng, S. H. Lin, and J. R. Lai, 1st Place, Thesis Awards, Chinese Institute of Engineers Student Section"}
+- {year: "2024", text: "P. Y. Chang, Y. P. Chang, C. H. Chou, and T. J. Wang, 1nd place, MechaHeroes"}
+- {year: "2024", text: "P. Y. Tseng, J. J. Yeh, Y. Y. Lai, and H. Y. Hsu, Honorary Mention, MechaHeroes"}
+- {year: "2024", text: "Best Poster Award, Automation Engineering Program, National Science and Technology Council (NSTC)"}
+- {year: "2024", text: "C. Liu and P. C. Lin, Best Paper Award, 27th Annual Meeting of the Chinese Society of Mechanism and Machine Theory and 3rd International Conference on Advanced Mechanism and Machine Technology"}
+- {year: "2024", text: "C. Liu, Distinguished Ph.D. Dissertation Award, Chinese Society of Mechanism and Machine Theory"}
+- {year: "2024", text: "C. Liu, Presidential Award for Graduate Students, NTU"}
+- {year: "2024", text: "M. J. Liao, C. Y. Shen, C. H. Liu, G. W. Tung, and W. Y. Shao, Honorary Mention, Best Student Paper Award, International Conference on Advanced Robotics and Intelligent Systems (ARIS)"}
+- {year: "2024", text: "T. Chen and J. X. Liu, 1st place, Best Presentation Paper Award, International Conference on Advanced Robotics and Intelligent Systems (ARIS)"}
+- {year: "2024", text: "M. J. Liao, C. Y. Shen, C. H. Liu, G. W. Tung, and W. Y. Shao, 1st Place, Thesis Awards, Chinese Institute of Engineers Student Section"}
+- {year: "2024", text: "M. J. Liao, 2nd Prize, ASME E-Fest Oral Competition, ASME"}
+- {year: "2023", text: "C. Y. Shen, C. H. Liu, G. W. Tung, W. Y. Shao, and M. J. Liao, 2nd place, MechaHeroes"}
+- {year: "2023", text: "Best Poster Award, Automation Engineering Program, Ministry of Science and Technology (MOST)"}
+- {year: "2023", text: "T. H. Wu, Y. L. Liang, and Y. T. Hsu, Innovation Scholarship, China Technical Consultants, Inc. (CTCI)"}
+- {year: "2023", text: "Fellow, Society of Theoretical and Applied Mechanics of the Republic of China (STAM Fellow)"}
+- {year: "2023", text: "T. H. Wu, Y. L. Liang, and Y. T. Hsu, Honorary Mention, Undergraduate Division, Precision Machine Tool and Intelligent Technology Competition"}
+- {year: "2023", text: "Outstanding Engineering Professor Award, The Chinese Society of Mechanical Engineers (CSME)"}
+- {year: "2023", text: "Y. C. Zhuang, 2nd place, Master’s Thesis Award, Chinese Automatic Control Society (CACS)"}
+- {year: "2023", text: "H. Y. Wang, 2nd place, Master’s Thesis Award, Robotics Society of Taiwan (RST)"}
+- {year: "2023", text: "Outstanding Teaching Award, NTU"}
+- {year: "2023", text: "S. H. Kao, W. L. Pai, F. E. Yeh, J. J. Chen, Honorary Mention, Best Presentation Paper Award, International Conference on Advanced Robotics and Intelligent Systems (ARIS)"}
+- {year: "2023", text: "Y. T. Huang, C. L. Lu, and Y. S. Chang, 1st Place, Thesis Awards, Chinese Institute of Engineers Student Section"}
+- {year: "2022", text: "T. H. Wu, Y. L. Liang, and Y. T. Hsu, 2nd place, MechaHeroes"}
+- {year: "2022", text: "L. J. Chen, 1st place, Master’s Thesis Award, The Chinese Society of Mechanical Engineers (CSME)"}
+- {year: "2022", text: "Best Poster Award, Annual Exhibition, Automation Engineering Program, National Science and Technology Council (NSTC)"}
+- {year: "2022", text: "Y. J. Liu, 1st place, Master’s Thesis Award, Chinese Automatic Control Society (CACS)"}
+- {year: "2022", text: "Distinguished Teaching Award, Taiwan Society of Precision Engineering (TSPE)"}
+- {year: "2022", text: "Outstanding Teaching Award, NTU"}
+- {year: "2022", text: "Fellow, Robotics Society of Taiwan (RST Fellow)"}
+- {year: "2022", text: "Z. R. Chen, College Student Research Creativity Award, MOST"}
+- {year: "2022", text: "Z. R. Chen, 2nd Prize, ASME E-Fest Oral Competition, ASME"}
+- {year: "2022", text: "Z. R. Chen, Honorary Mention, ASME SPDC Old Guard Oral Presentation Competition, ASME Taiwan"}
+- {year: "2022", text: "Outstanding Research Award, Ministry of Science and Technology (MOST)"}
+- {year: "2022", text: "Fellow, The Institute of Engineering and Technology (IET Fellow)"}
+- {year: "2021", text: "M. W. Liu, Outstanding Award, Hiwin ME Master’s Thesis Award"}
+- {year: "2021", text: "S. Y. Hsiao, H. Y. Wang, Y. Chu, and T. Chen, Technical Innovation Scholarship, China Technical Consultants, Inc. (CTCI)"}
+- {year: "2021", text: "K. C. Ho, Distinguished Master These Award, Chinese Society of Mechanism and Machine Theory"}
+- {year: "2021", text: "Y. H. Lin, Honorary Mention, Master’s Thesis Award, Robotics Society of Taiwan (RST)"}
+- {year: "2021", text: "T. Y. Su, Honorary Mention, Master’s Thesis Award, Chinese Automatic Control Society (CACS)"}
+- {year: "2021", text: "Y. H. Lin and M. W. Liu, International Conference on Advanced Robotics and Intelligent Systems (ARIS), Best Student Paper Award"}
+- {year: "2021", text: "I. C. Chang, C. H. Hsu, and H. S. Wu, 1st Place, Thesis Awards, Chinese Institute of Engineers Student Section"}
+- {year: "2021", text: "Outstanding Teaching Award, NTU"}
+- {year: "2021", text: "I. C. Chang, Sinian Fu Award, NTU Undergraduate Thesis Award"}
+- {year: "2021", text: "I. C. Chang, College Student Research Creativity Award, MOST"}
+- {year: "2021", text: "Distinguished Teaching Award, Institute of Engineering Education, Taiwan (IEET)"}
+- {year: "2021", text: "Distinguished Alumna, Taipei Municipal Tienmu Elementary School"}
+- {year: "2021", text: "C. H. Wang, Outstanding Award, Hiwin ME Master’s Thesis Award"}
+- {year: "2020", text: "Y. Chu, S. Y. Hsiao, T. Chen, and H. Y. Wang, 2nd place, Student Project Competition, Mechanical and Mechatronics Departments, National Taiwan University System"}
+- {year: "2020", text: "ASME Fellow"}
+- {year: "2018-2020", text: "Ching-Lang Chair Professor"}
+- {year: "2020", text: "J. M. Liao, Honorary Mention, Taiwan Society for Precision Engineering"}
+- {year: "2020", text: "H. Y. Chen, Distinguished Master These Award, Chinese Society of Mechanism and Machine Theory"}
+- {year: "2020", text: "W. J. Chang and C. L. Chang, Gold Medal, Undergraduate Division, Allring-Tech Innovation Competition"}
+- {year: "2020", text: "W. J. Chang and C. L. Chang, 1st Place, Thesis Awards, Chinese Institute of Engineers Student Section"}
+- {year: "2020", text: "W. J. Chang and C. L. Chang, 1st Place, Thesis Awards, Chinese Institute of Engineers Student Section"}
+- {year: "2020", text: "C. H. Chen, Master Thesis Award, NTU College of Engineering"}
+- {year: "2020", text: "Outstanding Teaching Award, NTU"}
+- {year: "2019", text: "Y. L Tsai, C. L. Chen, C. J. Yu, Hermes-Epitek Technology Thesis Awards, Honorary Mention"}
+- {year: "2019", text: "C. C. Huo, Y. C. Huang, and Y. H. Lin, SpinTech Technology Thesis Awards, Honorary Mention"}
+- {year: "2019", text: "Y. R. Du and T. J. Lin (Taipei First Girls High School), First Place, Applied Science, Taipei Middle School Research Program"}
+- {year: "2019", text: "W. D. Yang, M. Y. Liu, 2nd Place, AI Contest – AI and Art Group, China Technical Consultants Inc. (CTCI)"}
+- {year: "2019", text: "K. Y. Tseng, 2ndt place, Master’s Thesis Award, Chinese Automatic Control Society (CACS)"}
+- {year: "2019", text: "C. J. Kao, 3rd place, Master’s Thesis Award, Robotics Society of Taiwan (RST)"}
+- {year: "2019", text: "Y. L. Tsai, C. L. Chen, C. R. Yu, and Y. M. Chien, International Conference on Advanced Robotics and Intelligent Systems (ARIS), Best Presentation Paper Award, Honorary Mention"}
+- {year: "2019", text: "Outstanding Teaching Award, NTU"}
+- {year: "2019", text: "B. H. Chen, Y. H. Wang, P. C. Lin, Best Paper Award, Finalist, IEEE/ASME International Conference on Advanced and Intelligent Mechatronics (AIM)"}
+- {year: "2019", text: "Best Performance Award, 3rd Place, MOST The 2nd Quarter AI Cross-Disciplinary Conference"}
+- {year: "2019", text: "Award for Potential Investment, 2nd Place, MOST The 2nd Quarter AI Cross-Disciplinary Conference"}
+- {year: "2018", text: "B. H. Yang, S. C. Liao, and L. C. Liu, 2nd place, Student Project Competition, Mechanical and Mechatronics Departments, National Taiwan University System"}
+- {year: "2018", text: "FutureTech Demo and Breakthrough Award, Ministry of Science and Technology (MOST)"}
+- {year: "2018", text: "Y. H. Chen, 3rd Place, Chime Bell Technology Thesis Award"}
+- {year: "2018", text: "B. H. Yang, S. C. Liao, and L. C. Liu, 3rd Place, Chime Bell Technology Thesis Award"}
+- {year: "2018", text: "Outstanding Teaching Award, NTU"}
+- {year: "2018", text: "T. H. Wang, 1st place, Master’s Thesis Award, Chinese Automatic Control Society (CACS)"}
+- {year: "2018", text: "Y. H. Liu, C. Lei, P. K. Chen, and K. C. Lu, International Conference on Advanced Robotics and Intelligent Systems (ARIS), Best Student Paper Award, Finalist"}
+- {year: "2018", text: "W. C. Lu, 1st place, Master’s Thesis Award, Robotics Society of Taiwan (RST)"}
+- {year: "2018", text: "C. Lei, P. K. Chen, and Y. H. Liu, SpinTech Technology Thesis Awards, Best Innovative Design"}
+- {year: "2018", text: "S. Y. Chen, C. H. Hsiung, and K. W. Liu, SpinTech Technology Thesis Awards, Honorary Mention"}
+- {year: "2018", text: "K. C. Lu, 1st place, SPDC Old Guard Oral Presentation Competition, ASME Taiwan"}
+- {year: "2017", text: "J. R. Tsai, 3rd place, Hiwin Thesis Award"}
+- {year: "2017", text: "W. J. Wu, 2nd place, Master’s Thesis Award, Chinese Automatic Control Society (CACS)"}
+- {year: "2017", text: "R. W. Wang, Y. S. Chiang, H. H. Hsu, and J. Chen, SpinTech Technology Thesis Awards, SpinTech Gold Medal"}
+- {year: "2017", text: "R. W. Wang, Y. S. Chiang, H. H. Hsu, and J. Chen, International Conference on Advanced Robotics and Intelligent Systems (ARIS), Best Presentation Paper Award, Honorary Mention"}
+- {year: "2017", text: "S. T. Ma, L. Y. Hsu, Y. C. Chen, and Y. C. Lin, International Conference on Advanced Robotics and Intelligent Systems (ARIS), Best Student Paper Award, Honorary Mention"}
+- {year: "2017", text: "C. F. Wang, Honorary Mention, Master’s Thesis Award, Robotics Society of Taiwan (RST)"}
+- {year: "2017", text: "W. S. Chen, H. S. Lin, Y. M. Lin, and T. H. Wang, Finalist, 2017 Student Design Showcase, National Instruments"}
+- {year: "2017", text: "H. Y. Ling, P. Y, H, N. J. Cheng, J. X. Shih, NI Sward, ASME Taiwan SPDC"}
+- {year: "2016", text: "Excellent Poster, Annual Exhibition, Automation Engineering Program, Ministry of Science and Technology (MoST)"}
+- {year: "2016", text: "R. F. Tseng, 2nd place, Master’s Thesis Award, Chinese Automatic Control Society (CACS)"}
+- {year: "2016", text: "W. D. Yang, 2nd place, Master’s Thesis Award, Robotics Society of Taiwan (RST)"}
+- {year: "2016", text: "S. P. Wang, 2nd Place, Best Presentation Award, International Conference on Advanced Robotics and Intelligent Systems (ARIS)"}
+- {year: "2016", text: "Y. Y. Yuan, W. C. Lu, C. J. Kao, J. J. Hung Excellent Award, Maker Faire Mouser-NI Mechatronics Competition"}
+- {year: "2016", text: "W. L. Chen, S. P. Wang, Y. H. Chen, C. E. Tsai, Excellent Award, Popularity Award, Maker Faire Mouser-NI Mechatronics Competition"}
+- {year: "2016", text: "W. L. Chen, 1st place, SPDC Old Guard Oral Presentation Competition, ASME International Regional"}
+- {year: "2016", text: "W. L. Chen, 1st place, SPDC Old Guard Oral Presentation Competition, ASME Taiwan"}
+- {year: "2016", text: "T. H. Chang, C. W. Lin, D. H. Lee, Y. Y. Yuan, Outstanding Award, SPDC Student Design Competition, ASME Taiwan"}
+- {year: "2015", text: "Outstanding Poster, Annual Exhibition, Automation Engineering Program, Ministry of Science and Technology (MoST)"}
+- {year: "2015", text: "P. Y. Chen, 2nd place, SPDC Old Guard Oral Presentation Competition, ASME International"}
+- {year: "2015", text: "P. H. Huang, T. H. Wang, Z. Z. Wu, and H. J. Ho, Competition 3rd place, Technology and Humanities Award, Teamwork Award, Innovation Award, The 19th Taiwan TDK Robocon"}
+- {year: "2015", text: "Z. H. Lin, 2nd place, Master’s Thesis Award, Robotics Society of Taiwan (RST)"}
+- {year: "2015", text: "H. S. Lin, 1st place, Master’s Thesis Award, Chinese Automatic Control Society (CACS)"}
+- {year: "2015", text: "P. Y. Chen, winner, Custom-Developed Software Category, ASME Innovative Design Simulation Challenge (IDSC)"}
+- {year: "2015", text: "C. S. Chen, College Student Research Creativity Award, MoST"}
+- {year: "2015", text: "P. Y. Chen, 1st place, SPDC Old Guard Oral Presentation Competition, ASME International Regional"}
+- {year: "2015", text: "P. Y. Chen, 1st place, SPDC Old Guard Oral Presentation Competition, ASME Taiwan"}
+- {year: "2014", text: "C. K. Chou, and W. T. Yang, Best Student Paper Award Finalist, International Automatic Control Conference (CACS)"}
+- {year: "2014", text: "C. K. Huang, and C. J. Hu, Best Paper Award, Matlab/Simulink Tech Forum and Expo, MathWorks"}
+- {year: "2014", text: "Y. C. Lin, and L. Y. Huang, Best Paper Award, International Conference on Advanced Robotics and Intelligent Systems (ARIS)"}
+- {year: "2014", text: "W. S. Chen, and H. S. Lin, Best Video Award Finalist, International Conference on Robotics and Automation (ICRA)"}
+- {year: "2014", text: "Y. C. Lin, Hiwin Excellent Innovation Award"}
+- {year: "2014", text: "Y. C. Lin, Excellent Award, Hiwin Thesis Award"}
+- {year: "2014", text: "C.J. Hu, 1st place, Master’s Thesis Award, The Chinese Society of Mechanical Engineers (CSME)"}
+- {year: "2014", text: "C. K. Huang, 1st place, Master’s Thesis Award, Robotics Society of Taiwan (RST)"}
+- {year: "2014", text: "C. K. Chou, 2nd place, Master’s Thesis Award, Chinese Automatic Control Society (CACS)"}
+- {year: "2014", text: "C. Y. Chang, College Student Research Creativity Award, NSC"}
+- {year: "2013", text: "Distinguished Teaching Award, NTU"}
+- {year: "2013", text: "G. H. Liu, H. Y. Lin, H. Y. Lin, and S. D. Chen, Best Paper Award, IEEE/SICE International Symposium on System Integration"}
+- {year: "2013", text: "W. S. Chen, and H. S. Lin, Application of the Year Award & Advanced Control Systems Finalist, Graphical System Design, National Instruments Taiwan"}
+- {year: "2013", text: "M. Y. You, P. W. Tseng, Y. L Fang, and L. Y. Huang, 3rd place, Cortex-M division, ARM Code-O-Rama Design Competition"}
+- {year: "2013", text: "C. P. Chen, 1st place, Master’s Thesis Award, Chinese Automatic Control Society (CACS)"}
+- {year: "2013", text: "W. S. Chen, 2nd place, Master’s Thesis Award, Robotics Society of Taiwan (RST)"}
+- {year: "2013", text: "G. H. Liu, H. Y. Lin, H. Y. Lin, and S. T. Chen, 3rd place, undergraduate division, Chiuan Yen Technology Paper Award"}
+- {year: "2013", text: "B. L. Ko and F. L. Chang, Outstanding Award, Student Paper Competition, Society for the Achievement of Material and Process Engineering (SAMPE)"}
+- {year: "2012", text: "Ta-You Wu Memorial Award, National Science Council (NSC)"}
+- {year: "2012", text: "Outstanding Teaching Award, NTU"}
+- {year: "2012", text: "Outstanding Poster, Annual Exhibition, Automation Engineering Program, NSC"}
+- {year: "2012", text: "C. K. Huang, College Student Research Creativity Award, NSC"}
+- {year: "2012", text: "J. K. Chou, College Student Research Creativity Award, NSC"}
+- {year: "2012", text: "K. J. Huang, 1st place, Master’s Thesis Award, Robotics Society of Taiwan (RST)"}
+- {year: "2012", text: "J. Y. Chen, Outstanding Award, Hiwin ME Master’s Thesis Award"}
+- {year: "2012", text: "C. J. Liang, Y. Y. Yang, and C. A Li, 1st place, Technical Innovation Division, China Technical Consultants, Inc. (CTCI) Scholarship"}
+- {year: "2011", text: "Outstanding Teaching Award, NTU"}
+- {year: "2011", text: "Robotics Finalist & Community’s Choice Award Graphical System Design Achievement Awards, National Instruments"}
+- {year: "2011", text: "Best Paper Award, Matlab/Simulink Tech Forum, MathWorks"}
+- {year: "2011", text: "W. S. Chen, College Student Research Creativity Award, NSC"}
+- {year: "2010", text: "Outstanding Teaching Award, NTU"}
+- {year: "2010", text: "Academic Application of the Year Award & Editor's Choice Award Graphical system Design, National Instruments Taiwan"}
+- {year: "2010", text: "K. J. Huang, College Student Research Creativity Award, NSC"}
+- {year: "2009", text: "S. H. Chen, College Student Research Creativity Award, NSC"}
+- {year: "2025", text: "113年度國科會工程處自動化學門成果海報 Honorary Mention, Best Poster Award 佳作"}
+- {year: "2025", text: "台灣大學 113學年度 研究生院長獎，研究生 許雅婷"}
+- {year: "2025", text: "International Conference on Advanced Robotics and Intelligent Systems (ARIS), Best Student Paper Award, Third Place, 專題生 林士程、黃鈺棠、李國業、楊舒瑋"}
+- {year: "2025", text: "中國工程師學會學生分會工程論文競賽 機械組 特優，專題生 黃宣凱、曾元昱、林頎衡、賴靜蓉"}
+- {year: "2024", text: "第九屆北區跨校機械(電)工程學系 MechaHeroes專題製作競賽 第一名，專題生 張伯宇、張曜鵬、周知顥、王泰傑"}
+- {year: "2024", text: "第九屆北區跨校機械(電)工程學系 MechaHeroes專題製作競賽 佳作，專題生 曾柏穎、葉晉嘉、賴弋元、許瀚元"}
+- {year: "2024", text: "112年度國科會工程處自動化學門成果海報Best Poster Award特優"}
+- {year: "2024", text: "第27屆全國機構與機器設計學術研討會暨第3屆先進機構及機器技術國際會議 蔡隆文教授紀念論文獎"}
+- {year: "2024", text: "中華民國機構與機器原理學會 113年度博士論文獎 傑出獎，研究生 劉軍"}
+- {year: "2024", text: "台灣大學 112學年度 研究生校長獎，博士生 劉軍"}
+- {year: "2024", text: "International Conference on Advanced Robotics and Intelligent Systems (ARIS), Best Student Paper Award, Honorary Mention, 專題生 廖敏鈞、沈震揚、劉致和、邵薇芸、童國葦"}
+- {year: "2024", text: "International Conference on Advanced Robotics and Intelligent Systems (ARIS), Best Presentation Paper Award, First Place, 研究生 陳韜、劉佳鑫"}
+- {year: "2024", text: "中國工程師學會學生分會工程論文競賽 機械組 特優，專題生 廖敏鈞、沈震揚、劉致和、童國葦、邵薇芸"}
+- {year: "2024", text: "ASME SPDC Old Guard Oral Presentation Competition （國內賽）第二名，專題生 廖敏鈞"}
+- {year: "2023", text: "北區跨校機械(電)工程 專題製作競賽 第二名，專題生 沈震揚、劉致和、童國葦、邵薇芸、廖敏鈞"}
+- {year: "2023", text: "111年度科技部工程司自動化學門成果海報Best Poster Award特優"}
+- {year: "2023", text: "中技社 112年度科技獎學金 創意獎學金團體組，專題生 吳采栩、梁祐聆、許雅婷"}
+- {year: "2023", text: "精密工具機與智慧化技術專題實做競賽 大專生組 佳作，專題生 吳采栩、梁祐聆、許雅婷"}
+- {year: "2023", text: "中華民國自動控制學會 112年度碩士論文獎 優等獎，研究生 莊源誠"}
+- {year: "2023", text: "台灣機器人學會 112年度碩士論文獎 優等獎，研究生 王華豫"}
+- {year: "2023", text: "International Conference on Advanced Robotics and Intelligent Systems (ARIS), Best Presentation Paper Award, Honorary Mention, 專題生 高仕懷、白為霖、葉逢恩、陳志臻、林昱瑋"}
+- {year: "2023", text: "中國工程師學會學生分會工程論文競賽 機械組 特優，專題生 黃淵濤、呂金霖、張育軒"}
+- {year: "2022", text: "北區跨校機械（電）工程 專題製作競賽 第二名，專題生 吳采栩、梁祐聆、許雅婷"}
+- {year: "2022", text: "中國機械工學會 111年度碩士論文獎 第一名 研究生 陳亮傑"}
+- {year: "2022", text: "110年度科技部工程司自動化學門成果海報Best Poster Award特優"}
+- {year: "2022", text: "中華民國自動控制學會 111年度碩士論文獎 特優獎 研究生 劉育如"}
+- {year: "2022", text: "台灣精密工程 傑出教學獎"}
+- {year: "2022", text: "台灣大學 110學年度 教學優良獎"}
+- {year: "2022", text: "台灣機器人學會 會士 (RST Fellow)"}
+- {year: "2022", text: "科技部 110年度 大專生參與專題研究計畫研究創作獎 專題生 陳致仁"}
+- {year: "2022", text: "ASME E-Fest Oral Competition（國際賽）第二名 專題生 陳致仁"}
+- {year: "2022", text: "ASME SPDC Old Guard Oral Presentation Competition （國內賽）佳作 專題生 陳致仁"}
+- {year: "2022", text: "科技部110年度 傑出研究獎"}
+- {year: "2022", text: "英國The Institute of Engineering and Technology 會士 (IET Fellow)"}
+- {year: "2021", text: "上銀 第十八屆機械碩士論文獎 佳作獎 研究生 劉民偉"}
+- {year: "2021", text: "中技社 110年度科技獎學金 創意獎學金團體組 專題生 蕭尚亞、王華豫、朱勻、陳韜"}
+- {year: "2021", text: "中華民國機構與機器原理學會 110年度碩士論文獎 傑出獎 研究生 何光展"}
+- {year: "2021", text: "台灣機器人學會 110年度碩士論文獎 佳作獎 研究生 林郁衡"}
+- {year: "2021", text: "中華民國自動控制學會 110年度碩士論文獎 佳作獎 研究生 蘇庭頤"}
+- {year: "2021", text: "International Conference on Advanced Robotics and Intelligent Systems (ARIS), Best Student Paper Award 研究生 林郁衡、劉民偉"}
+- {year: "2021", text: "110年中國工程師學會學生分會工程論文競賽 機械組 特優 專題生 張益嘉、許智翔、吳泓昇"}
+- {year: "2021", text: "台灣大學 109學年度 教學優良獎"}
+- {year: "2021", text: "國立臺灣大學第五屆學士班學生論文獎 傅斯年獎 專題生 張益嘉"}
+- {year: "2021", text: "科技部 109年度 大專生參與專題研究計畫研究創作獎 專題生 張益嘉"}
+- {year: "2021", text: "IEET教學傑出獎"}
+- {year: "2021", text: "台北市立天母國小 第一屆 傑出校友"}
+- {year: "2021", text: "上銀 第十七屆機械碩士論文獎 佳作獎 研究生 王啟恆"}
+- {year: "2020", text: "北區三校機械（電）工程學系專題製作競賽 第二名 專題生 朱勻、陳韜、蕭尚亞、王華豫"}
+- {year: "2020", text: "ASME Fellow"}
+- {year: "2018-2020", text: "慶琅先生講座"}
+- {year: "2020", text: "精密工程專題與論文獎 研究生 廖俊銘"}
+- {year: "2020", text: "中華民國機構與機器原理學會 109年度碩士論文獎 傑出獎 研究生 陳宣妤"}
+- {year: "2020", text: "第13屆萬潤創新創意競賽 大專院校組 金牌 專題生 張維哲、張芝綾"}
+- {year: "2020", text: "109年中國工程師學會學生分會工程論文競賽 機械組 特優 專題生 張維哲、張芝綾"}
+- {year: "2020", text: "台灣大學工學院 碩士論文獎 研究生 陳振豪"}
+- {year: "2020", text: "台灣大學 108學年度 教學優良獎"}
+- {year: "2019", text: "漢民科技論文獎 大專專題競賽 佳作 專題生 蔡岳霖、陳奇林、余承叡"}
+- {year: "2019", text: "旭泰科技論文獎 大專專題競賽 佳作 專題生 林郁衡、霍家琦、黃元貞"}
+- {year: "2019", text: "台北市 中等學校科學研究獎助計畫 應用科學科 一等獎 北一女專題生 杜昀蓉、林亭汝"}
+- {year: "2019", text: "財團法人中技社 AI創意競賽 AI與藝術組 第二名 研究生 楊武德、劉民偉"}
+- {year: "2019", text: "中華民國自動控制學會 108年度碩士論文獎 優等獎 研究生 曾冠語"}
+- {year: "2019", text: "International Conference on Advanced Robotics and Intelligent Systems(ARIS), Best Presentation Paper Contest Award Certificate, Honary Mention 專題畢業生 余承叡、蔡岳霖、陳奇林、簡聿民"}
+- {year: "2019", text: "台灣機器人學會 第六屆碩士論文獎 優等獎 研究生 高稚然"}
+- {year: "2019", text: "台灣大學 107學年度 教學優良獎"}
+- {year: "2019", text: "IEEE/ASME International Conference on Advanced and Intelligent Mechatronics (AIM), Best Paper Award, Finalist"}
+- {year: "2019", text: "科技部 第二季AI跨域觀摩交流會 AI投資潛力獎 第二名"}
+- {year: "2019", text: "科技部 第二季AI跨域觀摩交流會 最佳展示獎 第三名"}
+- {year: "2018", text: "北區三校機械（電）工程學系專題製作競賽 第二名 專題生 楊秉翰、廖士齊、劉亮謙"}
+- {year: "2018", text: "科技部 未來科技突破獎"}
+- {year: "2018", text: "川寶科技論文獎 科技論文競賽 銅獎 研究生 陳永修"}
+- {year: "2018", text: "川寶科技論文獎 大專專題競賽 銅獎 專題生 楊秉翰、廖士齊、劉亮謙"}
+- {year: "2018", text: "台灣大學 106學年度 教學優良獎"}
+- {year: "2018", text: "中華民國自動控制學會 107年度碩士論文獎 特優獎 研究生 王霆皓"}
+- {year: "2018", text: "International Conference on Advanced Robotics and Intelligent Systems (ARIS), Best Student Paper Award, Finalist 專題生 劉又豪、金蕾、陳柏綱、呂冠頡"}
+- {year: "2018", text: "臺灣機器人學會 107年度碩士論文獎 特優獎 研究生 陸韋君"}
+- {year: "2018", text: "旭泰科技論文獎 大專專題競賽 佳作 專題生 陳宣妤、熊家和、劉光瑋"}
+- {year: "2018", text: "旭泰科技論文獎 大專專題競賽 優良創意獎 專題生 金蕾、陳柏綱、劉又豪"}
+- {year: "2018", text: "ASME SPDC Old Guard Oral Presentation Competition （國內賽）第一名 專題生 呂冠頡"}
+- {year: "2017", text: "上銀 第十一屆機械碩士論文獎 銅質獎 研究生 蔡謹容"}
+- {year: "2017", text: "中華民國自動控制學會 106年度碩士論文獎 優等獎 研究生 吳瑋哲"}
+- {year: "2017", text: "旭泰科技論文獎 大專專題競賽 金研獎 專題生 王仁蔚、江宇勝、許皓勛、陳智"}
+- {year: "2017", text: "International Conference on Advanced Robotics and Intelligent Systems (ARIS), Best Presentation Paper Award, Honorary Mention 專題生 王仁蔚、江宇勝、許皓勛、陳智"}
+- {year: "2017", text: "International Conference on Advanced Robotics and Intelligent Systems (ARIS), Best Student Paper Award, Honorary Mention 專題生 馬世宗、徐立揚、陳昱均、林允丞"}
+- {year: "2017", text: "臺灣機器人學會 106年度碩士論文獎 佳作獎 研究生 王智暉"}
+- {year: "2017", text: "National Instruments Student Design Showcase, Finalist 研究生 陳為熙、林紘生、林筠萌、王霆皓"}
+- {year: "2017", text: "國研盃智慧機械競賽 國家儀器特別獎 專題生 凌卉芸、薛沛宜、鄭乃節、施靖嫻"}
+- {year: "2016", text: "自動化學門 104年度專題計畫成果發表會 海報展覽競賽 優勝"}
+- {year: "2016", text: "中華民國自動控制學會 105年度碩士論文獎 優等獎 研究生 曾瑞發"}
+- {year: "2016", text: "台灣機器人學會 105年度碩士論文獎 優等獎 研究生 楊武德"}
+- {year: "2016", text: "International Conference on Advanced Robotics and Intelligent Systems (ARIS), Best Presentation Award, 2nd Place 專題生 王釋平"}
+- {year: "2016", text: "Maker Faire 機電整合設計競賽 佳作 專題生 高稚然、陸韋君、袁佑緣、洪健鈞"}
+- {year: "2016", text: "Maker Faire 機電整合設計競賽 最佳人氣獎 專題生 王釋平、陳韋綸、蔡仲恩、陳永修"}
+- {year: "2016", text: "ASME SPDC Old Guard Oral Presentation Competition （國際區域賽）第二名 專題生 陳韋綸"}
+- {year: "2016", text: "ASME SPDC Old Guard Oral Presentation Competition （國內賽）第一名 專題生 陳韋綸"}
+- {year: "2016", text: "ASME SPDC Student Design Competition （國內賽）佳作 專題生 張德芯、李東翰、林勁維、袁佑緣"}
+- {year: "2015", text: "自動化學門 103年度專題計畫成果發表會 優秀海報獎"}
+- {year: "2015", text: "ASME SPDC Old Guard Oral Presentation Competition （國際賽）第二名 專題生 陳品衣"}
+- {year: "2015", text: "第19屆TDK盃 全國大專院校創思設計與製作競賽，競賽獎第三名、科技人文獎、工作團隊紀錄獎、創意獎佳作 專題生王霆皓、黃珮瑄、吳宗澤、何欣容"}
+- {year: "2015", text: "臺灣機器人學會 104年度碩士論文獎 優等獎 研究生 林子涵"}
+- {year: "2015", text: "中華民國自動控制學會 104年度碩士論文獎 特優獎 研究生 林紘生"}
+- {year: "2015", text: "ASME Innovative Design Simulation Challenge (IDSC)（國際賽）, 客製軟體組， 第一名 專題生 陳品衣"}
+- {year: "2015", text: "科技部 103年度 大專生參與專題研究計畫研究創作獎 專題生 陳俊昇"}
+- {year: "2015", text: "ASME SPDC Old Guard Oral Presentation Competition （國際區域賽）第一名 專題生 陳品衣"}
+- {year: "2015", text: "ASME SPDC Old Guard Oral Presentation Competition （國內賽）第一名， 專題生 陳品衣"}
+- {year: "2014", text: "International Automatic Control Conference (CACS), Best Student Paper Award, Finalist 研究生 周敬凱、楊武德"}
+- {year: "2014", text: "MathWorks 2014 MATLAB/Simulink技術與應用文章/論文 徵文比賽 第一名 研究生 黃群凱、胡家睿"}
+- {year: "2014", text: "International Conference on Advanced Robotics and Intelligent Systems (ARIS), Best Paper Award 研究生 林昱辰、黃立言"}
+- {year: "2014", text: "IEEE International Conference on Robotics and Automation (ICRA), Best Video Award, Finalist 研究生 陳為熙、林紘生"}
+- {year: "2014", text: "上銀 第二屆傑出創作獎 研究生 林昱辰"}
+- {year: "2014", text: "上銀 第十一屆機械碩士論文獎 優等獎 研究生 林昱辰"}
+- {year: "2014", text: "中國機械工學會 103年度碩士論文獎 第一名 研究生 胡家睿"}
+- {year: "2014", text: "臺灣機器人學會 103年度碩士論文獎 特優獎 研究生 黃群凱"}
+- {year: "2014", text: "中華民國自動控制學會 103年度碩士論文獎 優等獎 研究生 周敬凱"}
+- {year: "2014", text: "國科會 102年度 大專生參與專題研究計畫研究創作獎 專題生 張家瑜"}
+- {year: "2013", text: "台灣大學 101學年度 教學傑出獎"}
+- {year: "2013", text: "IEEE/SICE International Symposium on System Integration (SII), Best Paper Award 專題生 劉冠宏、林後嶧、林懷宇、陳紹端"}
+- {year: "2013", text: "美商國家儀器 GSD 圖形化系統設計競賽 GSD最佳精神獎 & 進階控制系統組 亞軍 研究生 陳為熙、林紘生"}
+- {year: "2013", text: "ARM設計競賽 Cortex-M平台組 季軍 專題生 游明遠、曾柏維、方怡琳、黃立言"}
+- {year: "2013", text: "中華民國自動控制學會 102年度碩士論文獎 特優獎 研究生 陳慶沛"}
+- {year: "2013", text: "臺灣機器人學會 102年度碩士論文獎 優等獎 研究生 陳為熙"}
+- {year: "2013", text: "全研科技論文獎 大專組專題類 銅研獎 專題生 劉冠宏、林後<u>嶧</u>、林懷宇、陳紹端"}
+- {year: "2013", text: "中華民國尖端材料科技協會 學生論文比賽 佳作 專題生 柯秉良和張復龍 （與陳建彰教授和陳奕君教授共同指導）"}
+- {year: "2012", text: "國科會 101年度 吳大猷先生紀念獎"}
+- {year: "2012", text: "台灣大學 100學年度 教學優良獎"}
+- {year: "2012", text: "自動化學門 100年度成果發表會 海報佳作"}
+- {year: "2012", text: "國科會 100年度 大專生參與專題研究計畫研究創作獎 專題生 黃群凱"}
+- {year: "2012", text: "國科會 100年度 大專生參與專題研究計畫研究創作獎 專題生 周敬凱"}
+- {year: "2012", text: "臺灣機器人學會 101年度碩士論文獎 特優獎 研究生 黃科融"}
+- {year: "2012", text: "上銀 第九屆機械碩士論文獎 佳作 研究生 陳敬宜"}
+- {year: "2012", text: "中技社 101 年度科技創意組 科技獎學金 學生 梁期鈞、楊耀畬、李傳恩（與康仕仲教授共同指導）"}
+- {year: "2011", text: "台灣大學 99學年度 教學優良獎"}
+- {year: "2011", text: "2011 National Instruments Graphical System Design Achievement Awards Robotics Finalist & Community’s Choice Award 研究生 李政昕、陳慎強、沈宣諭、黃科融"}
+- {year: "2011", text: "MathWorks 2011 MATLAB/Simulink 技術與應用文章/論文 徵文比賽 第一名 研究生 陳敬宜、盧兆慶、陳均聖、王紹帆、游崴舜"}
+- {year: "2011", text: "國科會 99年度 大專生參與專題研究計畫研究創作獎 專題生 陳為熙"}
+- {year: "2010", text: "台灣大學 98學年度 教學優良獎"}
+- {year: "2010", text: "美商國家儀器 GSD 圖形化系統設計競賽之第九屆NI應用徵文比賽 學術組 冠軍＆記者獎 研究生 李政昕、陳慎強、沈宣諭、黃科融"}
+- {year: "2010", text: "國科會 98年度 大專生參與專題研究計畫研究創作獎 專題生 黃科融"}
+- {year: "2009", text: "國科會 97年度 大專生參與專題研究計畫研究創作獎 專題生 陳慎強"}

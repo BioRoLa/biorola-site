@@ -1,0 +1,42 @@
+# Home page: the ring of hexagon tiles around a slideshow.
+# Tile x/y are percentages of the ring (originally 917x624px); each tile is
+# 12.00% of the ring wide. hover is the image shown on mouse-over/focus.
+
+ring: {width: 917, height: 624.2, tile: 12.0}
+tiles:
+- {url: research_climbing_climbingwall.html, img: /pic/home/climbwall1.png, hover: /pic/home/climbwall2.png, x: 43.84, y: 0.0}
+- {url: media_movies.html, img: /pic/home/movies3.png, hover: /pic/home/movies4.png, x: 61.4, y: 0.16}
+- {url: research_legged_biped.html, img: /pic/home/biped1.png, hover: /pic/home/biped2.png, x: 26.06, y: 0.48}
+- {url: research_spherical_omnicron.html, img: /pic/home/omnicron3.png, hover: /pic/home/omnicron4.png, x: 8.72, y: 0.64}
+- {url: research_legged_rhex.html, img: /pic/home/rhex1.png, hover: /pic/home/rhex2.png, x: 79.06, y: 0.64}
+- {url: research_legged_rhex.html, img: /pic/home/rhex3.png, hover: /pic/home/rhex4.png, x: 52.56, y: 7.37}
+- {url: members_director.html, img: /pic/home/director1.png, hover: /pic/home/director2.png, x: 70.12, y: 7.69}
+- {url: research_spherical_omniqiu.html, img: /pic/home/omniqiu3.png, hover: /pic/home/omniqiu4.png, x: 35.11, y: 7.85}
+- {url: research_legged_quadruped.html, img: /pic/home/quatruped1.png, hover: /pic/home/quatruped2.png, x: 17.34, y: 8.17}
+- {url: research_others_imu.html, img: /pic/home/imu1.png, hover: /pic/home/imu2.png, x: 87.79, y: 8.17}
+- {url: research_climbing_climbingtree.html, img: /pic/home/climbtree1.png, hover: /pic/home/climbtree2.png, x: 0.0, y: 8.49}
+- {url: research_legged_biped.html, img: /pic/home/biped3.png, hover: /pic/home/biped4.png, x: 87.9, y: 23.39}
+- {url: aboutus_contactus.html, img: /pic/home/contact3.png, hover: /pic/home/contact4.png, x: 0.0, y: 23.71}
+- {url: research_wheeled_twowheels.html, img: /pic/home/twowheels1.png, hover: /pic/home/twowheels2.png, x: 88.0, y: 38.45}
+- {url: media_movies.html, img: /pic/home/movies1.png, hover: /pic/home/movies2.png, x: 0.11, y: 38.77}
+- {url: research_climbing_climbingtree.html, img: /pic/home/climbtree3.png, hover: /pic/home/climbtree4.png, x: 88.0, y: 53.67}
+- {url: research_wheeled_cartamigo.html, img: /pic/home/cartamigo3.png, hover: /pic/home/cartamigo4.png, x: 0.11, y: 53.99}
+- {url: aboutus_contactus.html, img: /pic/home/contact1.png, hover: /pic/home/contact2.png, x: 88.0, y: 68.73}
+- {url: aboutus_labtour.html, img: /pic/home/tour1.png, hover: /pic/home/tour2.png, x: 0.0, y: 69.21}
+- {url: research_climbing_climbingwall.html, img: /pic/home/climbwall3.png, hover: /pic/home/climbwall4.png, x: 79.39, y: 76.42}
+- {url: research_wheeled_twowheels.html, img: /pic/home/twowheels3.png, hover: /pic/home/twowheels4.png, x: 8.51, y: 76.74}
+- {url: members_director.html, img: /pic/home/director3.png, hover: /pic/home/director4.png, x: 61.5, y: 76.74}
+- {url: research_others_imu.html, img: /pic/home/imu3.png, hover: /pic/home/imu4.png, x: 43.73, y: 77.06}
+- {url: research_spherical_omniqiu.html, img: /pic/home/omniqiu1.png, hover: /pic/home/omniqiu2.png, x: 25.95, y: 77.22}
+- {url: research_spherical_omnicron.html, img: /pic/home/omnicron1.png, hover: /pic/home/omnicron2.png, x: 70.45, y: 84.11}
+- {url: research_legged_quadruped.html, img: /pic/home/quatruped3.png, hover: /pic/home/quatruped4.png, x: 52.78, y: 84.43}
+- {url: aboutus_labtour.html, img: /pic/home/tour3.png, hover: /pic/home/tour4.png, x: 17.12, y: 84.59}
+- {url: research_wheeled_cartamigo.html, img: /pic/home/cartamigo1.png, hover: /pic/home/cartamigo2.png, x: 34.79, y: 84.59}
+slides:
+- {img: /images/1.jpg, caption: Biped Robot}
+- {img: /images/2.jpg, caption: CartAmigo}
+- {img: /images/3.jpg, caption: RHex}
+- {img: /images/4.jpg, caption: Tree Climbing Robot}
+- {img: /images/5.JPG, caption: Quadruped}
+- {img: /images/6.jpg, caption: Two-wheels}
+- {img: /images/7.JPG, caption: Wall Climbing}

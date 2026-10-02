@@ -1,0 +1,19 @@
+# Videos on media_movies.html, grouped by robot. youtube is the video ID
+# (the part after youtube.com/watch?v=); title is optional.
+
+- title: "Quattroped"
+  videos:
+  - {youtube: JwBDnKxTCSA}
+- title: "Turboquad"
+  videos:
+  - {youtube: eIYeU9uGrWc}
+- title: "miniRHex"
+  videos:
+  - {youtube: T9yIcKj3cQI, title: "ditch leaping"}
+  - {youtube: HlIrxVxepuo, title: "frameborder=\"0\" allowfullscreen> obstacle leaping"}
+  - {youtube: 1e2REjD5ycs, title: "frameborder=\"0\" allowfullscreen> step climbing"}
+  - {youtube: m_1EKPbDzh4, title: "frameborder=\"0\" allowfullscreen> running"}
+- title: "Two-wheeled"
+  videos:
+  - {youtube: nQqO3KuNO5Y, title: "Human following"}
+  - {youtube: t-uwcSz49K8, title: "frameborder=\"0\" allowfullscreen> Target following"}
