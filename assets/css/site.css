@@ -622,10 +622,11 @@ a.hex:focus-visible { --edge: var(--focus); outline: none; }
 
   .content { padding: 0.5rem 1rem 1.5rem; font-size: 1rem; }
 
-  /* Home: slideshow on top, the tiles as a grid below it. */
-  .ring { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.25rem; aspect-ratio: auto !important; padding: 0 0.5rem; }
-  .tile { position: relative; left: auto !important; top: auto !important; width: auto; }
-  .slideshow { position: relative; left: auto; top: auto; width: auto; height: auto; aspect-ratio: 5 / 3; grid-column: 1 / -1; order: -1; margin-bottom: 0.5rem; }
+  /* Home: just the slideshow. The 28 tiles are 14 pages twice over and too many
+     for a phone; the menu links to all of them. */
+  .ring { aspect-ratio: auto !important; }
+  .tile { display: none; }
+  .slideshow { position: relative; left: auto; top: auto; width: auto; height: auto; aspect-ratio: 5 / 3; }
 
   .theses tr { display: grid; grid-template-columns: auto 1fr; padding: 0.4rem 0; border-bottom: 1px solid var(--border); }
   .theses td { border: 0; padding: 0 0.5rem 0 0; }
