@@ -97,15 +97,21 @@ main:focus { outline: none; }
 
 /* ---------- Masthead ---------- */
 
-/* The banner's left and right edges share this vertical gradient, so extending it
-   behind the banner blends the edges into any width, however wide the window. */
+/* The banner's left and right edges share one vertical gradient (sampled from
+   logo.png every 5%). It fills the masthead behind the banner at any window width,
+   and the banner's outer 1% fades into it, hiding small colour shifts from WebP. */
 .masthead {
-  background: linear-gradient(to bottom, #000 0%, #050b13 10%, #0b1a2d 20%, #112846 30%, #173660 40%,
-    #1e4579 50%, #193b67 60%, #132c4e 70%, #0d1e35 80%, #07101b 90%, #000 100%);
+  background: linear-gradient(to bottom, #000000 0%, #020306 5%, #050b13 10%, #08121f 15%,
+    #0b1a2d 20%, #0f213a 25%, #112846 30%, #142f53 35%, #173660 40%, #1b3e6c 45%, #1e4579 50%,
+    #1d4274 55%, #193b67 60%, #16335b 65%, #132c4e 70%, #112542 75%, #0d1e35 80%, #0a1727 85%,
+    #07101b 90%, #04080e 95%, #000101 100%);
 }
 .masthead a { display: block; }
 /* The banner is 2055x389; cap it so it doesn't dominate wide screens. */
-.masthead img { display: block; width: 100%; max-width: 66rem; margin: 0 auto; }
+.masthead img {
+  display: block; width: 100%; max-width: 66rem; margin: 0 auto;
+  mask-image: linear-gradient(to right, transparent, #000 1%, #000 99%, transparent);
+}
 
 /* ---------- Top menu ---------- */
 
