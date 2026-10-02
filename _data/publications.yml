@@ -222,6 +222,11 @@ theses:
   - "“Proprioceptive sensing for a legged robot,” Ph.D. Dissertation, Department of Mechanical Engineering, University of Michigan, Ann Arbor, Michigan, USA, Jun. 2005"
   - "“Research of passive magnetic force control system,” Master Thesis, Department of Mechanical Engineering, National Taiwan University, Taipei, Taiwan, Jun. 1998"
   students:
+  - {cohort: "D10", name: "Tao Chen", text: "Ph.D. in Mechanical Engineering 2026, “Real-Time Pose Estimation Using a Customized Gauge and a 2D Laser Profiler with a Single Scan”"}
+  - {cohort: "R13", name: "Sheng-Lun Chien", text: "M.S. in Mechanical Engineering 2026, “Soft Wire Assembly Integrating Vision Guidance and Fingertip Tactile Sensing”"}
+  - {cohort: "R13", name: "Hsing-Chen Lee", text: "M.S. in Mechanical Engineering 2026, “Design and Implementation of an AB/AD-enabled Leg-Wheel Transformable Robot”"}
+  - {cohort: "R13", name: "Yu-An Xiao", text: "M.S. in Mechanical Engineering 2026, “Perception and Stable Movement of a Leg-Wheel Transformable Robot in Unknown Terrains”"}
+  - {cohort: "R13", name: "Kuan-Jung Huang", text: "M.S. in Mechanical Engineering 2026, “Dual-Layer State Estimation and Velocity-Bias Correction for a leg-wheel transformable Robot”"}
   - {cohort: "R12", name: "Yi-Syuan Shen", text: "M.S. in Mechanical Engineering 2025, “Whole-Body Force Control Architecture on a Leg-Wheel Transformable Robot with Varying Ground Contact Points”"}
   - {cohort: "R12", name: "Ya-Ting Hsu", text: "M.S. in Mechanical Engineering 2025, “Deformable Object Assembly of a Robotic Manipulator Using Sim-to-Real Transfer”"}
   - {cohort: "R12", name: "Yi-Jung Lee", text: "M.S. in Mechanical Engineering 2025, “Physics-Informed Machine Learning for Surface Roughness Prediction in Robotic Arm Metal Grinding”"}

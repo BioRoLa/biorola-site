@@ -5,6 +5,8 @@
 #   current: phd | ms                    -> Members > Students > Graduate
 #   graduated: [{ degree, year }]        -> Members > Alumni > M.S. Degree (newest year first)
 #   staff: [{ role, period }]            -> Members > Alumni > R.A. (newest start first)
+#   former: true                         -> Members > Alumni > M.S. Degree, "Former members"
+#                                           (lab members with no degree from the lab)
 # Someone with none of these keeps their profile page but isn't listed.
 #
 # photo is relative to membersinfo/. Optional fields: position, research,
@@ -31,7 +33,9 @@
   photo: "profile/D14_TChen.jpg"
   hobby: "Painting, Traveling"
   email: "D10522001@ntu.edu.tw"
-  current: phd
+  thesis: {en: "Real-Time Pose Estimation Using a Customized Gauge and a 2D Laser Profiler with a Single Scan", zh: "基於客製化量具與二維雷射輪廓儀之單次掃描即時姿態估測方法"}
+  graduated:
+  - {degree: phd, year: 2026}
 
 - id: "D16_CCChen"
   name: {en: "Chun-Chieh Chen", zh: "陳俊傑"}
@@ -64,10 +68,11 @@
   - {degree: ms, year: 2026}
 
 - id: "M18_HCLee"
-  name: {en: "Hsin-Chen Lee", zh: "李星辰"}
+  name: {en: "Hsing-Chen Lee", zh: "李星辰"}
   photo: "profile/M18_HCLee.jpg"
   hobby: "Skate-boarding, reading, building cool stuffs"
   email: "R13522850@ntu.edu.tw"
+  thesis: {en: "Design and Implementation of an AB/AD-enabled Leg-Wheel Transformable Robot", zh: "具 AB/AD 自由度輪腳複合機器人之設計與實作"}
   graduated:
   - {degree: ms, year: 2026}
 
@@ -76,6 +81,7 @@
   photo: "profile/M18_KJHuang.jpg"
   hobby: "Coffee , RC Airplane"
   email: "R13522819@ntu.edu.tw"
+  thesis: {en: "Dual-Layer State Estimation and Velocity-Bias Correction for a leg-wheel transformable Robot", zh: "輪腳複合機器人之雙層狀態估測與速度偏差修正"}
   graduated:
   - {degree: ms, year: 2026}
 
@@ -83,6 +89,7 @@
   name: {en: "Sheng-Lun Chien", zh: "簡聖倫"}
   photo: "profile/M18_SLChien.jpg"
   email: "R13522822@ntu.edu.tw"
+  thesis: {en: "Soft Wire Assembly Integrating Vision Guidance and Fingertip Tactile Sensing", zh: "結合視覺導引與指尖觸覺感測之軟性線材裝配"}
   graduated:
   - {degree: ms, year: 2026}
 
@@ -90,6 +97,7 @@
   name: {en: "Yu-An Xiao", zh: "蕭妤安"}
   photo: "profile/M18_YAXiao.jpg"
   email: "R13522820@ntu.edu.tw"
+  thesis: {en: "Perception and Stable Movement of a Leg-Wheel Transformable Robot in Unknown Terrains", zh: "輪腳複合機器人於未知地形之感知與穩定移動"}
   graduated:
   - {degree: ms, year: 2026}
 
@@ -915,6 +923,7 @@
   photo: "profile/M17_YSShen.jpg"
   hobby: "Travelling, Hand-writing, Dancing"
   email: "R12522823@ntu.edu.tw"
+  thesis: {en: "Whole-Body Force Control Architecture on a Leg-Wheel Transformable Robot with Varying Ground Contact Points", zh: "輪腳複合機器人上可變多觸地點之全機力控制架構開發"}
   graduated:
   - {degree: ms, year: 2025}
 
@@ -931,6 +940,7 @@
   photo: "profile/M17_YJLee.jpg"
   hobby: "吃零食、打音遊"
   email: "R12522831@ntu.edu.tw"
+  thesis: {en: "Physics-Informed Machine Learning for Surface Roughness Prediction in Robotic Arm Metal Grinding", zh: "結合物理引導機器學習進行機械手臂金屬研磨表面粗糙度預測"}
   graduated:
   - {degree: ms, year: 2025}
 
@@ -939,6 +949,7 @@
   photo: "profile/M17_WTChen.jpeg"
   hobby: "Basketball"
   email: "r12522844@ntu.edu.tw"
+  thesis: {en: "Development of a Novel Leg-Wheel Hybrid Robot and Its Stair-Climbing Strategy", zh: "新型輪腳複合機器人研發與其爬樓梯策略"}
   graduated:
   - {degree: ms, year: 2025}
 
@@ -947,24 +958,9 @@
   photo: "profile/M17_YLLai.jpg"
   hobby: "Anime"
   email: "R11522865@ntu.edu.tw"
+  thesis: {en: "Stair Climbing Strategy of a Leg-Wheel Transformable Robot Using Visual Feedback and Varying Leg-Wheel Contact Points", zh: "輪腳複合機器人上具視覺回授與多輪腳觸地點之爬樓梯策略"}
   graduated:
   - {degree: ms, year: 2025}
-
-# ---- Not listed on any page: status unknown. Add `graduated` or `current`
-# to list them again. M17_YTHuang is an older profile of D18_YTHuang. ----
-
-- id: "D10_JHShih"
-  name: {en: "Jheng-Hong Shih", zh: "施政宏"}
-  photo: "profile/D10_JHShih.jpg"
-  hobby: "Badminton, Film editing, Biking, Beatbox, Musical composition"
-  email: "d05543003@ntu.edu.tw"
-
-- id: "D11_WCCheng"
-  name: {en: "Wei-Chung Cheng", zh: "鄭惟中"}
-  photo: "profile/D11_WCCheng.jpg"
-  position: "Hardware"
-  hobby: "Table tennis, Swimming, Movie, Music"
-  email: "tealambda@hotmail.com.tw"
 
 - id: "D6_YanDeZhou"
   name: {en: "Yan-De Zhou", zh: "周晏德"}
@@ -973,6 +969,22 @@
   research: "Temperature control"
   hobby: "Anything!"
   email: "d00522013@ntu.edu.tw"
+  former: true
+
+- id: "D10_JHShih"
+  name: {en: "Jheng-Hong Shih", zh: "施政宏"}
+  photo: "profile/D10_JHShih.jpg"
+  hobby: "Badminton, Film editing, Biking, Beatbox, Musical composition"
+  email: "d05543003@ntu.edu.tw"
+  former: true
+
+- id: "D11_WCCheng"
+  name: {en: "Wei-Chung Cheng", zh: "鄭惟中"}
+  photo: "profile/D11_WCCheng.jpg"
+  position: "Hardware"
+  hobby: "Table tennis, Swimming, Movie, Music"
+  email: "tealambda@hotmail.com.tw"
+  former: true
 
 - id: "M10_David"
   name: {en: "David Daley", zh: "戴大衛"}
@@ -984,6 +996,7 @@
   - "Motor control"
   hobby: "Music, Art and computer programming"
   email: "r05522843@ntu.edu.tw"
+  former: true
 
 - id: "M11_DGSung"
   name: {en: "Ding-Gong Sung", zh: "宋定剛"}
@@ -994,6 +1007,7 @@
   research: "Turboquad"
   hobby: "Movies, Music"
   email: "r06522809@ntu.edu.tw"
+  former: true
 
 - id: "M12_CYLiu"
   name: {en: "Cheng-Yueh Liu", zh: "劉承岳"}
@@ -1002,6 +1016,7 @@
   research: "Biped robotics"
   hobby: "Biped robotics"
   email: "R07522839@ntu.edu.tw"
+  former: true
 
 - id: "M12_MIChiang"
   name: {en: "Man-In Chiang", zh: "鄭文彥"}
@@ -1010,12 +1025,17 @@
   research: "TWIX"
   hobby: "Thinking and learning"
   email: "matt20064d@hotmail.com"
+  former: true
 
 - id: "M16_CEWei"
   name: {en: "Chia-En Wei", zh: "魏加恩"}
   photo: "profile/M16_CEWei.jpg"
   hobby: "table tennis, magic, reading"
   email: "LukeWeiChiaEn@gmail.com"
+  former: true
+
+# ---- Not listed on any page. M17_YTHuang is an older profile of
+# D18_YTHuang (黃淵濤), kept so its URL keeps working. ----
 
 - id: "M17_YTHuang"
   name: {en: "Yuan-Tao Huang", zh: "黃淵濤"}
