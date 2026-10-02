@@ -12,6 +12,14 @@
   --text: #111;
   --muted: #555;
   --link: #1a4f9c;
+  --rule: #999;            /* line under page titles */
+  --border: #e8ebf0;       /* table and list separators */
+  --note-bg: #fff7d6;
+  --note-edge: #e0b000;
+  --card-bg: #fff;
+  --card-border: #dde2ea;
+  --card-shadow: 0 1px 3px rgb(0 0 0 / 0.08), 0 4px 14px rgb(0 0 0 / 0.06);
+  --radius: 8px;
   --focus: #ffd200;
 
   /* Hexagon sidebar */
@@ -24,6 +32,23 @@
 
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans TC", "PingFang TC",
     "Microsoft JhengHei", Arial, sans-serif;
+}
+
+/* Dark mode follows the visitor's system setting. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --content-bg: #14181f;
+    --text: #e4e6ea;
+    --muted: #a9b1bd;
+    --link: #8ab4f8;
+    --rule: #4a5361;
+    --border: #2a313c;
+    --note-bg: #3a3212;
+    --note-edge: #c9a400;
+    --card-bg: #1c222c;
+    --card-border: #2e3644;
+    --card-shadow: 0 1px 3px rgb(0 0 0 / 0.4), 0 4px 14px rgb(0 0 0 / 0.3);
+  }
 }
 
 * { box-sizing: border-box; }
@@ -183,7 +208,7 @@ main:focus { outline: none; }
   font-size: clamp(1.4rem, 1.1rem + 1vw, 1.8rem);
   margin: 0.6rem 0 1rem;
   padding-bottom: 0.6rem;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid var(--rule);
 }
 
 .content p { margin: 0 0 1em; }
@@ -241,7 +266,7 @@ main:focus { outline: none; }
 .profile__photo { width: 280px; max-width: 100%; height: auto; border-radius: 6px; }
 .profile__photo--none {
   display: flex; align-items: center; justify-content: center;
-  aspect-ratio: 7 / 8; background: #eee; color: var(--muted);
+  aspect-ratio: 7 / 8; background: var(--border); color: var(--muted);
 }
 .profile__fields { flex: 1 1 16em; margin: 0; }
 .profile__fields dt { font-weight: bold; margin-top: 0.6rem; }
@@ -254,7 +279,7 @@ main:focus { outline: none; }
 .citations { padding-left: 1.2rem; }
 .news li, .citations li { margin-bottom: 0.55rem; }
 .news { list-style: none; padding-left: 0; }
-.news li { padding: 0.35rem 0; border-bottom: 1px solid #eef0f4; }
+.news li { padding: 0.35rem 0; border-bottom: 1px solid var(--border); }
 .news__date {
   display: inline-block;
   min-width: 3.4em;
@@ -270,7 +295,7 @@ main:focus { outline: none; }
 }
 
 .theses { border-collapse: collapse; width: 100%; }
-.theses td { vertical-align: top; padding: 0.35rem 0.5rem 0.35rem 0; border-bottom: 1px solid #eee; }
+.theses td { vertical-align: top; padding: 0.35rem 0.5rem 0.35rem 0; border-bottom: 1px solid var(--border); }
 .theses__cohort { font-weight: bold; color: var(--muted); white-space: nowrap; }
 .theses__name { white-space: nowrap; }
 
@@ -320,7 +345,7 @@ main:focus { outline: none; }
 /* ---------- About, research, media ---------- */
 
 .year-table { border-collapse: collapse; width: 100%; }
-.year-table td { vertical-align: top; padding: 0.35rem 0.75rem 0.35rem 0; border-bottom: 1px solid #eee; }
+.year-table td { vertical-align: top; padding: 0.35rem 0.75rem 0.35rem 0; border-bottom: 1px solid var(--border); }
 .year-table__year { font-weight: bold; color: var(--muted); white-space: nowrap; }
 
 .floorplan { position: relative; margin: 1rem 0; }
@@ -344,7 +369,7 @@ main:focus { outline: none; }
 .project__years { font-weight: normal; color: var(--muted); }
 .project__photo { display: block; max-width: 550px; width: 100%; margin: 0.5rem auto 1rem; }
 .coming-soon { color: var(--muted); }
-.note { background: #fff7d6; border-left: 4px solid #e0b000; padding: 0.5rem 0.75rem; }
+.note { background: var(--note-bg); border-left: 4px solid var(--note-edge); padding: 0.5rem 0.75rem; }
 
 .videos { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; }
 .video { margin: 0; }
@@ -364,13 +389,6 @@ main:focus { outline: none; }
 .map { display: block; width: 100%; max-width: 640px; margin-top: 1rem; }
 
 /* ---------- Cards ---------- */
-
-:root {
-  --card-bg: #fff;
-  --card-border: #dde2ea;
-  --card-shadow: 0 1px 3px rgb(0 0 0 / 0.08), 0 4px 14px rgb(0 0 0 / 0.06);
-  --radius: 8px;
-}
 
 .cards {
   list-style: none;
@@ -553,7 +571,7 @@ a.hex:focus-visible { --edge: var(--focus); outline: none; }
   .tile { position: relative; left: auto !important; top: auto !important; width: auto; }
   .slideshow { position: relative; left: auto; top: auto; width: auto; grid-column: 1 / -1; order: -1; margin-bottom: 0.5rem; }
 
-  .theses tr { display: grid; grid-template-columns: auto 1fr; padding: 0.4rem 0; border-bottom: 1px solid #eee; }
+  .theses tr { display: grid; grid-template-columns: auto 1fr; padding: 0.4rem 0; border-bottom: 1px solid var(--border); }
   .theses td { border: 0; padding: 0 0.5rem 0 0; }
   .theses td:last-child { grid-column: 1 / -1; }
 }
