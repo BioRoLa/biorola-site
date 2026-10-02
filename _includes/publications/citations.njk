@@ -1,0 +1,6 @@
+{# A list of Markdown citations; `entries` is set by the including page. #}
+<ul class="citations">
+  {%- for c in entries %}
+  <li>{{ c | mdInline | safe }}</li>
+  {%- endfor %}
+</ul>

@@ -162,6 +162,23 @@ a:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 
 .contact-list { padding-left: 1.2rem; }
 
+/* ---------- News and publications ---------- */
+
+.news, .citations { padding-left: 1.2rem; }
+.news li, .citations li { margin-bottom: 0.55rem; }
+.news__date { font-weight: bold; color: var(--muted); margin-right: 0.3em; white-space: nowrap; }
+
+.theses { border-collapse: collapse; width: 100%; }
+.theses td { vertical-align: top; padding: 0.35rem 0.5rem 0.35rem 0; border-bottom: 1px solid #eee; }
+.theses__cohort { font-weight: bold; color: var(--muted); white-space: nowrap; }
+.theses__name { white-space: nowrap; }
+
+@media (max-width: 760px) {
+  .theses tr { display: grid; grid-template-columns: auto 1fr; padding: 0.4rem 0; border-bottom: 1px solid #eee; }
+  .theses td { border: 0; padding: 0 0.5rem 0 0; }
+  .theses td:last-child { grid-column: 1 / -1; }
+}
+
 /* ---------- Hexagon sidebar ---------- */
 
 .honeycomb {

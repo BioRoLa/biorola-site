@@ -1,0 +1,12 @@
+<h2>{{ i18n.director_theses[lang] }}</h2>
+{% set entries = publications.theses.director %}{% include "publications/citations.njk" %}
+<h2>{{ i18n.student_theses[lang] }}</h2>
+<table class="theses">
+  {%- for t in publications.theses.students %}
+  <tr>
+    <td class="theses__cohort">{{ t.cohort }}</td>
+    <td class="theses__name">{{ t.name }}</td>
+    <td>{{ t.text | mdInline | safe }}</td>
+  </tr>
+  {%- endfor %}
+</table>

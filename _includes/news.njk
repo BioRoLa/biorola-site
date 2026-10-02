@@ -1,0 +1,13 @@
+{%- for section in ['announcements', 'honors', 'welcomes'] %}
+{%- if news[section] | length %}
+<h2>{{ i18n[section][lang] }}</h2>
+<ul class="news">
+  {%- for item in news[section] %}
+  {%- set text = item.en if (lang == 'en' and item.en) else item.text %}
+  <li{% if lang == 'en' and not item.en %} lang="zh-Hant-TW"{% endif %}>
+    {%- if item.date %}<span class="news__date">{{ item.date }}</span> {% endif %}{{ text | mdInline | safe -}}
+  </li>
+  {%- endfor %}
+</ul>
+{%- endif %}
+{%- endfor %}

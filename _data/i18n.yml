@@ -22,3 +22,14 @@ roles:
   "Administrative Associate": { en: "Administrative Associate", zh: "行政專員" }
   "Research Assistant": { en: "Research Assistant", zh: "研究助理" }
   "Research Associate": { en: "Research Associate", zh: "研究專員" }
+
+# News
+announcements: { en: "Announcements", zh: "最新消息" }
+honors: { en: "Honors", zh: "榮譽" }
+welcomes: { en: "New members", zh: "新血加入" }
+
+# Publications
+book_chapters: { en: "Book Chapters", zh: "專書章節" }
+invited: { en: "Invited / Non-refereed Articles", zh: "邀稿及非審查文章" }
+director_theses: { en: "Director", zh: "指導教授" }
+student_theses: { en: "Students", zh: "學生" }

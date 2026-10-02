@@ -1,0 +1,4 @@
+<h2>{{ i18n.book_chapters[lang] }}</h2>
+{% set entries = publications.book_chapters %}{% include "publications/citations.njk" %}
+<h2>{{ i18n.invited[lang] }}</h2>
+{% set entries = publications.invited %}{% include "publications/citations.njk" %}

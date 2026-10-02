@@ -1,6 +1,7 @@
 import { execFileSync } from "node:child_process";
 import path from "node:path";
 import yaml from "js-yaml";
+import MarkdownIt from "markdown-it";
 import { HtmlBasePlugin } from "@11ty/eleventy";
 import { honeycomb, langUrl } from "./_includes/nav.js";
 import { alumniByYear, currentStudents, listPageFor, staffList } from "./_includes/members.js";
@@ -49,6 +50,10 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("alumniByYear", alumniByYear);
   eleventyConfig.addFilter("staffList", staffList);
   eleventyConfig.addFilter("listPageFor", listPageFor);
+  // Inline Markdown for data text (news items, citations). HTML is allowed for <u>.
+  const md = new MarkdownIt({ html: true, linkify: false });
+  eleventyConfig.addFilter("mdInline", (text) => md.renderInline(String(text ?? "")));
+
   // Data fields may be a string or a list of strings.
   eleventyConfig.addFilter("asList", (v) => (v == null ? [] : Array.isArray(v) ? v : [v]));
 
