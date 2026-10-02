@@ -11,3 +11,12 @@ address:
   zh: "106319 臺北市羅斯福路四段一號 機械系 宗倬章館 710室"
 phone: "+886-2-3366-9771"
 email: "biorola@gmail.com"
+
+# Final address of the site, for canonical links, the sitemap and link previews.
+url: "https://biorola.me.ntu.edu.tw"
+# Default page description (search results and link previews).
+description:
+  en: "The Bio-inspired Robotics Laboratory (BioRoLa) at National Taiwan University's Department of Mechanical Engineering studies the principles of locomotion and builds agile legged, wheeled, climbing and spherical robots."
+  zh: "國立臺灣大學機械工程學系仿生機器人實驗室（BioRoLa），研究運動的原理與機制，開發具敏捷與強健運動能力的足式、輪型、攀爬與球形機器人。"
+# Image used in link previews when a page has none of its own.
+share_image: "/membersinfo/profile/stu_welcome10.JPG"

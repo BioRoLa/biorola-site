@@ -3,10 +3,13 @@
 pagination:
   data: research
   size: 1
+  addAllPagesToCollections: true
   alias: pageFile
 permalink: "english/{{ pageFile }}"
 eleventyComputed:
   pageUrl: "{{ pageFile }}"
   navUrl: "{{ pageFile }}"
+  description: "{{ ((research[pageFile] | first)['en'] or (research[pageFile] | first)['zh']) | excerpt(200) if research[pageFile] | length else '' }}"
+  shareImage: "{{ (research[pageFile] | first).photo if research[pageFile] | length else '' }}"
 ---
 {% include "research.njk" %}

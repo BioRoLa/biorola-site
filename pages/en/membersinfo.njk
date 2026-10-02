@@ -3,11 +3,13 @@
 pagination:
   data: members
   size: 1
+  addAllPagesToCollections: true
   alias: member
 permalink: "english/membersinfo/{{ member.id }}.html"
 eleventyComputed:
   pageUrl: "membersinfo/{{ member.id }}.html"
   navUrl: "{{ member | listPageFor }}"
+  shareImage: "{{ ('/membersinfo/' ~ member.photo) if member.photo else '' }}"
   pageTitle: "{{ member.name.en or member.name.en }}"
 ---
 {% include "members/profile.njk" %}
