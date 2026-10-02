@@ -7,6 +7,15 @@
   {%- endfor %}
 </ul>
 {%- endfor %}
+{%- set former = members | formerMembers %}
+{%- if former | length %}
+<h2>{{ i18n.former_members[lang] }}</h2>
+<ul class="people">
+  {%- for m in former %}
+  <li>{{ link(m, lang) }}</li>
+  {%- endfor %}
+</ul>
+{%- endif %}
 <div class="group-photos">
   {%- for f in ['alums_r10.JPG', 'alums_r09.JPG', 'alums_r08.JPG', 'alums_r07.JPG', 'alums_r05.jpg', 'alums_r04.JPG', 'alums_r02.JPG', 'alums_r99.JPG', 'alums_r98.JPG'] %}
   <img src="/membersinfo/profile/{{ f }}" alt="{{ '畢業生合照' if lang == 'zh' else 'Graduating class photo' }}" loading="lazy">

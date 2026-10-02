@@ -14,6 +14,7 @@ phd_students: { en: "Ph.D. students", zh: "博士班" }
 ms_students: { en: "Master's students", zh: "碩士班" }
 phd_degree: { en: "Ph.D. Degree", zh: "博士" }
 ms_degree: { en: "Master's Degree", zh: "碩士" }
+former_members: { en: "Former members", zh: "其他曾在實驗室的成員" }
 no_photo: { en: "No photo yet", zh: "尚無照片" }
 
 # Staff roles (members.yml stores the English name)

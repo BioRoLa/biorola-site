@@ -5,7 +5,7 @@ import yaml from "js-yaml";
 import MarkdownIt from "markdown-it";
 import { HtmlBasePlugin } from "@11ty/eleventy";
 import { honeycomb, langUrl, navLabel } from "./_includes/nav.js";
-import { alumniByYear, currentStudents, listPageFor, staffList } from "./_includes/members.js";
+import { alumniByYear, currentStudents, formerMembers, listPageFor, staffList } from "./_includes/members.js";
 
 // Not part of the legacy site: repo tooling, and sources for the new pages.
 const NOT_LEGACY = [
@@ -54,6 +54,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("currentStudents", currentStudents);
   eleventyConfig.addFilter("alumniByYear", alumniByYear);
   eleventyConfig.addFilter("staffList", staffList);
+  eleventyConfig.addFilter("formerMembers", formerMembers);
   eleventyConfig.addFilter("listPageFor", listPageFor);
   // Inline Markdown for data text (news items, citations). HTML is allowed for <u>.
   const md = new MarkdownIt({ html: true, linkify: false });

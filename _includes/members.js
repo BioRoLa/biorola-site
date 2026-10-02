@@ -49,5 +49,10 @@ export function listPageFor(member) {
   if (member.current) return "members_stu_gra.html";
   if (member.graduated?.length) return "members_alu_ms.html";
   if (member.staff?.length) return "members_alu_ra.html";
-  return "members_alu_ms.html";
+  return "members_alu_ms.html";   // former members, and unlisted profiles
+}
+
+// Lab members with no degree from the lab (`former: true`), in file order.
+export function formerMembers(members) {
+  return members.filter((m) => m.former);
 }
