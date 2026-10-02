@@ -356,20 +356,22 @@ main:focus { outline: none; }
 
 .ring { position: relative; width: 100%; margin: 0.5rem auto 1rem; max-width: 57.3rem; }
 
-.tile { position: absolute; width: var(--tile); display: block; }
+.tile { position: absolute; z-index: 1; width: var(--tile); display: block; }
 .tile img { display: block; width: 100%; height: auto; }
 .tile .tile__hover { position: absolute; inset: 0; opacity: 0; }
 .tile:hover .tile__hover,
 .tile:focus-visible .tile__hover { opacity: 1; }
 .tile:focus-visible { outline: 3px solid var(--focus); outline-offset: -6px; }
 
-/* Seven slides, 6s each, fading with a slow zoom (the old Ken Burns effect). */
+/* Seven slides, 6s each, fading with a slow zoom (the old Ken Burns effect).
+   As on the original site, the photo is 750x450 in the 917x624 ring and sits
+   under the tiles, filling the whole centre and showing between the hexagons. */
 .slideshow {
   position: absolute;
-  left: 21%;
-  top: 24%;
-  width: 58%;
-  aspect-ratio: 5 / 3;
+  left: 9.1%;
+  top: 11.2%;
+  width: 81.8%;
+  height: 72.1%;
   overflow: hidden;
   background: #000;
 }
@@ -623,7 +625,7 @@ a.hex:focus-visible { --edge: var(--focus); outline: none; }
   /* Home: slideshow on top, the tiles as a grid below it. */
   .ring { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.25rem; aspect-ratio: auto !important; padding: 0 0.5rem; }
   .tile { position: relative; left: auto !important; top: auto !important; width: auto; }
-  .slideshow { position: relative; left: auto; top: auto; width: auto; grid-column: 1 / -1; order: -1; margin-bottom: 0.5rem; }
+  .slideshow { position: relative; left: auto; top: auto; width: auto; height: auto; aspect-ratio: 5 / 3; grid-column: 1 / -1; order: -1; margin-bottom: 0.5rem; }
 
   .theses tr { display: grid; grid-template-columns: auto 1fr; padding: 0.4rem 0; border-bottom: 1px solid var(--border); }
   .theses td { border: 0; padding: 0 0.5rem 0 0; }

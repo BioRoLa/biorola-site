@@ -8,7 +8,7 @@
   {%- endfor %}
   <div class="slideshow" aria-label="{{ '研究成果照片' if lang == 'zh' else 'Our robots' }}" role="img">
     {%- for s in home.slides %}
-    <img src="{{ s.img }}" alt="{{ s.caption }}" style="--i: {{ loop.index0 }}" sizes="(max-width: 639px) 100vw, 540px"{% if loop.first %} loading="eager" fetchpriority="high"{% endif %}>
+    <img src="{{ s.img }}" alt="{{ s.caption }}" style="--i: {{ loop.index0 }}" sizes="(max-width: 639px) 100vw, 750px"{% if loop.first %} loading="eager" fetchpriority="high"{% endif %}>
     {%- endfor %}
   </div>
 </div>
