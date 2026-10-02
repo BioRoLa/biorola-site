@@ -1,139 +1,139 @@
-# Photo albums shown on media_album.html (both languages).
+# Photo albums shown on media_album.html. section and title have en/zh versions.
 # Full albums live in Synology Photos on the lab NAS. For each album:
 #   url:        public share link from Synology Photos (empty = title shown without a link)
 #   nas_folder: where the photos were in the old Photo Station, to find them in Synology Photos
 #   cover:      image kept on this site, shown at 300x196
 
-- section: "Team Building"
+- section: {en: "Team Building", zh: "團隊活動"}
   albums:
-    - title: "2024 肉次方+圓山育樂中心保齡球館"
+    - title: {en: "2024 Team building: dinner and bowling (Dec.)", zh: "2024 肉次方+圓山育樂中心保齡球館"}
       cover: "pic/album/cover_Yuanshan.JPG"
       nas_folder: "Team Building/20241219 肉次方+圓山育樂中心保齡球館"
       url: ""
-    - title: "2024 六度空間+漢來海港下午茶"
+    - title: {en: "2024 Team building: outing and afternoon tea (Jun.)", zh: "2024 六度空間+漢來海港下午茶"}
       cover: "pic/album/cover_TB2024_a.JPG"
       nas_folder: "Team Building/20240612 六度空間+漢來海港下午茶"
       url: ""
 
-- section: "Trip"
+- section: {en: "Trip", zh: "旅遊"}
   albums:
-    - title: "2024 Okinawa Trip(日本沖繩)"
+    - title: {en: "2024 Okinawa Trip", zh: "2024 日本沖繩旅遊"}
       cover: "pic/album/cover_Okinawa.JPG"
       nas_folder: "20240729-0801_日本沖繩"
       url: ""
-    - title: "2023 Hualien Trip(花蓮)"
+    - title: {en: "2023 Hualien Trip", zh: "2023 花蓮旅遊"}
       cover: "pic/album/cover_Hualien2023.JPG"
       nas_folder: "2023 花蓮"
       url: ""
-    - title: "2022 Penghu Trip(澎湖)"
+    - title: {en: "2022 Penghu Trip", zh: "2022 澎湖旅遊"}
       cover: "pic/album/cover_Penghu_2022.jpg"
       nas_folder: "2022 澎湖"
       url: ""
-    - title: "2020 Lanyu Trip(蘭嶼)"
+    - title: {en: "2020 Lanyu Trip", zh: "2020 蘭嶼旅遊"}
       cover: "pic/album/cover_Lanyu.JPG"
       nas_folder: "2020蘭嶼"
       url: ""
-    - title: "2019 Matsu Trip(馬祖)"
+    - title: {en: "2019 Matsu Trip", zh: "2019 馬祖旅遊"}
       cover: "pic/album/cover_Matsu.JPG"
       nas_folder: "2019 馬祖"
       url: ""
-    - title: "2018 Fulong & The Northeast Coast Trip(福隆、東北角)"
+    - title: {en: "2018 Fulong & Northeast Coast Trip", zh: "2018 福隆、東北角旅遊"}
       cover: "pic/album/cover_Fulong.JPG"
       nas_folder: "2018 福隆東北角"
       url: ""
-    - title: "2017 Hualien & Yilan Trip(花蓮、宜蘭)"
+    - title: {en: "2017 Hualien & Yilan Trip", zh: "2017 花蓮、宜蘭旅遊"}
       cover: "pic/album/cover_Hualien2017.jpg"
       nas_folder: "2017 花蓮宜蘭"
       url: ""
-    - title: "2016 Ali Mountain Trip(阿里山)"
+    - title: {en: "2016 Alishan Trip", zh: "2016 阿里山旅遊"}
       cover: "pic/album/cover_Ali.JPG"
       nas_folder: "2016 阿里山塔塔加"
       url: ""
-    - title: "2015 Hehuan Mountain Trip(合歡山)"
+    - title: {en: "2015 Hehuan Mountain Trip", zh: "2015 合歡山旅遊"}
       cover: "pic/album/cover_Hehuan.JPG"
       nas_folder: "2015 合歡山"
       url: ""
 
-- section: "Lab dinner party"
+- section: {en: "Lab dinner party", zh: "實驗室聚餐"}
   albums:
-    - title: "2023 Lab dinner party (饗食天堂)"
+    - title: {en: "2023 Lab dinner (Dec.)", zh: "2023 實驗室聚餐（饗食天堂）"}
       cover: "pic/album/cover_eat2023_b.jpg"
       nas_folder: "聚餐/20231228饗食天堂"
       url: ""
-    - title: "2023 Lab dinner party (享鴨)"
+    - title: {en: "2023 Lab dinner (Feb.)", zh: "2023 實驗室聚餐（享鴨）"}
       cover: "pic/album/cover_eat2023_a.jpg"
       nas_folder: "聚餐/20230211享鴨"
       url: ""
-    - title: "2022 Lab dinner party (十五週年聚餐)"
+    - title: {en: "2022 Lab 15th anniversary dinner", zh: "2022 實驗室十五週年聚餐"}
       cover: "pic/album/cover_eat2022_b.jpg"
       nas_folder: "聚餐/20221022 十五週年聚餐"
       url: ""
-    - title: "2022 Lab dinner party (乾杯)"
+    - title: {en: "2022 Lab dinner", zh: "2022 實驗室聚餐（乾杯）"}
       cover: "pic/album/cover_eat2022_a.jpg"
       nas_folder: "聚餐/乾杯"
       url: ""
-    - title: "2021 Lab dinner party (陶板屋)"
+    - title: {en: "2021 Lab dinner (Mar.)", zh: "2021 實驗室聚餐（陶板屋）"}
       cover: "pic/album/cover_eat2021_2.jpg"
       nas_folder: "聚餐/20210317陶板屋"
       url: ""
-    - title: "2021 Lab dinner party (金色三麥)"
+    - title: {en: "2021 Lab dinner (Jan.)", zh: "2021 實驗室聚餐（金色三麥）"}
       cover: "pic/album/cover_eat2021_1.jpg"
       nas_folder: "20210127微風金色三麥"
       url: ""
-    - title: "2020 Lab dinner party (戰醬燒肉)"
+    - title: {en: "2020 Lab dinner", zh: "2020 實驗室聚餐（戰醬燒肉）"}
       cover: "pic/album/cover_eat2020.jpg"
       nas_folder: "聚餐/戰醬燒肉"
       url: ""
-    - title: "2019 Lab dinner party (饗食天堂)"
+    - title: {en: "2019 Lab dinner", zh: "2019 實驗室聚餐（饗食天堂）"}
       cover: "pic/album/cover_eat2019.JPG"
       nas_folder: "聚餐/饗食天堂"
       url: ""
-    - title: "2018 Lab dinner party (小蒙牛)"
+    - title: {en: "2018 Lab dinner", zh: "2018 實驗室聚餐（小蒙牛）"}
       cover: "pic/album/cover_eat2018.jpg"
       nas_folder: "聚餐/小蒙牛"
       url: ""
-    - title: "2017 Lab dinner party (陶板屋)"
+    - title: {en: "2017 Lab dinner", zh: "2017 實驗室聚餐（陶板屋）"}
       cover: "pic/album/cover_eat2017.jpg"
       nas_folder: "聚餐/20170123_陶板屋.jpg"
       url: ""
-    - title: "2016 Lab dinner party"
+    - title: {en: "2016 Lab dinner", zh: "2016 實驗室聚餐"}
       cover: "pic/album/cover_eat2016.JPG"
       nas_folder: "聚餐/20160204.JPG"
       url: ""
-    - title: "2015 Lab dinner party"
+    - title: {en: "2015 Lab dinner", zh: "2015 實驗室聚餐"}
       cover: "pic/album/cover_eat2015.JPG"
       nas_folder: "聚餐/20151002.JPG"
       url: ""
 
-- section: "Members"
+- section: {en: "Members", zh: "成員合照"}
   albums:
-    - title: "Graduate"
+    - title: {en: "Graduate students", zh: "研究生"}
       cover: "pic/album/cover_graduate2024.JPG"
       nas_folder: "Graduate"
       url: ""
-    - title: "Under-graduate"
+    - title: {en: "Undergraduate students", zh: "大學部專題生"}
       cover: "pic/album/cover_under2023.jpg"
       nas_folder: "Under-graduate"
       url: ""
 
-- section: "Workshop"
+- section: {en: "Workshop", zh: "研討會"}
   albums:
-    - title: "2017.03.11-2017.03.12 KAIT workshop"
+    - title: {en: "2017.03.11–12 KAIT workshop", zh: "2017.03.11–12 KAIT 研討會"}
       cover: "pic/album/cover_kait2017.JPG"
       nas_folder: "2017 KAIT workshop"
       url: ""
-    - title: "2016.03.14-2016.03.15 KAIT workshop"
+    - title: {en: "2016.03.14–15 KAIT workshop", zh: "2016.03.14–15 KAIT 研討會"}
       cover: "pic/album/cover_kait.jpg"
       nas_folder: "2016 KAIT workshop"
       url: ""
 
-- section: "Visiting Students"
+- section: {en: "Visiting Students", zh: "訪問學生"}
   albums:
-    - title: "2017 Akihiro Aoyama, Kyushu Inst. of Tech., Japan"
+    - title: {en: "2017 Akihiro Aoyama, Kyushu Institute of Technology, Japan", zh: "2017 Akihiro Aoyama（日本九州工業大學）"}
       cover: "pic/album/cover_Akihiro Aoyama.jpg"
       nas_folder: "2017 Akihiro Aoyama, Kyushu Inst. of Tech., Japan"
       url: ""
-    - title: "2017 Ryo Abe, Tsukuba Univ., Japan"
+    - title: {en: "2017 Ryo Abe, University of Tsukuba, Japan", zh: "2017 Ryo Abe（日本筑波大學）"}
       cover: "pic/album/cover_Ryo Abe.JPG"
       nas_folder: "2017 Ryo Abe, Tsukuba Univ., Japan"
       url: ""

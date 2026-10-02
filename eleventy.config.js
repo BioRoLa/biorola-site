@@ -63,6 +63,37 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("mdInline", (text) => md.renderInline(String(text ?? "")));
   eleventyConfig.addFilter("md", (text) => md.render(String(text ?? "")));
 
+  // {{ value | localize(lang, translations) }}: {en, zh} objects pick the page
+  // language; plain text is swapped for its entry in _data/translations.yml
+  // when that entry suits the page language better (by share of CJK characters).
+  const cjkShare = (s) => {
+    const cjk = (s.match(/[\u4e00-\u9fff]/g) ?? []).length;
+    const latin = (s.match(/[A-Za-z]/g) ?? []).length;
+    return cjk + latin ? cjk / (cjk + latin / 2) : 0;
+  };
+  eleventyConfig.addFilter("localize", (value, lang, dict = {}) => {
+    if (value == null) return value;
+    if (typeof value === "object" && !Array.isArray(value)) return value[lang] ?? value.en ?? value.zh;
+    const text = String(value);
+    const other = dict[text];
+    if (other == null) return text;
+    const better = lang === "zh" ? cjkShare(other) > cjkShare(text) : cjkShare(other) < cjkShare(text);
+    return better ? other : text;
+  });
+
+  // Staff periods: "2023.Mar. -present" -> "2023.03 - 至今" on Chinese pages.
+  const MONTHS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
+  eleventyConfig.addFilter("period", (text, lang) => {
+    if (lang !== "zh") return text;
+    return String(text)
+      .replace(/(\d{4})\.\s*([A-Za-z]+)\.?/g, (m, y, mon) => {
+        const i = MONTHS.indexOf(mon.slice(0, 3).toLowerCase());
+        return i === -1 ? m : `${y}.${String(i + 1).padStart(2, "0")}`;
+      })
+      .replace(/\s*-\s*/g, " - ")
+      .replace(/present/i, "至今");
+  });
+
   // Data fields may be a string or a list of strings.
   eleventyConfig.addFilter("asList", (v) => (v == null ? [] : Array.isArray(v) ? v : [v]));
 

@@ -2,7 +2,7 @@
 <ul class="staff">
   {%- for s in members | staffList %}
   <li>
-    <span class="staff__role">{{ i18n.roles[s.role][lang] or s.role }}, {{ s.period }}</span>
+    <span class="staff__role">{{ i18n.roles[s.role][lang] or s.role }}, {{ s.period | period(lang) }}</span>
     {{ link(s.person, lang) }}
   </li>
   {%- endfor %}

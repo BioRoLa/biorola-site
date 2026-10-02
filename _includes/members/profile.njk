@@ -10,14 +10,15 @@
     <dt>{{ i18n.graduated[lang] }}</dt><dd>{{ i18n[g.degree ~ '_degree'][lang] }}, {{ g.year }}</dd>
     {%- endfor %}
     {%- for s in m.staff | default([]) %}
-    <dt>{{ i18n.roles[s.role][lang] or s.role }}</dt><dd>{{ s.period }}</dd>
+    <dt>{{ i18n.roles[s.role][lang] or s.role }}</dt><dd>{{ s.period | period(lang) }}</dd>
     {%- endfor %}
     {%- for field in ['position', 'research', 'thesis', 'job', 'hobby'] %}
     {%- if m[field] %}
     <dt>{{ i18n[field][lang] }}</dt>
     <dd>
-      {%- if m[field].en %}{{ m[field].en }}<br><span lang="zh-Hant-TW">{{ m[field].zh }}</span>
-      {%- else %}{% for line in m[field] | asList %}{{ line }}{% if not loop.last %}<br>{% endif %}{% endfor %}{% endif -%}
+      {%- if m[field].en and lang == "zh" %}{{ m[field].zh }}<br><span lang="en">{{ m[field].en }}</span>
+      {%- elif m[field].en %}{{ m[field].en }}<br><span lang="zh-Hant-TW">{{ m[field].zh }}</span>
+      {%- else %}{% for line in m[field] | asList %}{{ line | localize(lang, translations) }}{% if not loop.last %}<br>{% endif %}{% endfor %}{% endif -%}
     </dd>
     {%- endif %}
     {%- endfor %}

@@ -2,9 +2,9 @@
 <ul class="projects">
   {%- for p in projects %}
   <li>
-    <h2>{{ p.project }}</h2>
+    <h2>{{ p.project_en if (lang == "en" and p.project_en) else p.project }}</h2>
     {%- for t in p.teams %}
-    <p><span class="cohort">{{ t.cohort }}</span>{% if t.label %} {{ t.label }}:{% endif %} {{ t.names | join('、') }}</p>
+    <p><span class="cohort">{{ t.cohort }}</span>{% if t.label %} {{ t.label_en if (lang == "en" and t.label_en) else t.label }}:{% endif %} {{ t.names | join('、') }}</p>
     {%- endfor %}
   </li>
   {%- endfor %}

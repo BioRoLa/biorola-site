@@ -1,5 +1,5 @@
 # Research projects, shown on the research_*.html pages in both languages.
-# Keyed by page; each project has a name, years, photo, and description
+# Keyed by page; each project has a name (name_zh if it differs in Chinese), years, photo, and description
 # paragraphs in English (en) and Chinese (zh), in Markdown. Either language
 # falls back to the other when missing. movies: true adds a link to the Movies page.
 # A page with no projects shows a "coming soon" note.
@@ -8,10 +8,13 @@ research_climbing_climbingtree.html: []
 research_climbing_climbingwall.html: []
 research_legged_biped.html:
 - name: "Biped Robot"
+  name_zh: "雙足機器人"
   years: "2008 – 2013"
   photo: "/pic/photo/robots/DSC05388.JPG"
   en: |
     It is a child-size robot designed for exploring bipedal locomotion mechanism. It can perform walking, turning in place, and simultaneous walking and turning.
+  zh: |
+    此為一台兒童尺寸的雙足機器人，用以探討雙足運動的機制。機器人可執行行走、原地轉彎，以及邊行走邊轉彎等動作。
 research_legged_quadruped.html:
 - name: "TurboQuad"
   years: "2012 – now"
@@ -26,6 +29,8 @@ research_legged_quadruped.html:
   photo: "/pic/photo/robots/Quattroped.jpg"
   en: |
     Quattroped is a 4-leg/4-wheel transformable mobile robot. In contrast to most hybrid platforms which have separate mechanisms and actuators for wheels and legs, this robot is implemented with a unique transformation mechanism which directly switches the morphology of the driving mechanism between the wheels (i.e. a full circle) and a 2 degree-of-freedom leg (i.e. combining two half-circles as a leg), so the same system of actuation power can be efficiently utilized in both wheeled and legged modes. Taking advantage of the leg-wheel combination, the robot is capable of performing different behaviors, including wheeled driving, step and bar crossing, irregular terrain passing, stair climbing, etc.
+  zh: |
+    Quattroped 是一台四腳／四輪可變形的移動機器人。不同於多數輪腳複合平台分別以獨立的機構與致動器驅動輪與腳，此機器人採用獨特的變形機構，直接將驅動機構的外型在輪（完整的圓）與二自由度的腳（兩個半圓組合成的腳）之間切換，使同一套動力系統能在輪模式與腳模式下都被有效利用。結合輪與腳的優勢，機器人能執行多種行為，包括輪式行駛、跨越階梯與橫桿、通過不規則地形，以及爬樓梯等。
   movies: true
 research_legged_rhex.html:
 - name: "TWIX"
@@ -57,12 +62,16 @@ research_spherical_omnicron.html:
   years: "2011 – now"
   photo: "/pic/photo/robots/Omnicron.jpg"
   en: |
-    Omnicron is a spherical robot with singularity-free omnidirectional locomotion ability. Instead of using a single driven ball as in its predessor OmniQiu, the robot utilizes three omnidirectional wheels to drive its spherical shell. Three wheels are controlled independently, thus achieving 3-DOF planar locomotion by simple 3 to 3 mapping.
+    Omnicron is a spherical robot with singularity-free omnidirectional locomotion ability. Instead of using a single driven ball as in its predecessor OmniQiu, the robot utilizes three omnidirectional wheels to drive its spherical shell. Three wheels are controlled independently, thus achieving 3-DOF planar locomotion by simple 3 to 3 mapping.
+  zh: |
+    Omnicron 是一台具備無奇異點全向移動能力的球形機器人。有別於其前身 OmniQiu 以單一被驅動的球作為驅動方式，Omnicron 使用三個全向輪驅動球形外殼。三個輪子各自獨立控制，透過簡單的三對三映射即可達成三自由度的平面運動。
 research_spherical_omniqiu.html:
 - name: "OmniQiu"
   years: "2010 – 2013"
   photo: "/pic/photo/robots/Figure 09.jpg"
   en: |
-    OmniQue is a novel omnidirectional spherical robot. Instead of using wheels or flywheels as driving mechanism, the robot uses two orthogonally-mounted rollers to drive a ball installed inside a spherical shell. Because the ball rolls on the shell, the robot performs omnidirectional and singularity-free locomotion.
+    OmniQiu is a novel omnidirectional spherical robot. Instead of using wheels or flywheels as driving mechanism, the robot uses two orthogonally-mounted rollers to drive a ball installed inside a spherical shell. Because the ball rolls on the shell, the robot performs omnidirectional and singularity-free locomotion.
+  zh: |
+    OmniQiu 是一台新型的全向球形機器人。它不以輪子或飛輪作為驅動機構，而是以兩個正交安裝的滾輪，驅動裝在球形外殼內的一顆球。由於這顆球在外殼上滾動，機器人得以進行全向且無奇異點的運動。
 research_wheeled_cartamigo.html: []
 research_wheeled_twowheels.html: []

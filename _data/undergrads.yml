@@ -1,61 +1,79 @@
 # Undergraduate project teams (大學部專題生), shown on
 # Members > Students > Undergraduate (current) and Members > Alumni > B.S. Degree (alumni).
-# cohort is the entering class (B11 = 111 學年度). Order follows this file.
+# cohort is the entering class (B11 = 111 學年度). project_en / label_en are the
+# English versions. Order follows this file.
 
 current:
 - project: "四腳落地貓咪機器人"
+  project_en: "Cat-inspired self-righting robot"
   teams:
   - {cohort: "B11", names: ["李子儀", "鄭宇岑", "陳沛妤", "林珈亘", "魏家琦"]}
 - project: "蛇機器人"
+  project_en: "Snake robot"
   teams:
   - {cohort: "B11", names: ["高宇宏", "蕭鎧瀚", "陳宥禎", "黃柏崴"]}
 - project: "群體機器人"
+  project_en: "Swarm robots"
   teams:
   - {cohort: "B11", names: ["林詠鈞", "鄭皓元", "黃治中", "錢韋翰"]}
 - project: "巡檢機器人"
+  project_en: "Inspection robot"
   teams:
   - {cohort: "B11", names: ["蕭聰宇"]}
 - project: "六足機器人"
+  project_en: "Hexapod robot"
   teams:
   - {cohort: "B11", names: ["楊舒瑋", "藍芊妤", "林筱恩", "林愛晨"]}
   - {cohort: "B11", names: ["林士程", "李國業", "黃鈺棠", "謝文嘉", "魏義庭"]}
   - {cohort: "B10", names: ["郭哲明", "簡榮緯", "蕭聰宇", "林頎衡", "陳泰翔"]}
   - {cohort: "B10", names: ["黃宣凱", "曾元昱", "賴靜蓉"]}
 - project: "蝸牛機器人"
+  project_en: "Snail robot"
   teams:
   - {cohort: "B10", names: ["曾柏穎", "葉晉嘉", "賴弋元", "許瀚元"]}
 - project: "球型機器人"
+  project_en: "Spherical robot"
   teams:
   - {cohort: "B10", names: ["張伯宇", "張曜鵬", "王泰傑", "周知顥"]}
 alumni:
 - project: "蝸牛機器人"
+  project_en: "Snail robot"
   teams:
   - {cohort: "B10", names: ["曾柏穎", "葉晉嘉", "賴弋元", "許瀚元"]}
 - project: "牆磚修補(霹靂鑽地殺手)"
+  project_en: "Wall-tile repair robot"
   teams:
   - {cohort: "B09", names: ["廖敏鈞", "劉緯騏", "童國葦", "劉致和", "沈震揚"]}
 - project: "NTUBike"
+  project_en: "NTUBike"
   teams:
   - {cohort: "B09", names: ["林冠廷", "李星辰", "張舜凱", "崔恩傑", "徐詩婷"]}
 - project: "霈霈豬(三足機器人)"
+  project_en: "Pei-Pei Pig (three-legged robot)"
   teams:
   - {cohort: "B09", names: ["葉峻臺", "林政毅", "謝允恒", "李怡霈", "吳昌鴻"]}
 - project: "爬樓梯掃地機器人"
+  project_en: "Stair-climbing cleaning robot"
   teams:
   - {cohort: "B08", names: ["沈意軒", "梁晏慈", "陳仲桓", "黃仲麒"]}
 - project: "農用機器人"
+  project_en: "Agricultural robot"
   teams:
   - {cohort: "B08", names: ["吳采栩", "許雅婷", "梁祐聆", "邱彤安"]}
 - project: "送信機器人"
+  project_en: "Mail delivery robot"
   teams:
   - {cohort: "B08", names: ["林昱瑋", "葉逢恩", "白為霖", "陳志臻", "高仕懷"]}
 - project: "跑步機機器人(控制組)"
+  project_en: "Treadmill robot (control team)"
   teams:
   - {cohort: "B07", names: ["丁映文", "陳致仁", "曾兆廷", "吳泳震", "陳旻彥"]}
 - project: "跑步機機器人(視覺組)"
+  project_en: "Treadmill robot (vision team)"
   teams:
   - {cohort: "B07", names: ["吳昀翰", "陳彥良", "賴哲緯", "楊子毅"]}
 - project: "六足機器人"
+  project_en: "Hexapod robot"
   teams:
   - {cohort: "B09", names: ["辜冠霖", "曾國睿"]}
   - {cohort: "B08", names: ["黃淵濤", "呂金霖", "張育軒"]}
@@ -64,43 +82,53 @@ alumni:
   - {cohort: "B05", names: ["詹捷雅", "張邑華", "崔靖揚", "林柏全"]}
   - {cohort: "B04", names: ["李俊杰", "林郁衡", "林彥宇", "林正虎"]}
   - {cohort: "B04", names: ["黃元貞", "霍家琦"]}
-  - {label: "第一組", cohort: "B03", names: ["吳星耀", "張家誠", "蔡承穎", "許晉豪"]}
-  - {label: "第二組", cohort: "B03", names: ["許守歷", "劉光瑋", "熊家和", "陳宣妤"]}
+  - {label: "第一組", label_en: "Team 1", cohort: "B03", names: ["吳星耀", "張家誠", "蔡承穎", "許晉豪"]}
+  - {label: "第二組", label_en: "Team 2", cohort: "B03", names: ["許守歷", "劉光瑋", "熊家和", "陳宣妤"]}
   - {cohort: "B95", names: ["黃科融", "鄒亞成", "游崴舜", "陳敬宜", "李冠輝", "廖柏勛"]}
 - project: "青蛙機器人"
+  project_en: "Frog robot"
   teams:
   - {cohort: "B06", names: ["林怡萱", "許書詮", "楊淳富", "林佳穎"]}
   - {cohort: "B02", names: ["梁育齊", "林季寬", "曾冠語"]}
 - project: "書法機器人"
+  project_en: "Calligraphy robot"
   teams:
   - {cohort: "B06", names: ["朱祥誠", "郭律佑", "李承璋", "許心慈"]}
   - {cohort: "B05", names: ["林瑋儒", "許維倫", "林恒慶", "賴奕澂", "宋體淮"]}
 - project: "球型機器人"
+  project_en: "Spherical robot"
   teams:
   - {cohort: "B06", names: ["朱勻", "蕭尚亞", "陳韜", "王華豫"]}
   - {cohort: "B99", names: ["王昱凱", "張家瑜", "施佑霖"]}
   - {cohort: "B96", names: ["陳慶沛", "陳為熙", "楊琇惠", "蔡佳璇"]}
 - project: "推粒機器人"
+  project_en: "Pellet-pushing robot"
   teams:
   - {cohort: "B06", names: ["林子閎", "李昱勳", "黃暄文", "葉俊佑（與楊馥菱教授共同指導）"]}
 - project: "貓咪機器人"
+  project_en: "Cat robot"
   teams:
   - {cohort: "B05", names: ["廖經晏", "許定為", "李昱揚", "吳冠廷", "李維"]}
 - project: "挖土機器人"
+  project_en: "Digging robot"
   teams:
   - {cohort: "B05", names: ["李正己", "李溥浤"]}
   - {cohort: "B04", names: ["陳婷", "曹珮琪"]}
   - {cohort: "B02", names: ["李雨融", "尤奕閎", "吳思皜", "王立男"]}
 - project: "跳躍球機器人"
+  project_en: "Jumping ball robot"
   teams:
   - {cohort: "B05", names: ["張維哲", "張芝綾", "何壬宏", "曾奇鈞"]}
 - project: "足類K值量測"
+  project_en: "Leg stiffness (k) measurement"
   teams:
   - {cohort: "B04", names: ["楊秉翰", "劉亮謙", "廖士齊"]}
 - project: "六足玩具化"
+  project_en: "Hexapod toy design"
   teams:
   - {cohort: "B04", names: ["蔡岳霖", "陳奇林", "余承叡", "簡聿民"]}
 - project: "猴子機器人"
+  project_en: "Monkey robot"
   teams:
   - {cohort: "B04", names: ["施力維", "賴景裕", "吳良彥", "陳昱霖", "皇甫維德"]}
   - {cohort: "B03", names: ["劉又豪", "金蕾", "陳柏綱", "呂冠頡"]}
@@ -108,105 +136,135 @@ alumni:
   - {cohort: "B01", names: ["陳冠羽", "劉恬君", "李旻憲"]}
   - {cohort: "B00", names: ["朱振文", "林岑璋", "楊侑寰", "駱愷元"]}
 - project: "變型蟑螂機器人"
+  project_en: "Transformable cockroach robot"
   teams:
   - {cohort: "B03", names: ["邱家瑞", "陳匯晴", "王宗祥", "黃御芝"]}
 - project: "發射器機器人"
+  project_en: "Launcher robot"
   teams:
   - {cohort: "B03", names: ["鄭文彥", "鄭澄遠", "龔柏翰", "洪承佾"]}
 - project: "比賽機器人"
+  project_en: "Competition robot"
   teams:
   - {cohort: "B03", names: ["薛沛宜", "鄭乃節", "凌卉芸", "施靖嫻"]}
 - project: "糞金龜機器人"
+  project_en: "Dung beetle robot"
   teams:
   - {cohort: "B02", names: ["許皓勛", "陳智", "王仁蔚", "江宇勝"]}
 - project: "輪足機器人"
+  project_en: "Wheel-leg robot"
   teams:
   - {cohort: "B02", names: ["馬世宗", "徐立揚", "陳昱均", "林允丞"]}
 - project: "翻滾機器人"
+  project_en: "Tumbling robot"
   teams:
   - {cohort: "B02", names: ["張德芯", "李東翰", "林柏文", "許睿修"]}
 - project: "TDK 機器人"
+  project_en: "TDK competition robot"
   teams:
   - {cohort: "B01", names: ["黃珮瑄", "何欣容", "吳宗澤", "王霆皓"]}
 - project: "掃樓梯機器人"
+  project_en: "Stair-sweeping robot"
   teams:
   - {cohort: "B01", names: ["鄭喬允", "巫昊坤", "徐偉捷", "李沐恩"]}
 - project: "尺蠖機器人"
+  project_en: "Inchworm robot"
   teams:
   - {cohort: "B01", names: ["洪健鈞", "袁佑緣", "陸韋君", "高稚然"]}
   - {cohort: "B00", names: ["呂士成", "莊岳翰", "楊承霖", "張伊瑞", "李明叡"]}
 - project: "雙自由度機器人"
+  project_en: "Two-DOF robot"
   teams:
   - {cohort: "B01", names: ["王釋平", "陳永修", "陳韋倫", "蔡仲恩", "孫捷"]}
   - {cohort: "B00", names: ["黃筵翔", "陳俊昇", "游雋仁", "吳謦安"]}
 - project: "KNR 機器人"
+  project_en: "KNR competition robot"
   teams:
   - {cohort: "B00", names: ["王育浚", "呂定憲", "林筠萌"]}
 - project: "拍翼機器人"
+  project_en: "Flapping-wing robot"
   teams:
   - {cohort: "B00", names: ["陳柏勳", "陳立樹", "王子傑"]}
 - project: "爬樹機器人"
+  project_en: "Tree-climbing robot"
   teams:
   - {cohort: "B00", names: ["黃威綸", "李柏諺", "趙浩雲", "李孟豪"]}
   - {cohort: "B99", names: ["廖友廷", "陳瑋杰", "柯俊誼", "王意評"]}
   - {cohort: "B98", names: ["羅世芸", "曾柏維", "林子涵"]}
   - {cohort: "B97", names: ["周敬凱", "林承翰", "李子魁", "戴坤霖"]}
 - project: "爬牆機器人"
+  project_en: "Wall-climbing robot"
   teams:
   - {cohort: "B99", names: ["蔣瑋軒", "許雅涵", "柯緯鴻", "方怡琳"]}
   - {cohort: "B98", names: ["張爾傑", "游明遠", "沈奕彤", "林紘生"]}
   - {cohort: "B97", names: ["曾仁輿", "陳嘉彬", "江建衡", "詹鎮毓"]}
   - {cohort: "B94", names: ["林淑婷", "楊又璇", "李孟貞"]}
 - project: "蛇板機器人"
+  project_en: "Snakeboard robot"
   teams:
   - {cohort: "B99", names: ["何岡娗", "陳仲禮", "張勻慈"]}
 - project: "SCARA 機器人"
+  project_en: "SCARA robot"
   teams:
   - {cohort: "B99", names: ["王彥傑", "洪梓菡", "蔡長龍", "黃秉宗", "王仲煒"]}
 - project: "袋鼠機器人"
+  project_en: "Kangaroo robot"
   teams:
   - {cohort: "B98", names: ["劉冠宏", "陳劭端", "林後嶧", "林懷宇"]}
 - project: "扇貝機器人"
+  project_en: "Scallop robot"
   teams:
   - {cohort: "B98", names: ["楊皓偉", "尤冠勛", "林政賢", "陳翰霖（與楊馥菱教授共同指導）"]}
 - project: "小球"
+  project_en: "Mini ball robot"
   teams:
   - {cohort: "B98", names: ["汪鼎翔", "陳柏儒", "李承澤"]}
 - project: "力回饋動力輔助系統"
+  project_en: "Force-feedback power-assist system"
   teams:
   - {cohort: "B98", names: ["何為竣", "林梵琦"]}
   - {cohort: "B97", names: ["邵彥翔", "吳奕郁"]}
 - project: "溫度梯度對細胞生長之影響"
+  project_en: "Effect of temperature gradients on cell growth"
   teams:
   - {cohort: "B98", names: ["吳奕鴻", "李耕銘", "蔡金博", "楊晨甫（與董奕鍾博士", "陳建彰教授", "陳奕君教授共同指導）"]}
 - project: "形狀記憶合金調控表面複材"
+  project_en: "Shape-memory-alloy tunable surface composites"
   teams:
   - {cohort: "B97", names: ["柯秉良", "張復龍（與董奕鍾博士", "陳建彰教授", "陳奕君教授共同指導）"]}
 - project: "軟球機器人"
+  project_en: "Soft ball robot"
   teams:
   - {cohort: "B97", names: ["林昱辰", "郭哲男", "黃群凱", "胡家睿", "林巧雯"]}
 - project: "軟式單輪機器人"
+  project_en: "Soft single-wheel robot"
   teams:
   - {cohort: "B97", names: ["張哲軒", "劉得祺", "吳柏勳"]}
 - project: "梯度溫控系統"
+  project_en: "Gradient temperature control system"
   teams:
   - {cohort: "B96", names: ["蔡明霏", "劉曼琦", "吳津艮（與陳建彰教授", "陳奕君教授共同指導）"]}
 - project: "六足機器人（單馬達）"
+  project_en: "Hexapod robot (single motor)"
   teams:
   - {cohort: "B96", names: ["梁芳瑜", "薛雅薰", "蔡孟璟"]}
   - {cohort: "B94", names: ["陳慎強", "藍奕中", "陳宏昕", "楊宗霖", "楊凱傑", "蔡東湘", "賴嘉宏", "翁左庭"]}
 - project: "模組機器人"
+  project_en: "Modular robot"
   teams:
   - {cohort: "B07", names: ["黃培郡", "鄭詮鏵", "施品竹", "陳致嘉", "許文碩", "石翊鵬", "孫詠晴"]}
   - {cohort: "B96", names: ["劉俊麟", "張景媖", "羅文甫"]}
 - project: "雙輪平衡機器人"
+  project_en: "Two-wheeled balancing robot"
   teams:
   - {cohort: "B96", names: ["陳奕安", "胡兆慶", "邱俊豪"]}
   - {cohort: "B95", names: ["盧治綱", "林忻穎", "李大順", "王俊耀"]}
 - project: "六足機器人（雙馬達）"
+  project_en: "Hexapod robot (dual motor)"
   teams:
   - {cohort: "B95", names: ["簡佑任", "黃婷筠", "季敬棠", "鄭煒儒", "洪振寧", "林聖昌"]}
 - project: "其他"
+  project_en: "Others"
   teams:
   - {cohort: "B05", names: ["簡行謙", "“robotsensingsystem”"]}
   - {cohort: "B03", names: ["陳柏綱", "“R-SLIPModeling”"]}

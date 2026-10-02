@@ -1,5 +1,6 @@
 # Videos on media_movies.html, grouped by robot. youtube is the video ID
-# (the part after youtube.com/watch?v=); title is optional.
+# (the part after youtube.com/watch?v=); title is optional. Titles can be
+# text (same in both languages) or {en, zh}.
 
 - title: "Quattroped"
   videos:
@@ -9,11 +10,11 @@
   - {youtube: eIYeU9uGrWc}
 - title: "miniRHex"
   videos:
-  - {youtube: T9yIcKj3cQI, title: "ditch leaping"}
-  - {youtube: HlIrxVxepuo, title: "frameborder=\"0\" allowfullscreen> obstacle leaping"}
-  - {youtube: 1e2REjD5ycs, title: "frameborder=\"0\" allowfullscreen> step climbing"}
-  - {youtube: m_1EKPbDzh4, title: "frameborder=\"0\" allowfullscreen> running"}
-- title: "Two-wheeled"
+  - {youtube: T9yIcKj3cQI, title: {en: "ditch leaping", zh: "跨越壕溝"}}
+  - {youtube: HlIrxVxepuo, title: {en: "obstacle leaping", zh: "跳越障礙物"}}
+  - {youtube: 1e2REjD5ycs, title: {en: "step climbing", zh: "攀爬階梯"}}
+  - {youtube: m_1EKPbDzh4, title: {en: "running", zh: "奔跑"}}
+- title: {en: "Two-wheeled", zh: "雙輪機器人"}
   videos:
-  - {youtube: nQqO3KuNO5Y, title: "Human following"}
-  - {youtube: t-uwcSz49K8, title: "frameborder=\"0\" allowfullscreen> Target following"}
+  - {youtube: nQqO3KuNO5Y, title: {en: "Human following", zh: "跟隨人員"}}
+  - {youtube: t-uwcSz49K8, title: {en: "Target following", zh: "跟隨目標"}}

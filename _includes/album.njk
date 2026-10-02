@@ -1,12 +1,12 @@
 {# Full albums are on the lab NAS (Synology Photos); url is the share link, empty until set. #}
 {%- for s in albums %}
-<h2>{{ s.section }}</h2>
+<h2>{{ s.section | localize(lang) }}</h2>
 <ul class="albums">
   {%- for a in s.albums %}
   <li>
     {%- if a.url %}<a href="{{ a.url }}">{% endif %}
     <img src="/{{ a.cover }}" alt="" loading="lazy">
-    <span>{{ a.title }}</span>
+    <span>{{ a.title | localize(lang) }}</span>
     {%- if a.url %}</a>{% endif %}
   </li>
   {%- endfor %}
