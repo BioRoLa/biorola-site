@@ -632,6 +632,9 @@ a.hex:focus-visible { --edge: var(--focus); outline: none; }
 
   .content { padding: 0.5rem 1rem 1.5rem; font-size: 1rem; }
 
+  /* The whole banner would be too small to read; show its logo end, larger. */
+  .masthead img { height: 7.5rem; object-fit: cover; object-position: 100% 50%; mask-image: none; }
+
   /* Home: just the slideshow. The 28 tiles are 14 pages twice over and too many
      for a phone; the menu links to all of them. */
   .ring { aspect-ratio: auto !important; }
