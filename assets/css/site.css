@@ -249,6 +249,7 @@ a:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 .project__years { font-weight: normal; color: var(--muted); }
 .project__photo { display: block; max-width: 550px; width: 100%; margin: 0.5rem auto 1rem; }
 .coming-soon { color: var(--muted); }
+.note { background: #fff7d6; border-left: 4px solid #e0b000; padding: 0.5rem 0.75rem; }
 
 .videos { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; }
 .video { margin: 0; }
