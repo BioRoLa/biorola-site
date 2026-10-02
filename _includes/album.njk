@@ -5,7 +5,7 @@
   {%- for a in s.albums %}
   <li>
     {%- if a.url %}<a href="{{ a.url }}">{% endif %}
-    <img src="/{{ a.cover }}" alt="" loading="lazy">
+    <img src="/{{ a.cover }}" alt="" sizes="(max-width: 639px) 50vw, 240px">
     <span>{{ a.title | localize(lang) }}</span>
     {%- if a.url %}</a>{% endif %}
   </li>

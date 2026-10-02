@@ -1,7 +1,7 @@
 {%- set m = member %}
 <div class="profile">
   {%- if m.photo %}
-  <img class="profile__photo" src="/membersinfo/{{ m.photo }}" alt="{{ m.name[lang] or m.name.en }}">
+  <img class="profile__photo" src="/membersinfo/{{ m.photo }}" sizes="280px" alt="{{ m.name[lang] or m.name.en }}">
   {%- else %}
   <div class="profile__photo profile__photo--none">{{ i18n.no_photo[lang] }}</div>
   {%- endif %}

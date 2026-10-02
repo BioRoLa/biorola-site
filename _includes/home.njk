@@ -2,13 +2,13 @@
 <div class="ring" style="aspect-ratio: {{ home.ring.width }} / {{ home.ring.height }}; --tile: {{ home.ring.tile }}%">
   {%- for t in home.tiles %}
   <a class="tile" href="{{ t.url | langUrl(lang) }}" style="left: {{ t.x }}%; top: {{ t.y }}%">
-    <img src="{{ t.img }}" alt="{{ nav | navLabel(t.url, lang) }}" width="159" height="139">
-    <img class="tile__hover" src="{{ t.hover }}" alt="" width="159" height="139">
+    <img src="{{ t.img }}" alt="{{ nav | navLabel(t.url, lang) }}" width="159" height="139" sizes="(max-width: 639px) 25vw, 130px">
+    <img class="tile__hover" src="{{ t.hover }}" alt="" width="159" height="139" sizes="(max-width: 639px) 25vw, 130px">
   </a>
   {%- endfor %}
   <div class="slideshow" aria-label="{{ '研究成果照片' if lang == 'zh' else 'Our robots' }}" role="img">
     {%- for s in home.slides %}
-    <img src="{{ s.img }}" alt="{{ s.caption }}" style="--i: {{ loop.index0 }}"{% if not loop.first %} loading="lazy"{% endif %}>
+    <img src="{{ s.img }}" alt="{{ s.caption }}" style="--i: {{ loop.index0 }}" sizes="(max-width: 639px) 100vw, 540px"{% if loop.first %} loading="eager" fetchpriority="high"{% endif %}>
     {%- endfor %}
   </div>
 </div>

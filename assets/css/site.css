@@ -41,6 +41,8 @@ body {
 }
 
 img { max-width: 100%; height: auto; }
+/* The image plugin wraps images in <picture>; lay them out as if it weren't there. */
+picture { display: contents; }
 
 a { color: var(--link); }
 :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }

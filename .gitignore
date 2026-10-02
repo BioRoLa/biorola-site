@@ -16,3 +16,4 @@ movie/
 
 # Incoming students' personal data forms (source material only, never publish)
 新生資料/
+.cache

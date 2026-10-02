@@ -2,7 +2,7 @@
 {%- for p in projects %}
 <section class="project">
   <h2>{{ p.name_zh if (lang == "zh" and p.name_zh) else p.name }}{% if p.years %} <span class="project__years">({{ p.years | replace("now", "至今") if lang == "zh" else p.years }})</span>{% endif %}</h2>
-  {%- if p.photo %}<img class="project__photo" src="{{ p.photo }}" alt="{{ p.name }}"{% if not loop.first %} loading="lazy"{% endif %}>{% endif %}
+  {%- if p.photo %}<img class="project__photo" src="{{ p.photo }}" alt="{{ p.name }}" sizes="(max-width: 639px) 100vw, 550px">{% endif %}
   {%- set primary = p[lang] or p.en or p.zh %}
   {%- set primaryLang = lang if p[lang] else ('en' if p.en else 'zh') %}
   <div{% if primaryLang != lang %} lang="{{ 'zh-Hant-TW' if primaryLang == 'zh' else 'en' }}"{% endif %}>{{ primary | md | safe }}</div>

@@ -18,6 +18,6 @@
 {%- endif %}
 <div class="group-photos">
   {%- for f in ['alums_r10.JPG', 'alums_r09.JPG', 'alums_r08.JPG', 'alums_r07.JPG', 'alums_r05.jpg', 'alums_r04.JPG', 'alums_r02.JPG', 'alums_r99.JPG', 'alums_r98.JPG'] %}
-  <img src="/membersinfo/profile/{{ f }}" alt="{{ '畢業生合照' if lang == 'zh' else 'Graduating class photo' }}" loading="lazy">
+  <img src="/membersinfo/profile/{{ f }}" alt="{{ '畢業生合照' if lang == 'zh' else 'Graduating class photo' }}" sizes="(max-width: 639px) 100vw, 320px">
   {%- endfor %}
 </div>

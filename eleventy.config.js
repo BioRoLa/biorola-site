@@ -4,6 +4,7 @@ import path from "node:path";
 import yaml from "js-yaml";
 import MarkdownIt from "markdown-it";
 import { HtmlBasePlugin } from "@11ty/eleventy";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { honeycomb, langUrl, navLabel } from "./_includes/nav.js";
 import { alumniByYear, currentStudents, formerMembers, listPageFor, staffList } from "./_includes/members.js";
 
@@ -25,6 +26,21 @@ const NOT_LEGACY = [
 export default function (eleventyConfig) {
   eleventyConfig.addDataExtension("yml,yaml", (contents) => yaml.load(contents));
   eleventyConfig.addPlugin(HtmlBasePlugin);
+
+  // Every <img> in a generated page becomes a <picture> with WebP and original-format
+  // copies at several widths (originals keep their URLs). Templates give a `sizes`
+  // hint so browsers fetch the smallest copy that looks sharp. Legacy pages copied
+  // through unchanged aren't touched.
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    formats: ["webp", "auto"],
+    widths: [160, 320, 640, 960, 1600],
+    urlPath: "/img/",
+    outputDir: "_site/img/",
+    failOnError: true,
+    htmlOptions: {
+      imgAttributes: { loading: "lazy", decoding: "async", sizes: "(max-width: 1200px) 100vw, 1000px" },
+    },
+  });
 
   // The legacy site is copied through untouched. Only git-tracked files are
   // published, so ignored server software and secrets (.ssh/, phpMyAdmin/)
