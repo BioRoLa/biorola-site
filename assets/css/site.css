@@ -364,14 +364,16 @@ main:focus { outline: none; }
 .tile:focus-visible { outline: 3px solid var(--focus); outline-offset: -6px; }
 
 /* Seven slides, 6s each, fading with a slow zoom (the old Ken Burns effect).
-   As on the original site, the photo is 750x450 in the 917x624 ring and sits
-   under the tiles, filling the whole centre and showing between the hexagons. */
+   The photo sits under the tiles with its edges along the middle of the tile
+   rows, so it fills the whole centre with no black between the hexagons. The
+   bottom corners are cut because no tile covers them. */
 .slideshow {
   position: absolute;
-  left: 9.1%;
-  top: 11.2%;
-  width: 81.8%;
-  height: 72.1%;
+  left: 6%;
+  top: 11%;
+  width: 88%;
+  height: 77%;
+  clip-path: polygon(0 0, 100% 0, 100% 89.6%, 93.2% 100%, 6.8% 100%, 0 89.6%);
   overflow: hidden;
   background: #000;
 }
@@ -626,7 +628,7 @@ a.hex:focus-visible { --edge: var(--focus); outline: none; }
      for a phone; the menu links to all of them. */
   .ring { aspect-ratio: auto !important; }
   .tile { display: none; }
-  .slideshow { position: relative; left: auto; top: auto; width: auto; height: auto; aspect-ratio: 5 / 3; }
+  .slideshow { position: relative; left: auto; top: auto; width: auto; height: auto; aspect-ratio: 5 / 3; clip-path: none; }
 
   .theses tr { display: grid; grid-template-columns: auto 1fr; padding: 0.4rem 0; border-bottom: 1px solid var(--border); }
   .theses td { border: 0; padding: 0 0.5rem 0 0; }
