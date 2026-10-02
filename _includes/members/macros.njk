@@ -1,0 +1,10 @@
+{# Name as shown in lists: "Yu-Lin Chu (朱佑麟)" in English, "朱佑麟 Yu-Lin Chu" in Chinese. #}
+{% macro name(m, lang) -%}
+{%- if lang == 'zh' and m.name.zh %}{{ m.name.zh }} <span lang="en">{{ m.name.en }}</span>
+{%- elif m.name.zh %}{{ m.name.en }} <span lang="zh-Hant-TW">({{ m.name.zh }})</span>
+{%- else %}{{ m.name.en }}{% endif %}
+{%- endmacro %}
+
+{% macro link(m, lang) -%}
+<a href="{{ ('membersinfo/' ~ m.id ~ '.html') | langUrl(lang) }}">{{ name(m, lang) }}</a>
+{%- endmacro %}

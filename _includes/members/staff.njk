@@ -1,0 +1,9 @@
+{%- from "members/macros.njk" import link %}
+<ul class="staff">
+  {%- for s in members | staffList %}
+  <li>
+    <span class="staff__role">{{ i18n.roles[s.role][lang] or s.role }}, {{ s.period }}</span>
+    {{ link(s.person, lang) }}
+  </li>
+  {%- endfor %}
+</ul>

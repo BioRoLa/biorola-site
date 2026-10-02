@@ -57,6 +57,9 @@ export function pageData(lang) {
     layout: "layouts/page.njk",
     permalink: (data) => langUrl(`${data.page.fileSlug}.html`, lang),
     eleventyComputed: {
+      // Path without the language prefix, used to link the other language.
+      pageUrl: (data) => `${data.page.fileSlug}.html`,
+      // Nav entry to highlight; pages outside the nav (profiles) point at their list.
       navUrl: (data) => `${data.page.fileSlug}.html`,
       // A page's own `title` front matter wins over its nav label.
       pageTitle: (data) => data.title ?? findInNav(data.nav, data.navUrl)?.page.label[lang],

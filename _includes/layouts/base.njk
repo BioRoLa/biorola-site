@@ -6,8 +6,8 @@
   <title>{% if pageTitle %}{{ pageTitle }} | {% endif %}{{ site.short_name }} {{ site.name[lang] }}</title>
   <link rel="icon" href="/pic/home/favicon.ico">
   <link rel="stylesheet" href="/assets/css/site.css">
-  <link rel="alternate" hreflang="zh-Hant-TW" href="{{ navUrl | langUrl('zh') }}">
-  <link rel="alternate" hreflang="en" href="{{ navUrl | langUrl('en') }}">
+  <link rel="alternate" hreflang="zh-Hant-TW" href="{{ pageUrl | langUrl('zh') }}">
+  <link rel="alternate" hreflang="en" href="{{ pageUrl | langUrl('en') }}">
 </head>
 <body>
   <div class="frame">
@@ -47,9 +47,9 @@
         {%- endfor %}
         <li class="menu__lang">
           {%- if lang == 'zh' %}
-          <a href="{{ navUrl | langUrl('en') }}" hreflang="en" lang="en">English</a>
+          <a href="{{ pageUrl | langUrl('en') }}" hreflang="en" lang="en">English</a>
           {%- else %}
-          <a href="{{ navUrl | langUrl('zh') }}" hreflang="zh-Hant-TW" lang="zh-Hant-TW">中文</a>
+          <a href="{{ pageUrl | langUrl('zh') }}" hreflang="zh-Hant-TW" lang="zh-Hant-TW">中文</a>
           {%- endif %}
         </li>
       </ul>

@@ -3,6 +3,7 @@ import path from "node:path";
 import yaml from "js-yaml";
 import { HtmlBasePlugin } from "@11ty/eleventy";
 import { honeycomb, langUrl } from "./_includes/nav.js";
+import { alumniByYear, currentStudents, listPageFor, staffList } from "./_includes/members.js";
 
 // Not part of the legacy site: repo tooling, and sources for the new pages.
 const NOT_LEGACY = [
@@ -42,6 +43,14 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("langUrl", langUrl);
   // {% set hc = nav | honeycomb(navUrl, lang) %}
   eleventyConfig.addFilter("honeycomb", honeycomb);
+
+  // Member lists, from _data/members.yml
+  eleventyConfig.addFilter("currentStudents", currentStudents);
+  eleventyConfig.addFilter("alumniByYear", alumniByYear);
+  eleventyConfig.addFilter("staffList", staffList);
+  eleventyConfig.addFilter("listPageFor", listPageFor);
+  // Data fields may be a string or a list of strings.
+  eleventyConfig.addFilter("asList", (v) => (v == null ? [] : Array.isArray(v) ? v : [v]));
 
   return {
     // Legacy .html is passthrough, not a template, so Liquid never touches it.

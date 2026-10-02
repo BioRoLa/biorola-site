@@ -1,0 +1,24 @@
+# Interface text used by templates: {{ i18n.<key>[lang] }}
+
+# Member profile fields
+position: { en: "Position", zh: "負責項目" }
+research: { en: "Research", zh: "研究主題" }
+thesis: { en: "Thesis", zh: "學位論文" }
+job: { en: "Job", zh: "現職" }
+hobby: { en: "Hobby", zh: "興趣" }
+email: { en: "Email", zh: "電子信箱" }
+graduated: { en: "Graduated", zh: "畢業" }
+
+# Member lists
+phd_students: { en: "Ph.D. students", zh: "博士班" }
+ms_students: { en: "Master's students", zh: "碩士班" }
+phd_degree: { en: "Ph.D. Degree", zh: "博士" }
+ms_degree: { en: "Master's Degree", zh: "碩士" }
+no_photo: { en: "No photo yet", zh: "尚無照片" }
+
+# Staff roles (members.yml stores the English name)
+roles:
+  "Administrative Assistant": { en: "Administrative Assistant", zh: "行政助理" }
+  "Administrative Associate": { en: "Administrative Associate", zh: "行政專員" }
+  "Research Assistant": { en: "Research Assistant", zh: "研究助理" }
+  "Research Associate": { en: "Research Associate", zh: "研究專員" }

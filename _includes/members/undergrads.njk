@@ -1,0 +1,11 @@
+{# Project teams; `projects` is undergrads.current or undergrads.alumni. #}
+<ul class="projects">
+  {%- for p in projects %}
+  <li>
+    <h2>{{ p.project }}</h2>
+    {%- for t in p.teams %}
+    <p><span class="cohort">{{ t.cohort }}</span>{% if t.label %} {{ t.label }}:{% endif %} {{ t.names | join('、') }}</p>
+    {%- endfor %}
+  </li>
+  {%- endfor %}
+</ul>

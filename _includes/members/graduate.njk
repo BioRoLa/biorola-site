@@ -1,0 +1,12 @@
+{%- from "members/macros.njk" import link %}
+<figure class="group-photo">
+  <img src="/membersinfo/profile/stu_welcome10.JPG" alt="{{ '實驗室成員合照' if lang == 'zh' else 'Lab group photo' }}">
+</figure>
+{%- for degree in ['phd', 'ms'] %}
+<h2>{{ i18n[degree ~ '_students'][lang] }}</h2>
+<ul class="people">
+  {%- for m in members | currentStudents(degree) %}
+  <li>{{ link(m, lang) }}</li>
+  {%- endfor %}
+</ul>
+{%- endfor %}

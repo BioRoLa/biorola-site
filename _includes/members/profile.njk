@@ -1,0 +1,29 @@
+{%- set m = member %}
+<div class="profile">
+  {%- if m.photo %}
+  <img class="profile__photo" src="/membersinfo/{{ m.photo }}" alt="{{ m.name[lang] or m.name.en }}">
+  {%- else %}
+  <div class="profile__photo profile__photo--none">{{ i18n.no_photo[lang] }}</div>
+  {%- endif %}
+  <dl class="profile__fields">
+    {%- for g in m.graduated | default([]) %}
+    <dt>{{ i18n.graduated[lang] }}</dt><dd>{{ i18n[g.degree ~ '_degree'][lang] }}, {{ g.year }}</dd>
+    {%- endfor %}
+    {%- for s in m.staff | default([]) %}
+    <dt>{{ i18n.roles[s.role][lang] or s.role }}</dt><dd>{{ s.period }}</dd>
+    {%- endfor %}
+    {%- for field in ['position', 'research', 'thesis', 'job', 'hobby'] %}
+    {%- if m[field] %}
+    <dt>{{ i18n[field][lang] }}</dt>
+    <dd>
+      {%- if m[field].en %}{{ m[field].en }}<br><span lang="zh-Hant-TW">{{ m[field].zh }}</span>
+      {%- else %}{% for line in m[field] | asList %}{{ line }}{% if not loop.last %}<br>{% endif %}{% endfor %}{% endif -%}
+    </dd>
+    {%- endif %}
+    {%- endfor %}
+    {%- if m.email %}
+    <dt>{{ i18n.email[lang] }}</dt>
+    <dd>{% for e in m.email | asList %}<a href="mailto:{{ e }}">{{ e }}</a>{% if not loop.last %}<br>{% endif %}{% endfor %}</dd>
+    {%- endif %}
+  </dl>
+</div>

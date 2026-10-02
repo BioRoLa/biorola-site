@@ -1,0 +1,13 @@
+---
+# One profile page per person in _data/members.yml.
+pagination:
+  data: members
+  size: 1
+  alias: member
+permalink: "membersinfo/{{ member.id }}.html"
+eleventyComputed:
+  pageUrl: "membersinfo/{{ member.id }}.html"
+  navUrl: "{{ member | listPageFor }}"
+  pageTitle: "{{ member.name.zh or member.name.en }}"
+---
+{% include "members/profile.njk" %}

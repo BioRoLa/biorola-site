@@ -117,6 +117,51 @@ a:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 .accent-orange { color: #c93; font-size: 1.5em; }
 .accent-green { color: #0c6; font-size: 1.5em; }
 
+/* ---------- Members ---------- */
+
+.content h2 { font-size: 1.1rem; margin: 1.4rem 0 0.4rem; }
+
+.people {
+  columns: 2 16em;
+  column-gap: 2rem;
+  margin: 0;
+  padding-left: 1.2rem;
+}
+.people li { break-inside: avoid; }
+
+.group-photo { margin: 0 0 1rem; }
+.group-photo img,
+.director-photo img { display: block; width: 100%; max-width: 568px; margin: 0 auto; }
+
+.group-photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+.group-photos img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+
+.staff { list-style: none; padding: 0; }
+.staff li { margin-bottom: 0.6rem; }
+.staff__role { display: block; color: var(--muted); font-size: 0.9em; }
+
+.projects { list-style: none; padding: 0; }
+.projects h2 { margin-top: 1.2rem; }
+.projects p { margin: 0.2rem 0; }
+.cohort { display: inline-block; min-width: 3em; font-weight: bold; color: var(--muted); }
+
+.profile { display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: flex-start; }
+.profile__photo { width: 280px; max-width: 100%; height: auto; }
+.profile__photo--none {
+  display: flex; align-items: center; justify-content: center;
+  aspect-ratio: 7 / 8; background: #eee; color: var(--muted);
+}
+.profile__fields { flex: 1 1 16em; margin: 0; }
+.profile__fields dt { font-weight: bold; margin-top: 0.6rem; }
+.profile__fields dd { margin: 0; overflow-wrap: anywhere; }
+
+.contact-list { padding-left: 1.2rem; }
+
 /* ---------- Hexagon sidebar ---------- */
 
 .honeycomb {
