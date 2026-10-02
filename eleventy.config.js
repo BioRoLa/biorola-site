@@ -33,7 +33,7 @@ export default function (eleventyConfig) {
   // through unchanged aren't touched.
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     formats: ["webp", "auto"],
-    widths: [160, 320, 640, 960, 1600],
+    widths: [160, 320, 640, 960, 1600, "auto"],   // "auto" = the original's own width
     urlPath: "/img/",
     outputDir: "_site/img/",
     failOnError: true,
