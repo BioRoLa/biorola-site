@@ -31,6 +31,7 @@ jobs:
       # base_path is "/biorola-site" on <org>.github.io and "" once the custom domain is set.
       - run: npx @11ty/eleventy --pathprefix="${{ steps.pages.outputs.base_path }}/"
       - run: node scripts/check-urls.mjs
+      - run: node scripts/check-links.mjs
       - if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v5
         with:
