@@ -12,3 +12,15 @@
     {%- endfor %}
   </div>
 </div>
+<section class="latest" aria-labelledby="latest-title">
+  <h2 id="latest-title">{{ i18n.latest_news[lang] }}</h2>
+  <ul class="news">
+    {%- for item in news | latestNews(3) %}
+    {%- set text = item.en if (lang == 'en' and item.en) else item.text %}
+    <li{% if lang == 'en' and not item.en %} lang="zh-Hant-TW"{% endif %}>
+      {%- if item.date %}<span class="news__date">{{ item.date }}</span> {% endif %}{{ text | mdInline | safe -}}
+    </li>
+    {%- endfor %}
+  </ul>
+  <p><a href="{{ 'news.html' | langUrl(lang) }}">{{ i18n.all_news[lang] }} →</a></p>
+</section>

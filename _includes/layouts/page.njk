@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 ---
 {%- set hc = nav | honeycomb(navUrl, lang) %}
-<div class="page">
+<div class="page{% if not hc %} page--wide{% endif %}">
   {%- if hc %}
   <nav class="honeycomb" style="--rows: {{ hc.rows }}" aria-label="{{ '本區選單' if lang == 'zh' else 'In this section' }}">
     {%- for c in hc.cells %}

@@ -110,6 +110,27 @@ export default function (eleventyConfig) {
       .replace(/present/i, "至今");
   });
 
+  // {{ list | findBy("id", "research") }}: first item whose field equals the value.
+  eleventyConfig.addFilter("findBy", (list, field, value) => (list ?? []).find((x) => x?.[field] === value));
+
+  // First sentence of a Markdown description, for cards.
+  eleventyConfig.addFilter("excerpt", (text, max = 140) => {
+    const plain = String(text ?? "").replace(/\[([^\]]*)\]\([^)]*\)/g, "$1").replace(/[*_`#>]/g, "").replace(/\s+/g, " ").trim();
+    const sentence = plain.match(/^.+?[.。!?！？](?=\s|$)/)?.[0] ?? plain;
+    return sentence.length > max ? sentence.slice(0, max - 1).trimEnd() + "…" : sentence;
+  });
+
+  // Newest news items across sections: announcements first, then by date
+  // ("2025.08.01" before an undated-in-year "2025").
+  eleventyConfig.addFilter("latestNews", (news, n = 3) => {
+    const key = (d) => {
+      const [y = 0, m = 0, day = 0] = String(d ?? "").split(".").map(Number);
+      return y * 10000 + (m || 0) * 100 + (day || 0) - (m ? 0 : 0.5);
+    };
+    const dated = [...(news.welcomes ?? []), ...(news.honors ?? [])].sort((a, b) => key(b.date) - key(a.date));
+    return [...(news.announcements ?? []), ...dated].slice(0, n);
+  });
+
   // Data fields may be a string or a list of strings.
   eleventyConfig.addFilter("asList", (v) => (v == null ? [] : Array.isArray(v) ? v : [v]));
 

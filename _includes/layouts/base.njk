@@ -70,12 +70,19 @@
     </main>
 
     <footer class="footer">
-      <p>{{ site.address[lang] }}</p>
-      <p>
-        {{ 'Lab phone' if lang == 'en' else '實驗室電話' }}: {{ site.phone }}
-        · Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-      </p>
-      <p>© {{ build.year }} {{ site.name[lang] }}, {{ site.affiliation[lang] }}</p>
+      <div class="footer__cols">
+        <p>
+          <strong>{{ site.short_name }} · {{ site.name[lang] }}</strong><br>
+          {{ site.affiliation[lang] }}<br>
+          {{ site.address[lang] }}
+        </p>
+        <p>
+          {{ 'Lab phone' if lang == 'en' else '實驗室電話' }}: {{ site.phone }}<br>
+          Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a><br>
+          <a href="{{ 'aboutus_contactus.html' | langUrl(lang) }}">{{ '聯絡我們' if lang == 'zh' else 'Contact us' }}</a>
+        </p>
+      </div>
+      <p class="footer__copy">© {{ build.year }} {{ site.name[lang] }}</p>
     </footer>
   </div>
 </body>

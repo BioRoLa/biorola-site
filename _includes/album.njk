@@ -1,13 +1,18 @@
 {# Full albums are on the lab NAS (Synology Photos); url is the share link, empty until set. #}
+{%- set missing = 0 %}
+{%- for s in albums %}{% for a in s.albums %}{% if not a.url %}{% set missing = missing + 1 %}{% endif %}{% endfor %}{% endfor %}
+{%- if missing %}
+<p class="note">{{ '完整相簿的連結準備中，目前僅顯示封面。' if lang == 'zh' else 'Links to the full albums are coming soon; for now only the covers are shown.' }}</p>
+{%- endif %}
 {%- for s in albums %}
 <h2>{{ s.section | localize(lang) }}</h2>
-<ul class="albums">
+<ul class="cards cards--albums">
   {%- for a in s.albums %}
   <li>
-    {%- if a.url %}<a href="{{ a.url }}">{% endif %}
-    <img src="/{{ a.cover }}" alt="" sizes="(max-width: 639px) 50vw, 240px">
-    <span>{{ a.title | localize(lang) }}</span>
-    {%- if a.url %}</a>{% endif %}
+    {%- if a.url %}<a class="album-card" href="{{ a.url }}">{% else %}<div class="album-card">{% endif %}
+    <img src="/{{ a.cover }}" alt="" sizes="(max-width: 639px) 50vw, 260px">
+    <span class="album-card__title">{{ a.title | localize(lang) }}</span>
+    {%- if a.url %}</a>{% else %}</div>{% endif %}
   </li>
   {%- endfor %}
 </ul>

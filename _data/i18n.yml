@@ -34,3 +34,7 @@ book_chapters: { en: "Book Chapters", zh: "專書章節" }
 invited: { en: "Invited / Non-refereed Articles", zh: "邀稿及非審查文章" }
 director_theses: { en: "Director", zh: "指導教授" }
 student_theses: { en: "Students", zh: "學生" }
+
+# Home
+latest_news: { en: "Latest news", zh: "最新消息" }
+all_news: { en: "All news", zh: "所有消息" }

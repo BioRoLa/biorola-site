@@ -51,6 +51,7 @@
 
 - id: research
   label: { en: "Research", zh: "研究" }
+  url: research.html
   groups:
     - label: { en: "Legged Robots", zh: "足式機器人" }
       color: blue

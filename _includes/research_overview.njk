@@ -1,0 +1,29 @@
+{# Research overview: one card per robot page in the nav, grouped like the menu. #}
+{%- set section = nav | findBy("id", "research") %}
+{%- for group in section.groups %}
+<h2>{{ group.label[lang] }}</h2>
+<ul class="cards cards--research">
+  {%- for p in group.pages %}
+  {%- set projects = research[p.url] | default([]) %}
+  {%- set tile = home.tiles | findBy("url", p.url) %}
+  <li>
+    <a class="research-card hex--{{ group.color }}" href="{{ p.url | langUrl(lang) }}">
+      {%- if projects | length and projects[0].photo %}
+      <img class="research-card__photo" src="{{ projects[0].photo }}" alt="" sizes="(max-width: 639px) 100vw, 320px">
+      {%- elif tile %}
+      <span class="research-card__icon"><img src="{{ tile.img }}" alt="" width="159" height="139" sizes="110px"></span>
+      {%- endif %}
+      <span class="research-card__body">
+        <span class="research-card__title">{{ p.label[lang] }}</span>
+        {%- if projects | length %}
+        <span class="research-card__robots">{% for r in projects %}{{ r.name_zh if (lang == 'zh' and r.name_zh) else r.name }}{% if not loop.last %} · {% endif %}{% endfor %}</span>
+        <span class="research-card__text">{{ (projects[0][lang] or projects[0].en or projects[0].zh) | excerpt }}</span>
+        {%- else %}
+        <span class="research-card__text">{{ '內容準備中' if lang == 'zh' else 'Coming soon' }}</span>
+        {%- endif %}
+      </span>
+    </a>
+  </li>
+  {%- endfor %}
+</ul>
+{%- endfor %}

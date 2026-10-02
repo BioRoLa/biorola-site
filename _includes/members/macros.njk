@@ -8,3 +8,18 @@
 {% macro link(m, lang) -%}
 <a href="{{ ('membersinfo/' ~ m.id ~ '.html') | langUrl(lang) }}">{{ name(m, lang) }}</a>
 {%- endmacro %}
+
+{# Photo card for the current students page. #}
+{% macro card(m, lang) -%}
+{%- set primary = m.name[lang] or m.name.en %}
+{%- set secondary = m.name.en if lang == 'zh' else m.name.zh %}
+<a class="person-card" href="{{ ('membersinfo/' ~ m.id ~ '.html') | langUrl(lang) }}">
+  {%- if m.photo %}
+  <img src="/membersinfo/{{ m.photo }}" alt="" sizes="(max-width: 639px) 45vw, 200px">
+  {%- else %}
+  <span class="person-card__nophoto" aria-hidden="true">{{ primary | first }}</span>
+  {%- endif %}
+  <span class="person-card__name">{{ primary }}</span>
+  {%- if secondary %}<span class="person-card__alt" lang="{{ 'en' if lang == 'zh' else 'zh-Hant-TW' }}">{{ secondary }}</span>{% endif %}
+</a>
+{%- endmacro %}
