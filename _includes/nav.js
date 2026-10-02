@@ -1,7 +1,7 @@
 // Lookups over _data/nav.yml, shared by eleventy.config.js and page data files.
 
-// Hexagon sidebar height in rows; sections with more items grow past it.
-const SIDEBAR_ROWS = 7;
+// Rows of dark filler hexagons below the last link, to round off the honeycomb.
+const FILLER_ROWS = 1;
 
 export function findInNav(nav, url) {
   for (const section of nav) {
@@ -41,7 +41,7 @@ export function honeycomb(nav, url, lang) {
     });
   });
 
-  const rows = Math.max(SIDEBAR_ROWS, section.groups.length, groupIndex + pages.length);
+  const rows = Math.max(section.groups.length, groupIndex + pages.length) + FILLER_ROWS;
   for (let col = 0; col < 2; col++) {
     for (let row = 0; row < rows; row++) {
       if (!cells.some((c) => c.col === col && c.row === row)) cells.push({ col, row, filler: true });

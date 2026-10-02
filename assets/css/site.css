@@ -226,7 +226,6 @@ main:focus { outline: none; }
 
 .content {
   background: var(--content-bg);
-  min-height: calc(var(--hex-step) * 7.5 + 0.625rem);
   /* Content is at most 66rem wide, next to the hexagons; extra width goes on the right. */
   --pad: clamp(1rem, 3vw, 2.5rem);
   padding: 0.5rem max(var(--pad), 100% - 66rem - var(--pad)) 2.5rem var(--pad);
