@@ -1,8 +1,11 @@
-/* BioRoLa site styles. Recreates the original 900px black frame, grey menu,
-   and hexagon sidebar (formerly one PNG per page) in plain CSS. */
+/* BioRoLa site styles. Keeps the original black frame, grey menu and hexagon
+   sidebar (formerly one PNG per page), with a fluid layout:
+     desktop  >= 1024px  hexagon sidebar beside the content
+     tablet   640-1023px hexagons in a row above the content
+     phone    < 640px    section links as pills; the menu collapses below 900px */
 
 :root {
-  --frame: 900px;
+  --frame: 1200px;
   --menu-bg: #ccc;
   --menu-hover: #666;
   --content-bg: #fff;
@@ -19,7 +22,8 @@
   --hex-border: 3px;
   --hex-filler: #0f233e;
 
-  font-family: Arial, Helvetica, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans TC", "PingFang TC",
+    "Microsoft JhengHei", Arial, sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -39,12 +43,26 @@ body {
 img { max-width: 100%; height: auto; }
 
 a { color: var(--link); }
-a:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+
+.skip-link {
+  position: absolute;
+  left: 0.5rem;
+  top: -3rem;
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  background: var(--focus);
+  color: #000;
+  font-weight: bold;
+}
+.skip-link:focus { top: 0.5rem; }
+main:focus { outline: none; }
 
 /* ---------- Masthead ---------- */
 
 .masthead a { display: block; }
-.masthead img { display: block; width: 100%; }
+/* The banner is 2055x389; cap it so it doesn't dominate wide screens. */
+.masthead img { display: block; width: 100%; max-width: 1056px; margin: 0 auto; }
 
 /* ---------- Top menu ---------- */
 
@@ -55,6 +73,16 @@ a:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 .menu__bar { display: flex; flex-wrap: wrap; }
 
 .menu__item, .menu__lang { position: relative; flex: 1 1 auto; }
+/* Label and ▾ button sit together in the middle of the cell; the whole cell lights up. */
+.menu__item { display: flex; flex-wrap: wrap; justify-content: center; }
+.menu__item:hover,
+.menu__item:focus-within,
+.menu__item.is-open { background: var(--menu-hover); }
+.menu__item:hover > a,
+.menu__item:focus-within > a,
+.menu__item.is-open > a,
+.menu__item:hover > .menu__expand,
+.menu__item:focus-within > .menu__expand { color: #fff; }
 
 .menu a {
   display: block;
@@ -86,7 +114,49 @@ a:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 .menu__drop a, .menu__fly a { text-align: left; }
 
 .menu li:hover > ul,
-.menu li:focus-within > ul { display: block; }
+.menu li:focus-within > ul,
+.menu__item.is-open > ul { display: block; }
+
+/* Buttons added by menu.js; hidden when JavaScript is off. */
+.menu__toggle, .menu__expand {
+  display: none;
+  font: inherit;
+  color: #000;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.js .menu__expand { display: block; padding: 0 0.6em 0 0; margin-left: -0.6em; }
+.menu__expand:hover, .menu__item.is-open > .menu__expand { background: var(--menu-hover); color: #fff; }
+.menu__item.is-open > .menu__expand span { display: inline-block; transform: rotate(180deg); }
+
+@media (max-width: 899px) {
+  .js .menu__toggle {
+    display: block;
+    width: 100%;
+    padding: 0.6em 1em;
+    text-align: left;
+    font-weight: bold;
+  }
+  .js .menu__bar { display: none; }
+  .js .menu.is-open .menu__bar { display: block; border-top: 1px solid #999; }
+
+  .js .menu__item, .js .menu__lang { border-bottom: 1px solid #bbb; }
+  .js .menu__item { justify-content: stretch; }
+  .js .menu__item > a { flex: 1 1 auto; }
+  .js .menu__item:hover, .js .menu__item:focus-within { background: none; }
+  .js .menu__item:hover > a, .js .menu__item:focus-within > a, .js .menu__item:hover > .menu__expand { color: #000; }
+  .js .menu a:hover, .js .menu a:focus-visible { background: var(--menu-hover); color: #fff; }
+  .js .menu a { text-align: left; padding: 0.7em 1em; }
+  .js .menu__expand { padding: 0 1.2em; margin: 0; border-left: 1px solid #bbb; }
+
+  /* Submenus open inline, indented, and only by their button. */
+  .js .menu__drop, .js .menu__fly { position: static; flex-basis: 100%; box-shadow: none; background: #ddd; }
+  .js .menu__drop a { padding-left: 2em; }
+  .js .menu__fly a { padding-left: 3em; }
+  .js .menu li:hover > ul, .js .menu li:focus-within > ul { display: none; }
+  .js .menu .menu__item.is-open > ul, .js .menu .menu__item.is-open .menu__fly { display: block; }
+}
 
 /* ---------- Page: sidebar + content ---------- */
 
@@ -99,12 +169,16 @@ a:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 .content {
   background: var(--content-bg);
   min-height: calc(var(--hex-step) * 7.5 + 10px);
-  padding: 0.5rem 1.5rem 2rem;
-  line-height: 1.7;
+  padding: 0.5rem clamp(1rem, 3vw, 2.5rem) 2.5rem;
+  font-size: 1.0625rem;
+  line-height: 1.75;
 }
 
+/* Keep running text to a readable line length; grids and tables use the full width. */
+.content > :where(p, ul, ol, dl, h2, h3, blockquote) { max-width: 75ch; }
+
 .content h1 {
-  font-size: 1.4rem;
+  font-size: clamp(1.4rem, 1.1rem + 1vw, 1.8rem);
   margin: 0.6rem 0 1rem;
   padding-bottom: 0.6rem;
   border-bottom: 1px solid #999;
@@ -119,7 +193,7 @@ a:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 
 /* ---------- Members ---------- */
 
-.content h2 { font-size: 1.1rem; margin: 1.4rem 0 0.4rem; }
+.content h2 { font-size: 1.2rem; margin: 1.6rem 0 0.5rem; }
 
 .people {
   columns: 2 16em;
@@ -172,12 +246,6 @@ a:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 .theses td { vertical-align: top; padding: 0.35rem 0.5rem 0.35rem 0; border-bottom: 1px solid #eee; }
 .theses__cohort { font-weight: bold; color: var(--muted); white-space: nowrap; }
 .theses__name { white-space: nowrap; }
-
-@media (max-width: 760px) {
-  .theses tr { display: grid; grid-template-columns: auto 1fr; padding: 0.4rem 0; border-bottom: 1px solid #eee; }
-  .theses td { border: 0; padding: 0 0.5rem 0 0; }
-  .theses td:last-child { grid-column: 1 / -1; }
-}
 
 /* ---------- Home: tile ring and slideshow ---------- */
 
@@ -338,38 +406,50 @@ a.hex:focus-visible { --edge: var(--focus); outline: none; }
 .footer p { margin: 0.15rem 0; }
 .footer a { color: #fff; }
 
-/* ---------- Narrow screens ---------- */
+/* ---------- Tablet: hexagons in a row above the content ---------- */
 
-@media (max-width: 760px) {
+@media (max-width: 1023px) {
   .page { display: block; }
 
   .honeycomb {
     height: auto;
     margin: 0;
-    padding: 0.5rem;
+    padding: 0.75rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.4rem;
+    gap: 0.3rem 0.15rem;
   }
+  .hex { position: relative; left: auto; top: auto; flex: none; }
+  .hex--filler { display: none; }
+
+  .content { min-height: 0; }
+}
+
+/* ---------- Phone: section links as pills ---------- */
+
+@media (max-width: 639px) {
+  .honeycomb { gap: 0.4rem; padding: 0.6rem; }
 
   .hex {
-    position: static;
     width: auto;
     height: auto;
-    padding: 0.4rem 0.8rem;
+    padding: 0.45rem 0.9rem;
     clip-path: none;
     border-radius: 999px;
     background: var(--fill);
     font-size: 14px;
   }
   .hex::before { content: none; }
-  .hex--filler { display: none; }
   a.hex:focus-visible { outline: 3px solid var(--focus); }
 
-  .content { min-height: 0; padding: 0.5rem 1rem 1.5rem; }
+  .content { padding: 0.5rem 1rem 1.5rem; font-size: 1rem; }
 
-  .menu__item, .menu__lang { flex: 1 1 33%; }
-  .menu__drop, .menu__fly { position: static; box-shadow: none; }
-  .menu li:hover > ul { display: none; }
-  .menu li:focus-within > ul { display: block; }
+  /* Home: slideshow on top, the tiles as a grid below it. */
+  .ring { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.25rem; aspect-ratio: auto !important; padding: 0 0.5rem; }
+  .tile { position: relative; left: auto !important; top: auto !important; width: auto; }
+  .slideshow { position: relative; left: auto; top: auto; width: auto; grid-column: 1 / -1; order: -1; margin-bottom: 0.5rem; }
+
+  .theses tr { display: grid; grid-template-columns: auto 1fr; padding: 0.4rem 0; border-bottom: 1px solid #eee; }
+  .theses td { border: 0; padding: 0 0.5rem 0 0; }
+  .theses td:last-child { grid-column: 1 / -1; }
 }

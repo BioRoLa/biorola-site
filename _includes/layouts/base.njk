@@ -1,15 +1,18 @@
 <!doctype html>
-<html lang="{{ 'zh-Hant-TW' if lang == 'zh' else 'en' }}">
+<html lang="{{ 'zh-Hant-TW' if lang == 'zh' else 'en' }}" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if pageTitle %}{{ pageTitle }} | {% endif %}{{ site.short_name }} {{ site.name[lang] }}</title>
   <link rel="icon" href="/pic/home/favicon.ico">
   <link rel="stylesheet" href="/assets/css/site.css">
+  <script>document.documentElement.classList.replace("no-js", "js");</script>
+  <script src="/assets/js/menu.js" defer></script>
   <link rel="alternate" hreflang="zh-Hant-TW" href="{{ pageUrl | langUrl('zh') }}">
   <link rel="alternate" hreflang="en" href="{{ pageUrl | langUrl('en') }}">
 </head>
 <body>
+  <a class="skip-link" href="#main">{{ '跳到主要內容' if lang == 'zh' else 'Skip to content' }}</a>
   <div class="frame">
     <header class="masthead">
       <a href="{{ 'index.html' | langUrl(lang) }}">
@@ -19,12 +22,19 @@
     </header>
 
     <nav class="menu" aria-label="{{ '主選單' if lang == 'zh' else 'Main' }}">
-      <ul class="menu__bar">
+      <button class="menu__toggle" type="button" aria-expanded="false" aria-controls="menu-bar">
+        <span aria-hidden="true">☰</span> {{ '選單' if lang == 'zh' else 'Menu' }}
+      </button>
+      <ul class="menu__bar" id="menu-bar">
         {%- for section in nav %}
         {%- set first = section.url or section.groups[0].pages[0].url %}
         <li class="menu__item{% if section.id == currentSection %} is-current{% endif %}">
           <a href="{{ first | langUrl(lang) }}">{{ section.label[lang] }}</a>
           {%- set groups = section.groups | default([]) %}
+          {%- if groups | length > 1 or (groups | length == 1 and groups[0].pages | length > 1) %}
+          <button class="menu__expand" type="button" aria-expanded="false"
+                  aria-label="{{ section.label[lang] }}{{ '：展開子選單' if lang == 'zh' else ': show submenu' }}"><span aria-hidden="true">▾</span></button>
+          {%- endif %}
           {%- if groups | length > 1 %}
           <ul class="menu__drop">
             {%- for group in groups %}
@@ -55,7 +65,7 @@
       </ul>
     </nav>
 
-    <main>
+    <main id="main" tabindex="-1">
       {{ content | safe }}
     </main>
 
