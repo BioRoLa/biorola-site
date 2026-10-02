@@ -1,0 +1,961 @@
+# Lab members. Each person gets a profile page at /membersinfo/<id>.html
+# (Chinese) and /english/membersinfo/<id>.html (English).
+#
+# The member lists are generated from these fields:
+#   current: phd | ms                    -> Members > Students > Graduate
+#   graduated: [{ degree, year }]        -> Members > Alumni > M.S. Degree (newest year first)
+#   staff: [{ role, period }]            -> Members > Alumni > R.A. (newest start first)
+# Someone with none of these keeps their profile page but isn't listed.
+#
+# photo is relative to membersinfo/. Optional fields: position, research,
+# thesis ({ en, zh } or text), job, hobby, email. Any field can be a list.
+# Order within each list follows the order of this file.
+
+- id: "D13_YLChu"
+  name: {en: "Yu-Lin Chu", zh: "朱佑麟"}
+  photo: "profile/D13_YLChu.jpg"
+  position: "Hardware"
+  hobby: "Movie, Basketball, Travel"
+  email: "d08522016@ntu.edu.tw"
+  current: phd
+
+- id: "D13_YCChiu"
+  name: {en: "Ya-Chu Chiu", zh: "丘雅竹"}
+  photo: "profile/D13_YCChiu.jpg"
+  hobby: "Travel, Painting"
+  email: "d08522033@ntu.edu.tw"
+  current: phd
+
+- id: "D14_TChen"
+  name: {en: "Tao Chen", zh: "陳韜"}
+  photo: "profile/D14_TChen.jpg"
+  hobby: "Painting, Traveling"
+  email: "D10522001@ntu.edu.tw"
+  current: phd
+
+- id: "D16_CCChen"
+  name: {en: "Chun-Chieh Chen", zh: "陳俊傑"}
+  photo: "profile/D16_CCChen.jpg"
+  research: "TBD"
+  hobby: "Camping"
+  email: "D11522007@ntu.edu.tw"
+  current: phd
+
+- id: "D18_YTHuang"
+  name: {en: "Yuan-Tao Huang", zh: "黃淵濤"}
+  photo: "profile/M17_YTHuang.jpg"
+  hobby: "Cooking"
+  email: "R12522836@ntu.edu.tw"
+  current: phd
+
+- id: "D18_JWShiau"
+  name: {en: "Jau-Wen Shiau", zh: "蕭昭文"}
+  email: "_@ntu.edu.tw"
+  current: phd
+
+- id: "M18_ECTsui"
+  name: {en: "En-Chieh Tsui", zh: "崔恩傑"}
+  photo: "profile/M18_ECTsui.jpg"
+  hobby: "Animation、Movie、Basketball"
+  email: "R13522824@ntu.edu.tw"
+  current: ms
+
+- id: "M18_HCLee"
+  name: {en: "Hsin-Chen Lee", zh: "李星辰"}
+  photo: "profile/M18_HCLee.jpg"
+  hobby: "Skate-boarding, reading, building cool stuffs"
+  email: "R13522850@ntu.edu.tw"
+  current: ms
+
+- id: "M18_KJHuang"
+  name: {en: "Kuan-Jung Huang", zh: "黃冠融"}
+  photo: "profile/M18_KJHuang.jpg"
+  hobby: "Coffee , RC Airplane"
+  email: "R13522819@ntu.edu.tw"
+  current: ms
+
+- id: "M18_SLChien"
+  name: {en: "Sheng-Lun Chien", zh: "簡聖倫"}
+  photo: "profile/M18_SLChien.jpg"
+  email: "R13522822@ntu.edu.tw"
+  current: ms
+
+- id: "M18_YAXiao"
+  name: {en: "Yu-An Xiao", zh: "蕭妤安"}
+  photo: "profile/M18_YAXiao.jpg"
+  email: "R13522820@ntu.edu.tw"
+  current: ms
+
+- id: "M19_YYLai"
+  name: {en: "Yi-Yuan Lai", zh: "賴弋元"}
+  email: "R14522838@ntu.edu.tw"
+  current: ms
+
+- id: "M19_SCLin"
+  name: {en: "Shi-Cheng Lin", zh: "林士程"}
+  email: "R14522837@ntu.edu.tw"
+  current: ms
+
+- id: "M19_CHHsieh"
+  name: {en: "Chia-Heng Hsieh", zh: "謝佳亨"}
+  email: "R14522820@ntu.edu.tw"
+  current: ms
+
+- id: "M19_CMKuo"
+  name: {en: "Che-Ming Kuo", zh: "郭哲明"}
+  email: "R14522829@ntu.edu.tw"
+  current: ms
+
+- id: "M19_AlexChen"
+  name: {en: "Alex Chen", zh: "陳柏瑜"}
+  email: "R14522850@ntu.edu.tw"
+  current: ms
+
+- id: "M19_CCTsai"
+  name: {en: "Chia-Chen Tsai", zh: "蔡佳臻"}
+  email: "R14522802@ntu.edu.tw"
+  current: ms
+
+- id: "M19_TLChang"
+  name: {en: "Tsai-Lin Chang", zh: "章采霖"}
+  email: "R14522836@ntu.edu.tw"
+  current: ms
+
+- id: "D10_CLiu"
+  name: {en: "Chun Liu", zh: "劉軍"}
+  photo: "profile/D10_CLiu.jpg"
+  position: "Hardware"
+  research:
+  - "Bipedal robot"
+  - "Ballbot"
+  hobby: "Music, Philosophy"
+  email: "mygrayie@gmail.com"
+  graduated:
+  - {degree: phd, year: 2024}
+
+- id: "M16_FCKao"
+  name: {en: "Fan‐Chien Kao", zh: "高凡千"}
+  photo: "profile/M16_FCKao.jpg"
+  hobby: "聽團、畫畫、羽球"
+  email: "r11522824@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2024}
+
+- id: "M16_KLLU"
+  name: {en: "Kuan-Lun Lu", zh: "盧冠綸"}
+  photo: "profile/M16_KLLU.jpg"
+  hobby: "Photograph, Volleyball"
+  email: "guanlunlu1109@gmail.com"
+  graduated:
+  - {degree: ms, year: 2024}
+
+- id: "M16_PCHuang"
+  name: {en: "Pei-Chun Huang", zh: "黃培郡"}
+  photo: "profile/M16_PCHuang.jpg"
+  hobby: "素描"
+  email: "R11522827@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2024}
+
+- id: "M16_ZRChen"
+  name: {en: "Zhi-Ren Chen", zh: "陳致仁"}
+  photo: "profile/M16_ZRChen.jpg"
+  hobby: "Piano, Pencil Drawing, Watercolor"
+  email: "r11522816@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2024}
+
+- id: "M14_YCZhuang"
+  name: {en: "Yuan-Cheng Zhuang", zh: "莊源誠"}
+  photo: "profile/M14_YCZhuang.jpg"
+  hobby: "Traveling, Movie"
+  email: "R09522850@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2023}
+
+- id: "M15_HYWang"
+  name: {en: "Hua-Yu Wang", zh: "王華豫"}
+  photo: "profile/M15_HYWang.jpg"
+  hobby: "movie、basketball"
+  email: "r10522816@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2023}
+
+- id: "M15_GLChen"
+  name: {en: "Guan-Lun Chen", zh: "陳冠綸"}
+  photo: "profile/M15_GLChen.jpg"
+  hobby: "Volleyball"
+  email: "r10522831@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2023}
+
+- id: "M15_SYHsiao"
+  name: {en: "Shang-Ya Hsiao", zh: "蕭尚亞"}
+  photo: "profile/M15_SYHsiao.jpg"
+  email: "r10522830@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2023}
+
+- id: "M15_JXLiu"
+  name: {en: "Jia-Xin Liu", zh: "劉佳鑫"}
+  photo: "profile/M15_JXLiu.jpg"
+  hobby: "爬山、看電影"
+  email: "R10522837@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2023}
+
+- id: "M14_JYLai"
+  name: {en: "Jing-Yu Lai", zh: "賴景裕"}
+  photo: "profile/M14_JYLai.jpg"
+  hobby: "Basketball, movie, travel"
+  email: "R09522801@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2022}
+
+- id: "M14_LJChen"
+  name: {en: "Liang-Jie Chen", zh: "陳亮傑"}
+  photo: "profile/M14_LJChen.jpg"
+  hobby: "Drawing"
+  email: "Jim97272000@gmail.com"
+  graduated:
+  - {degree: ms, year: 2022}
+
+- id: "M14_YJLiu"
+  name: {en: "Yu-Ju Liu", zh: "劉育如"}
+  photo: "profile/M14_YJLiu.JPG"
+  hobby: "排球、唱歌、游泳"
+  email: "winnie1998228@gmail.com"
+  graduated:
+  - {degree: ms, year: 2022}
+
+- id: "M14_YHChen"
+  name: {en: "Yu-Ho Chen", zh: "陳予和"}
+  photo: "profile/M14_YHChen.jpg"
+  hobby: "Frisbee, Swim, Ping-Pong, Movie"
+  email: "samue119971224@gmail.com"
+  graduated:
+  - {degree: ms, year: 2022}
+
+- id: "M12_MWLiu"
+  name: {en: "Ming-Wei Liu", zh: "劉民偉"}
+  photo: "profile/M12_MWLiu.jpg"
+  position: "General Affairs"
+  hobby: "Music, Movie, Guitar"
+  email: "r07522856@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2021}
+
+- id: "M13_KCHo"
+  name: {en: "Kuang-Chan Ho", zh: "何光展"}
+  photo: "profile/M13_KCHo.jpg"
+  position: "General Affairs"
+  hobby: "baseball"
+  email: "r08522832@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2021}
+
+- id: "M13_YHLin"
+  name: {en: "Yu-Heng Lin", zh: "林郁衡"}
+  photo: "profile/M13_YHLin.jpg"
+  position: "General Affairs"
+  hobby: "Music, Hip-Hop"
+  email: "r08522824@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2021}
+
+- id: "M13_TISu"
+  name: {en: "Ting-I Su", zh: "蘇庭頤"}
+  photo: "profile/M13_TISu.jpg"
+  position: "General Affairs"
+  hobby: "Jogging, Ping-Pong, Swim, music, Movie, Tech."
+  email: "stu92116stu92116@hotmail.com.tw"
+  graduated:
+  - {degree: ms, year: 2021}
+
+- id: "M11_YHWang"
+  name: {en: "Yu-Hsun Wang", zh: "王右勛"}
+  photo: "profile/M11_YHWang.jpg"
+  position: "General Affairs"
+  research: "Robotic arm"
+  hobby: "Weight training, GUNPLA assembling"
+  email: "r06522806@gmail.com"
+  graduated:
+  - {degree: ms, year: 2021}
+
+- id: "M12_SYChen"
+  name: {en: "Hsuan-Yu Chen", zh: "陳宣妤"}
+  photo: "profile/M12_SYChen.jpg"
+  position: "Public relation affairs, Security officer"
+  research: "TurboQuad"
+  hobby: "跳舞、旅遊、哈韓"
+  email: "r07522815@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2020}
+
+- id: "M12_CHChen"
+  name: {en: "Chen-Hao Chen", zh: "陳振豪"}
+  photo: "profile/M12_CHChen.jpg"
+  position: "Hardware"
+  research: "Robotic arm"
+  hobby: "Table tennis, WeiChi"
+  email: "r07522811@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2020}
+
+- id: "M12_CHWang"
+  name: {en: "Chi-Heng Wang", zh: "王啟恆"}
+  photo: "profile/M12_CHWang.jpg"
+  position: "Networks & Hardware"
+  research: "Robotic arm"
+  hobby: "寫程式 打球健身 做音樂"
+  email: "e8853041@gmail.com"
+  graduated:
+  - {degree: ms, year: 2020}
+
+- id: "M12_JMLiao"
+  name: {en: "Jyun-Ming Liao", zh: "廖俊銘"}
+  photo: "profile/M12_JMLiao.jpg"
+  position: "Hardware(Circuit & Electronics)"
+  research: "Robotic arm"
+  hobby: "Table tennis, Music, Animation"
+  email: "r07522818@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2020}
+
+- id: "M11_CJKao"
+  name: {en: "Chih-Jan Kao", zh: "高稚然"}
+  photo: "profile/M11_CJKao.jpg"
+  position: "Hardware"
+  research: "FORHex"
+  hobby: "Craft, Reading"
+  email: "r06522820@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2019}
+
+- id: "M11_KYTseng"
+  name: {en: "Kuan-Yu Tseng", zh: "曾冠語"}
+  photo: "profile/M11_KYTseng.JPG"
+  position: "networks, hardware"
+  research:
+  - "leaping"
+  - "quadruped"
+  hobby: "Exercise"
+  email: "R06522811@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2019}
+
+- id: "M10_WSYang"
+  name: {en: "Wen-Shan Yang", zh: "楊文杉"}
+  photo: "profile/M10_WSYang.jpg"
+  position: "Hardware"
+  research:
+  - "Model Structure Modification"
+  - "Trajectory Optimization"
+  hobby: "basketball"
+  email: "r05522837@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2019}
+
+- id: "M10_WCLu"
+  name: {en: "Wei-Chun Lu", zh: "陸韋君"}
+  photo: "profile/M10_WCLu.jpg"
+  position: "Hardware"
+  research: "Twix"
+  hobby: "Exercise, Hiking, Traveling"
+  email: "r05522807@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2018}
+  staff:
+  - {role: "Research Assistant", period: "2019.Feb. -2019.July"}
+
+- id: "M10_BSChen"
+  name: {en: "Bo-Hsun Chen", zh: "陳柏勳"}
+  photo: "profile/M10_BSChen.jpg"
+  position: "Hardware"
+  research: "Dual Arm Robot"
+  hobby: "Badminton, Movie"
+  email: "r05522811@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2018}
+  staff:
+  - {role: "Research Assistant", period: "2019.Oct. -2020.June"}
+
+- id: "M10_YSChen"
+  name: {en: "Yung-Hsiu Chen", zh: "陳永修"}
+  photo: "profile/M10_YSChen.jpg"
+  position: "Public Relations"
+  research: "Robot Arm"
+  hobby: "Volleyball, Baseball, Music"
+  email: "r05522812@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2018}
+
+- id: "M10_THWang"
+  name: {en: "Ting-Hao Wang", zh: "王霆皓"}
+  photo: "profile/M10_THWang.jpg"
+  position: "Networks"
+  research: "Turboquad"
+  hobby: "Exercise, Movie"
+  email: "wtyngh@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2018}
+  staff:
+  - {role: "Research Assistant", period: "2019.Feb. -2020.Dec"}
+
+- id: "M9_YunMengLin"
+  name: {en: "Yun-Meng Lin", zh: "林筠萌"}
+  photo: "profile/M9_YunMengLin.jpg"
+  position: "Networks"
+  research: "Turboquad"
+  hobby: "Workout, Movies"
+  email: "r04522808@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2017}
+
+- id: "M9_ChungShengChen"
+  name: {en: "Chung-Sheng Chen", zh: "陳俊昇"}
+  photo: "profile/M9_ChungShengChen.jpg"
+  position: "General Affairs"
+  research: "Rhex"
+  hobby: "Photography, Biking, Guitar, Trumpet"
+  email: "r04522822@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2017}
+
+- id: "M9_WeiJheWu"
+  name: {en: "Wei-Jhe Wu", zh: "吳瑋哲"}
+  photo: "profile/M9_WeiJheWu.jpg"
+  position: "Accountant"
+  research: "Power regulation actuator"
+  hobby: "Exercise, Philosophy"
+  email: "elliott10009@yahoo.com.tw"
+  graduated:
+  - {degree: ms, year: 2017}
+
+- id: "M9_JinRongCai"
+  name: {en: "Jin-Rong Cai", zh: "蔡謹容"}
+  photo: "profile/M9_JinRongCai.jpg"
+  position: "Hardware"
+  research: "Grasp simplified-objects with simplified-grasping postures"
+  hobby: "Paint, Music"
+  email: "asddd4040@gmail.com"
+  graduated:
+  - {degree: ms, year: 2017}
+
+- id: "M9_ChiFaiWong"
+  name: {en: "Chi-Fai Wong", zh: "王智暉"}
+  photo: "profile/M9_ChiFaiWong.jpg"
+  position: "Public Relations"
+  research:
+  - "Human following"
+  - "Obstacle avoidance"
+  email: "r04522837@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2017}
+
+- id: "M8_LiYenHuang"
+  name: {en: "Li-Yen Huang", zh: "黃立言"}
+  photo: "profile/M8_LiYenHuang.jpg"
+  position: "Life"
+  research: "SCARA"
+  hobby: "Exercise, Reading"
+  email: "r02522845@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2016}
+
+- id: "M8_CLChen"
+  name: {en: "Chung-Li Chen", zh: "陳仲禮"}
+  photo: "profile/M8_CLChen.jpg"
+  research: "R-SLIP model on TWIX"
+  hobby: "Basketball"
+  email: "r03522808@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2016}
+
+- id: "M8_TsaoKangWang"
+  name: {en: "Tsao-Kang Wang", zh: "王作剛"}
+  photo: "profile/M8_TKWang.jpg"
+  research: "R-SLIP model on TWIX"
+  hobby: "Technology, Basketball, XBOX, Music"
+  email: "b99202001@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2016}
+
+- id: "M8_WTYang"
+  name: {en: "Wu-Te Yang", zh: "楊武德"}
+  photo: "profile/M8_WTYang.jpg"
+  research: "Dual-arm system"
+  hobby: "Martial arts, Jogging"
+  email: "r03522818@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2016}
+
+- id: "M8_RFtseng"
+  name: {en: "Ruei-Fa Tseng", zh: "曾瑞發"}
+  photo: "profile/M8_RFtseng.jpg"
+  hobby: "Table Tennis, Traveling"
+  email: "as9255@hotmail.com"
+  graduated:
+  - {degree: ms, year: 2016}
+
+- id: "M7_YiTungShen"
+  name: {en: "Yi-Tung Shen", zh: "沈奕彤"}
+  photo: "profile/M7_YiTungShen.jpg"
+  position: "Networks"
+  hobby: "Paint, Dance, Travel"
+  email: "r02522822@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2015}
+
+- id: "M7_HungShengLin"
+  name: {en: "Hung-Sheng Lin", zh: "林紘生"}
+  photo: "profile/M7_HungSheng.jpg"
+  position: "Public Relations"
+  hobby: "Badminton, photography"
+  email: "b98502101@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2015}
+  staff:
+  - {role: "Research Assistant", period: "2017.Jan. -2017.July"}
+
+- id: "M7_HanLin"
+  name: {en: "Tzu-Han Lin", zh: "林子涵"}
+  photo: "profile/M7_HanLin.jpg"
+  position: "Accountant"
+  hobby: "Sleep, Comic"
+  email: "b98502046@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2015}
+
+- id: "M7_BoWei"
+  name: {en: "Po-Wei Tseng", zh: "曾柏維"}
+  photo: "profile/M7_PoWei.jpg"
+  position: "Hardware"
+  hobby: "ACG"
+  email: "boyce60225@gmail.com"
+  graduated:
+  - {degree: ms, year: 2015}
+
+- id: "M6_ChunKaiHunag"
+  name: {en: "Chun-Kai Huang", zh: "黃群凱"}
+  photo: "profile/M6_ChunKaiHuang.JPG"
+  position: "Networks and General Affairs"
+  research: "Rolling SLIP running on RHex"
+  hobby: "Sports, Nature, Movies"
+  email: "r01522805@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2014}
+
+- id: "M6_ChingKaiChou"
+  name: {en: "Ching-Kai Chou", zh: "周敬凱"}
+  photo: "profile/M6_ChingKaiChou.JPG"
+  position: "Hardware"
+  research:
+  - "Tiltable two-wheel robot"
+  - "an intelligent unmanned ground vehicle"
+  - "dual arm compliant manipulation"
+  hobby: "Basketball, Travel, Photography"
+  email: "r01522801@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2014}
+
+- id: "M6_YuChenLin"
+  name: {en: "Yu-Chen Lin", zh: "林昱辰"}
+  photo: "profile/M6_YuChenLin.JPG"
+  position: "Accountant"
+  research:
+  - "Scara"
+  - "Tactile sensor"
+  hobby: "Watch NBA games, Novels, Making fun"
+  email: "r01522832@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2014}
+
+- id: "M6_ChiaJuiHu"
+  name: {en: "Chia-Jui Hu", zh: "胡家睿"}
+  photo: "profile/M6_ChiaJuiHu.JPG"
+  position: "Public Relations"
+  research:
+  - "Charicteristics of glass fiber"
+  - "Torque-Damping-SLIP"
+  hobby: "Drawing, Novels"
+  email: "r01522809@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2014}
+
+- id: "M5_GengPingRen"
+  name: {en: "Geng-Ping Ren", zh: "任耕平"}
+  photo: "profile/M5_GengPingRen.JPG"
+  position: "Accountant"
+  research:
+  - "Target following/Obstacle avoidance"
+  - "Navigation"
+  - "Sensor data fusion"
+  hobby: "Table tennis, Swimming, Travel"
+  email: "r01522805@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2013}
+
+- id: "M5_ChingPeiChen"
+  name: {en: "Ching-Pei Chen", zh: "陳慶沛"}
+  photo: "profile/M5_ChingPeiChen.jpg"
+  position: "Public Relations"
+  research:
+  - "Spherical robot"
+  - "Biped robot"
+  - "Sensor data fusion"
+  hobby: "Jogging, Photography, Writing"
+  email: "r00522810@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2013}
+
+- id: "M5_WeiHsiChen"
+  name: {en: "Wei-Hsi Chen", zh: "陳為熙"}
+  photo: "profile/M5_WeiHsiChen.jpg"
+  position: "Hardware"
+  research:
+  - "Spherical Robot"
+  - "Quadruped"
+  - "Central pattern generator"
+  hobby: "Swimming, Weight training, Magic"
+  email: "r01522805@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2013}
+
+- id: "M5_ChangHaoLin"
+  name: {en: "Chang-Hao Lin", zh: "林昌豪"}
+  photo: "profile/M5_ChangHaoLin.JPG"
+  position: "Networks and General Affairs"
+  research:
+  - "Micro 2 axis force sensor developing"
+  - "3-4 axis force sensor for hexapod"
+  - "Force feedback control on hexapod"
+  hobby: "ACG, Swimming, Badminton, Piano"
+  email: "thomaslin0925@gmail.com"
+  graduated:
+  - {degree: ms, year: 2013}
+
+- id: "M4_YaChengChou"
+  name: {en: "Ya-Cheng Chou", zh: "鄒亞成"}
+  photo: "profile/M4_YaChengChou.jpg"
+  thesis: {en: "Development of climbing gait and jumping gait for a hexapod robot", zh: "仿生六足機器人越障步態與跳躍步態開發"}
+  job: "Searching..."
+  email: "r99522805@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2012}
+
+- id: "M4_WeiShunYu"
+  name: {en: "Wei-Shun Yu", zh: "游崴舜"}
+  photo: "profile/M4_WeiShunYu.jpg"
+  research: "Mechatronics"
+  thesis: {en: "Motion control in a tiltable two-wheel robot with generalized infrastructure of robotic mechatronics", zh: "可側傾雙輪機器人之運動控制與其內部機器人泛用機電系統"}
+  hobby: "Video gaming"
+  email: "randyko26@gmail.com"
+  graduated:
+  - {degree: ms, year: 2012}
+  staff:
+  - {role: "Research Associate", period: "2021.Sep. -present"}
+  - {role: "Research Assistant", period: "2013-2014"}
+
+- id: "M4_ShangChangLin"
+  name: {en: "Shang-Chang Lin", zh: "林聖昌"}
+  photo: "profile/M4_ShangChangLin.jpg"
+  thesis: {en: "Elasticity and damping adjustable plate fabricated by fiberglass and polyurethane composite", zh: "以玻璃纖維和聚氨酯混合製程建構彈性和阻尼特性可調控複材板件"}
+  job: "Military service..."
+  email: "quaisqua@gmail.com"
+  graduated:
+  - {degree: ms, year: 2012}
+
+- id: "M4_JingYiChen"
+  name: {en: "Jing-Yi Chen", zh: "陳敬宜"}
+  photo: "profile/M4_JingYiChen.jpg"
+  thesis: {en: "Development of turning gait and force-feedback walking gait for a biped robot", zh: "雙足機器人轉彎步態與力回授步行步態開發"}
+  job: "Jingliao Elementary School, Substitute Services Draftee (台南市菁寮國小教育替代役)"
+  email: "luckyskyer@gmail.com"
+  graduated:
+  - {degree: ms, year: 2012}
+
+- id: "M4_KeJungHuang"
+  name: {en: "Ke-Jung Huang", zh: "黃科融"}
+  photo: "profile/M4_KeJungHuang.jpg"
+  thesis: "A novel spring loaded inverted pendulum with rolling contact and its application on developing dynamic jogging gaits in a hexapod robot"
+  job: "Military service..."
+  email: "kejung7322@gmail.com"
+  graduated:
+  - {degree: ms, year: 2012}
+
+- id: "M3_ChunShengChen"
+  name: {en: "Chun-Sheng Chen", zh: "陳均聖"}
+  photo: "profile/M3_ChunShengChen.jpg"
+  thesis: {en: "Mechatronics development and trajectory control of a biped robot", zh: "雙足機器人之機電整合與軌跡控制"}
+  job: "Taiwan Power Company"
+  email: "chunsaint.chen@gmail.com"
+  graduated:
+  - {degree: ms, year: 2011}
+
+- id: "M3_ShenChiangChen"
+  name: {en: "Shen-Chiang Chen", zh: "陳慎強"}
+  photo: "profile/M3_ShenChiangChen.jpg"
+  thesis: {en: "Locomotion Development on the Leg-wheel Hybrid Robot", zh: "輪腳複合式移動平台運動模式開發"}
+  job: "Teaching Assistant in the Department of Mechanical Engineering, National Taiwan University"
+  email: "ohjoechen@hotmail.com"
+  graduated:
+  - {degree: ms, year: 2011}
+
+- id: "M2_JauChingLu"
+  name: {en: "Jau-Ching Lu", zh: "盧兆慶"}
+  photo: "profile/M2_JauchingLu.JPG"
+  thesis: {en: "Gait generation of a biped robot and construction of measurement system", zh: "雙足機器人之步態規劃與感測系統建置"}
+  job: "Research Assistant,Academia Sinica, Nankang"
+  email: "b93502114@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2010}
+
+- id: "M2_ShaoFanWang"
+  name: {en: "Shao-Fan Wang", zh: "王紹帆"}
+  photo: "profile/M2_ShaoFanWang.jpg"
+  thesis: "Design and realization of a biped robot (雙足機器人的設計與實現)"
+  job: "台灣新光保全股份有限公司 產品開發專員"
+  email: "r97522835@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2010}
+
+- id: "M2_ChengHsinLee"
+  name: {en: "Cheng-Hsin Lee", zh: "李政昕"}
+  photo: "profile/M2_ChengHsinLee.JPG"
+  thesis: {en: "Applications of embedded systems on the mobile robots", zh: "嵌入式系統在移動機器人上之應用"}
+  job: "electronic engineer at FEGO Precision Industrial Co."
+  email: "minnelee@hotmail.com"
+  graduated:
+  - {degree: ms, year: 2010}
+
+- id: "M2_ChihChungCheng"
+  name: {en: "Chih-Chung Cheng", zh: "鄭智中"}
+  photo: "profile/M2_ChihChungCheng.jpg"
+  thesis: {en: "Design and realization of a tiltable 2-wheel mobile robot with obstacle avoidance capability", zh: "具避障功能之可傾式雙輪平台設計與實現"}
+  job:
+  - "TCP Pioneer Incorporated"
+  - "(科瑞股份有限公司 工程師)"
+  email:
+  - "luke.zheng@tcppioneer.com.tw"
+  - "r97522809@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2010}
+
+- id: "M1_ChihChungKo"
+  name: {en: "Chih-Chung Ko", zh: "柯致中"}
+  photo: "profile/M1_ChihChungKo.jpg"
+  thesis: "Trajectory planning and four-leg coordination for stair climbing in a quadruped robot (四足機器人穩定爬升樓梯步態之軌跡規劃)"
+  job:
+  - "Melchers Trading GmbH - Taiwan Branch"
+  - "Sales Engineer"
+  email: "LOG4XLNE@hotmail.com"
+  graduated:
+  - {degree: ms, year: 2009}
+
+- id: "A12_WYChien"
+  name: {en: "Wei-Yin Chien", zh: "簡蔚瀅"}
+  photo: "profile/A12_WYChien.jpg"
+  hobby: "旅遊、烘培"
+  email: "chienweiyin@ntu.edu.tw"
+  staff:
+  - {role: "Administrative Associate", period: "2023.Mar. -present"}
+
+- id: "A11_HMChen"
+  name: {en: "Huei-min Chen", zh: "陳惠敏"}
+  photo: "profile/A11_HMChen.jpg"
+  position:
+  - "Project Management"
+  - "Accountant"
+  - "Networks"
+  email: "hueiming@ntu.edu.tw"
+  staff:
+  - {role: "Administrative Associate", period: "2023.Mar. -2025.June"}
+
+- id: "A10_YHChiu"
+  name: {en: "Yu-Hsin Chiu", zh: "邱于芯"}
+  photo: "profile/A10_YHChiu.jpg"
+  email: "yuxin860621@ntu.edu.tw"
+  staff:
+  - {role: "Administrative Associate", period: "2022.Mar. -present"}
+
+- id: "A9_LSLee"
+  name: {en: "Ling-Suan LEE", zh: "李泠暄"}
+  photo: "profile/A9_LSLee.jpeg"
+  email: "leelingsuan@ntu.edu.tw"
+  staff:
+  - {role: "Administrative Assistant", period: "2021.May. -2022.Feb"}
+
+- id: "A8_NYLi"
+  name: {en: "Ning-Yuan Li", zh: "李甯媛"}
+  photo: "profile/A8_NYLi.jpeg"
+  research: "Legged robot"
+  email: "skye53653@gmail.com"
+  staff:
+  - {role: "Research Assistant", period: "2021.Mar. -2021.Jun"}
+
+- id: "A7_WDHwangFu"
+  name: {en: "Wei-De HwangFu", zh: "皇甫維德"}
+  photo: "profile/A7_WDHwangFu.jpg"
+  research: "Brachiation Robot"
+  hobby:
+  - "illustration"
+  - "sketch"
+  - "meme"
+  email: "eddie70443@gmail.com"
+  staff:
+  - {role: "Research Assistant", period: "2021.Mar. -2021.Jun"}
+
+- id: "A6_YCChang"
+  name: {en: "Ya-Chi Chang", zh: "張雅棋"}
+  photo: "profile/A6_YCChang.jpg"
+  position:
+  - "Project Management"
+  - "Accountant"
+  - "Networks"
+  email: "nanachang@ntu.edu.tw"
+  staff:
+  - {role: "Administrative Assistant", period: "2020.Nov. -2023.Feb"}
+
+- id: "A5_WJChang"
+  name: {en: "Wei-Jer Chang", zh: "張維哲"}
+  photo: "profile/A5_WJChang.jpg"
+  research: "Spherical robot"
+  hobby: "Basketball, handball, travel"
+  email: "b05502045@ntu.edu.tw"
+  staff:
+  - {role: "Research Assistant", period: "2020.Aug. -2021.Jan"}
+
+- id: "A4_WTYang"
+  name: {en: "Wu-Te Yang", zh: "楊武德"}
+  photo: "profile/A4_WTYang.JPG"
+  research:
+  - "Robot arm"
+  - "Force control"
+  hobby: "Jogging"
+  email: "wtyang@mail.ntu.edu.tw"
+  staff:
+  - {role: "Research Assistant", period: "2018.June -2019.April"}
+
+- id: "A2_YuWenWang"
+  name: {en: "Yu-Wen Wang", zh: "王昱文"}
+  photo: "profile/A2_YWWang.JPG"
+  position:
+  - "Project Management"
+  - "Accountant"
+  - "Networks"
+  email: "wyuwen@ntu.edu.tw"
+  staff:
+  - {role: "Administrative Assistant", period: "2017. Jan. -present"}
+
+- id: "A3_YiHsiangChiu"
+  name: {en: "Yi-Hsiang Chiu", zh: "邱奕翔"}
+  photo: "profile/A3_YiHsiangChiu.jpg"
+  research: "Ground Truth Measurement System (GTMS) (高速雙相機攝影系統之建構)"
+  job: "Applications Engineer@National Instruments"
+  email: "Quazzi1115@gmail.com"
+  staff:
+  - {role: "Research Assistant", period: "2009-2010"}
+
+# ---- Not listed on any page: graduation status unknown. Add `graduated` or
+# `current` to list them again. The M17 cohort probably graduated in 2025. ----
+
+- id: "D10_JHShih"
+  name: {en: "Jheng-Hong Shih", zh: "施政宏"}
+  photo: "profile/D10_JHShih.jpg"
+  hobby: "Badminton, Film editing, Biking, Beatbox, Musical composition"
+  email: "d05543003@ntu.edu.tw"
+
+- id: "D11_WCCheng"
+  name: {en: "Wei-Chung Cheng", zh: "鄭惟中"}
+  photo: "profile/D11_WCCheng.jpg"
+  position: "Hardware"
+  hobby: "Table tennis, Swimming, Movie, Music"
+  email: "tealambda@hotmail.com.tw"
+
+- id: "D6_YanDeZhou"
+  name: {en: "Yan-De Zhou", zh: "周晏德"}
+  photo: "profile/D6_YanDeZhou.JPG"
+  position: "none"
+  research: "Temperature control"
+  hobby: "Anything!"
+  email: "d00522013@ntu.edu.tw"
+
+- id: "M10_David"
+  name: {en: "David Daley", zh: "戴大衛"}
+  photo: "profile/M10_David.jpg"
+  position: "General Affairs"
+  research:
+  - "Grippers"
+  - "Direct-drive"
+  - "Motor control"
+  hobby: "Music, Art and computer programming"
+  email: "r05522843@ntu.edu.tw"
+
+- id: "M11_DGSung"
+  name: {en: "Ding-Gong Sung", zh: "宋定剛"}
+  photo: "profile/M11_DGSung.jpg"
+  position:
+  - "Public Relations"
+  - "Environmental Health and Safety"
+  research: "Turboquad"
+  hobby: "Movies, Music"
+  email: "r06522809@ntu.edu.tw"
+
+- id: "M12_CYLiu"
+  name: {en: "Cheng-Yueh Liu", zh: "劉承岳"}
+  photo: "profile/M12_CYLiu.jpg"
+  position: "Hardware (Circuit & Electronics)"
+  research: "Biped robotics"
+  hobby: "Biped robotics"
+  email: "R07522839@ntu.edu.tw"
+
+- id: "M12_MIChiang"
+  name: {en: "Man-In Chiang", zh: "鄭文彥"}
+  photo: "profile/M12_MIChiang.jpg"
+  position: "General Affairs"
+  research: "TWIX"
+  hobby: "Thinking and learning"
+  email: "matt20064d@hotmail.com"
+
+- id: "M16_CEWei"
+  name: {en: "Chia-En Wei", zh: "魏加恩"}
+  photo: "profile/M16_CEWei.jpg"
+  hobby: "table tennis, magic, reading"
+  email: "LukeWeiChiaEn@gmail.com"
+
+- id: "M17_WTChen"
+  name: {en: "Wei-Tin Chen", zh: "陳威廷"}
+  photo: "profile/M17_WTChen.jpeg"
+  hobby: "Basketball"
+  email: "r12522844@ntu.edu.tw"
+
+- id: "M17_YJLee"
+  name: {en: "Yi-Jung, Lee", zh: "李奕融"}
+  photo: "profile/M17_YJLee.jpg"
+  hobby: "吃零食、打音遊"
+  email: "R12522831@ntu.edu.tw"
+
+- id: "M17_YLLai"
+  name: {en: "Lai, Yen-Li", zh: "賴彥澧"}
+  photo: "profile/M17_YLLai.jpg"
+  hobby: "Anime"
+  email: "R11522865@ntu.edu.tw"
+
+- id: "M17_YSShen"
+  name: {en: "Yi-Syuan, Shen", zh: "沈意軒"}
+  photo: "profile/M17_YSShen.jpg"
+  hobby: "Travelling, Hand-writing, Dancing"
+  email: "R12522823@ntu.edu.tw"
+
+- id: "M17_YTHsu"
+  name: {en: "Ya-Ting Hsu", zh: "許雅婷"}
+  photo: "profile/M17_YTHsu.jpg"
+  hobby: "Coffee, Baking and Movie"
+  email: "R12522806@ntu.edu.tw"
+
+- id: "M17_YTHuang"
+  name: {en: "Yuan-tao Huang", zh: "黃淵濤"}
+  photo: "profile/M17_YTHuang.jpg"
+  hobby: "Cooking"
+  email: "R12522836@ntu.edu.tw"
