@@ -10,6 +10,8 @@ import { alumniByYear, currentStudents, formerMembers, listPageFor, staffList } 
 // Not part of the legacy site: repo tooling, and sources for the new pages.
 const NOT_LEGACY = [
   /^\./,
+  /^node_modules(\/|$)/,
+  /^_site(\/|$)/,
   /^CLAUDE\.md$/,
   /^package(-lock)?\.json$/,
   /^eleventy\.config\.js$/,
