@@ -5,7 +5,6 @@
      phone    < 640px    section links as pills; the menu collapses below 900px */
 
 :root {
-  --frame: 96rem;            /* 1536px at 16px, ~1930px on a 2500px-wide screen */
   --menu-bg: #ccc;
   --menu-hover: #666;
   --content-bg: #fff;
@@ -64,10 +63,9 @@ body {
   color: var(--text);
 }
 
+/* The frame fills the whole window; only the banner and running text are capped. */
 .frame {
-  max-width: var(--frame);
   min-height: 100vh;
-  margin: 0 auto;
   background: #000;
   display: flex;
   flex-direction: column;
@@ -100,7 +98,7 @@ main:focus { outline: none; }
 /* ---------- Masthead ---------- */
 
 /* The banner's left and right edges share this vertical gradient, so extending it
-   behind the banner blends the edges into the full width. */
+   behind the banner blends the edges into any width, however wide the window. */
 .masthead {
   background: linear-gradient(to bottom, #000 0%, #050b13 10%, #0b1a2d 20%, #112846 30%, #173660 40%,
     #1e4579 50%, #193b67 60%, #132c4e 70%, #0d1e35 80%, #07101b 90%, #000 100%);
