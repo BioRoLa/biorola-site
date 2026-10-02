@@ -216,15 +216,20 @@ main:focus { outline: none; }
 .page {
   background: var(--sidebar-bg);
   display: grid;
-  grid-template-columns: 11.25rem 1fr;
+  /* On wide screens the hexagons and the content column (66rem, the banner's
+     width, plus 2 x 2.5rem padding) are centred together; the sidebar's
+     background fills the space to their left. */
+  grid-template-columns: max(11.25rem, (100% - 82.25rem) / 2 + 11.25rem) 1fr;
   align-items: start;
 }
+.page > .honeycomb { width: 11.25rem; justify-self: end; }
 
 .content {
   background: var(--content-bg);
   min-height: calc(var(--hex-step) * 7.5 + 0.625rem);
-  /* On wide screens the content is a centred column as wide as the banner (66rem). */
-  padding: 0.5rem max(clamp(1rem, 3vw, 2.5rem), (100% - 66rem) / 2) 2.5rem;
+  /* Content is at most 66rem wide, next to the hexagons; extra width goes on the right. */
+  --pad: clamp(1rem, 3vw, 2.5rem);
+  padding: 0.5rem max(var(--pad), 100% - 66rem - var(--pad)) 2.5rem var(--pad);
   font-size: 1.0625rem;
   line-height: 1.75;
 }
@@ -243,6 +248,8 @@ main:focus { outline: none; }
 
 /* Pages outside the hexagon nav (e.g. the research overview) use the full width. */
 .page--wide { grid-template-columns: 1fr; }
+/* Without hexagons, the content column is centred. */
+.page--wide > .content { padding-inline: max(var(--pad), (100% - 66rem) / 2); }
 :lang(zh-Hant-TW) .content p { text-align: justify; }
 
 /* Coloured words used on the introduction page. */
@@ -591,7 +598,9 @@ a.hex:focus-visible { --edge: var(--focus); outline: none; }
 @media (max-width: 1023px) {
   .page { display: block; }
 
-  .honeycomb {
+  .page > .honeycomb, .honeycomb {
+    width: auto;
+    justify-self: auto;
     height: auto;
     margin: 0;
     padding: 0.75rem;
