@@ -26,7 +26,7 @@
       pages:
         - { url: aboutus_introduction.html, label: { en: "Introduction", zh: "實驗室簡介" } }
         - { url: aboutus_labtour.html, label: { en: "Lab Tour", zh: "實驗室導覽" } }
-        - { url: aboutus_honors.html, label: { en: "Honors", zh: "榮譽" } }
+        - { url: aboutus_honors.html, label: { en: "Honors", zh: "榮譽事蹟" } }
         - { url: aboutus_perspective.html, label: { en: "Prospective Students", zh: "招生資訊" } }
         - { url: aboutus_contactus.html, label: { en: "Contact Us", zh: "聯絡我們" } }
 
@@ -41,7 +41,7 @@
       color: green
       pages:
         - { url: members_stu_gra.html, label: { en: "Graduate", zh: "研究生" } }
-        - { url: members_stu_under.html, label: { en: "Under­graduate", zh: "大學部" } }
+        - { url: members_stu_under.html, label: { en: "Under­graduate", zh: "大學部專題生" } }
     - label: { en: "Alumni", zh: "畢業校友" }
       color: red
       pages:
@@ -61,7 +61,7 @@
     - label: { en: "Wheeled Robots", zh: "輪型機器人" }
       color: grey
       pages:
-        - { url: research_wheeled_twowheels.html, label: { en: "Two-Wheels", zh: "兩輪機器人" } }
+        - { url: research_wheeled_twowheels.html, label: { en: "Two-Wheels", zh: "雙輪機器人" } }
         - { url: research_wheeled_cartamigo.html, label: { en: "CartAmigo", zh: "CartAmigo" } }
     - label: { en: "Climbing Robots", zh: "攀爬機器人" }
       color: green
