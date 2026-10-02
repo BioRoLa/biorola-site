@@ -1,0 +1,30 @@
+{# Citations grouped under year headings, with a year/keyword filter (pubfilter.js).
+   Without JavaScript the filter stays hidden and the full list shows. #}
+{%- set groups = entries | groupByYear %}
+<form class="pubfilter" data-pubfilter hidden role="search"
+      data-count="{{ i18n.filter_count[lang] }}" onsubmit="return false">
+  <label>{{ i18n.filter_year[lang] }}
+    <select data-year>
+      <option value="">{{ i18n.filter_all[lang] }}</option>
+      {%- for g in groups %}
+      <option value="{{ g.year or 'inpress' }}">{{ g.year or i18n.in_press[lang] }}</option>
+      {%- endfor %}
+    </select>
+  </label>
+  <label>{{ i18n.filter_keyword[lang] }}
+    <input type="search" data-query placeholder="{{ i18n.filter_placeholder[lang] }}">
+  </label>
+  <p class="pubfilter__count" aria-live="polite"></p>
+</form>
+<p class="pubfilter__none" hidden>{{ i18n.filter_none[lang] }}</p>
+{%- for g in groups %}
+<section class="pubyear" data-year="{{ g.year or 'inpress' }}">
+  <h2>{{ g.year or i18n.in_press[lang] }}</h2>
+  <ul class="citations">
+    {%- for c in g.entries %}
+    <li>{{ c | mdInline | safe }}</li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endfor %}
+<script src="/assets/js/pubfilter.js" defer></script>

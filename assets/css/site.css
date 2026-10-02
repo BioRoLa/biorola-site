@@ -52,6 +52,7 @@
 }
 
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 
 body {
   margin: 0;
@@ -277,6 +278,31 @@ main:focus { outline: none; }
 /* ---------- News and publications ---------- */
 
 .citations { padding-left: 1.2rem; }
+
+.pubfilter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 0.75rem 1.25rem;
+  margin: 0 0 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+}
+.pubfilter label { display: flex; flex-direction: column; gap: 0.2rem; font-size: 0.9em; font-weight: bold; }
+.pubfilter select, .pubfilter input {
+  font: inherit;
+  font-weight: normal;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  background: var(--content-bg);
+  color: var(--text);
+}
+.pubfilter input { min-width: min(22rem, 70vw); }
+.pubfilter__count { margin: 0 0 0.35rem !important; color: var(--muted); font-size: 0.9em; }
+.pubyear h2 { border-bottom: 1px solid var(--border); padding-bottom: 0.2rem; }
 .news li, .citations li { margin-bottom: 0.55rem; }
 .news { list-style: none; padding-left: 0; }
 .news li { padding: 0.35rem 0; border-bottom: 1px solid var(--border); }

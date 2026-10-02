@@ -33,6 +33,13 @@ welcomes: { en: "New members", zh: "新血加入" }
 book_chapters: { en: "Book Chapters", zh: "專書章節" }
 invited: { en: "Invited / Non-refereed Articles", zh: "邀稿及非審查文章" }
 director_theses: { en: "Director", zh: "指導教授" }
+in_press: { en: "Accepted / in press", zh: "已接受／即將出版" }
+filter_year: { en: "Year", zh: "年份" }
+filter_all: { en: "All years", zh: "全部年份" }
+filter_keyword: { en: "Search", zh: "搜尋" }
+filter_placeholder: { en: "Author, title, journal…", zh: "作者、標題、期刊…" }
+filter_count: { en: "Showing {n} of {m}", zh: "顯示 {n} / {m} 篇" }
+filter_none: { en: "No publications match.", zh: "沒有符合的論文。" }
 student_theses: { en: "Students", zh: "學生" }
 
 # Home

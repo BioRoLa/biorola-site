@@ -113,6 +113,29 @@ export default function (eleventyConfig) {
   // {{ list | findBy("id", "research") }}: first item whose field equals the value.
   eleventyConfig.addFilter("findBy", (list, field, value) => (list ?? []).find((x) => x?.[field] === value));
 
+  // Publication year from a citation: the latest "Mon. YYYY", else the last
+  // standalone year; links and DOIs are ignored. null if there is none
+  // (e.g. "(accepted)").
+  const MONTH_YEAR = /(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s*,?\s*((?:19|20)\d{2})\b/g;
+  const pubYear = (text) => {
+    const s = String(text).replace(/\[[^\]]*\]\([^)]*\)/g, "").replace(/10\.\d{4,}\/\S+/g, " ");
+    const months = [...s.matchAll(MONTH_YEAR)].map((m) => Number(m[1]));
+    if (months.length) return Math.max(...months);
+    const years = [...s.matchAll(/(?<![\d./-])((?:19|20)\d{2})(?!\d)/g)].map((m) => Number(m[1]));
+    return years.length ? years[years.length - 1] : null;
+  };
+  // [{ year, entries }] in list order; entries without a year come first as year null.
+  eleventyConfig.addFilter("groupByYear", (entries) => {
+    const groups = [];
+    for (const text of entries) {
+      const year = pubYear(text);
+      let g = groups.find((x) => x.year === year);
+      if (!g) groups.push((g = { year, entries: [] }));
+      g.entries.push(text);
+    }
+    return groups.sort((a, b) => (a.year === null ? -1 : b.year === null ? 1 : b.year - a.year));
+  });
+
   // First sentence of a Markdown description, for cards.
   eleventyConfig.addFilter("excerpt", (text, max = 140) => {
     const plain = String(text ?? "").replace(/\[([^\]]*)\]\([^)]*\)/g, "$1").replace(/[*_`#>]/g, "").replace(/\s+/g, " ").trim();
