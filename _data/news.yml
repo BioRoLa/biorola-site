@@ -4,9 +4,7 @@
 #   text: Chinese text. Links use Markdown: [link text](https://...)
 #   en:   optional English text; the English page shows `text` when there is none.
 
-announcements:
-- text: "114學年度 碩士班新生招生資訊已公布，歡迎有興趣的同學參考: [R15 研究生招生訊息](https://docs.google.com/document/d/1BDrQx5tcYLwzbpR8GT1Kma-wnimY1n6LHwJ_3hrWNw0/edit?usp=drivesdk)"
-  en: "Admission information for the 2025–26 master’s program is now available: [R15 graduate admission information](https://docs.google.com/document/d/1BDrQx5tcYLwzbpR8GT1Kma-wnimY1n6LHwJ_3hrWNw0/edit?usp=drivesdk)"
+announcements: []
 honors:
 - date: "2025"
   text: "恭喜 林沛群 教授榮獲 台灣大學 113學年度 教學優良獎"
