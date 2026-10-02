@@ -222,11 +222,11 @@ theses:
   - "“Proprioceptive sensing for a legged robot,” Ph.D. Dissertation, Department of Mechanical Engineering, University of Michigan, Ann Arbor, Michigan, USA, Jun. 2005"
   - "“Research of passive magnetic force control system,” Master Thesis, Department of Mechanical Engineering, National Taiwan University, Taipei, Taiwan, Jun. 1998"
   students:
-  - {cohort: "R12", name: "Yi-Syuan, Shen", text: "M.S. in Mechanical Engineering expected 2025, “Whole-Body Force Control Architecture on a Leg-Wheel Transformable Robot with Varying Ground Contact Points”"}
-  - {cohort: "R12", name: "Ya-Ting, Hsu", text: "M.S. in Mechanical Engineering expected 2025, “Deformable Object Assembly of a Robotic Manipulator Using Sim-to-Real Transfer”"}
-  - {cohort: "R12", name: "Yi-Jung, Lee", text: "M.S. in Mechanical Engineering expected 2025, “Physics-Informed Machine Learning for Surface Roughness Prediction in Robotic Arm Metal Grinding”"}
-  - {cohort: "R12", name: "Wei-Ting, Chen", text: "M.S. in Mechanical Engineering expected 2025, “Development of a Novel Leg-Wheel Hybrid Robot and Its Stair-Climbing Strategy”"}
-  - {cohort: "R12", name: "Yen-Li, Lai", text: "M.S. in Mechanical Engineering expected 2025, “Stair Climbing Strategy of a Leg-Wheel Transformable Robot Using Visual Feedback and Varying Leg-Wheel Contact Points”"}
+  - {cohort: "R12", name: "Yi-Syuan Shen", text: "M.S. in Mechanical Engineering 2025, “Whole-Body Force Control Architecture on a Leg-Wheel Transformable Robot with Varying Ground Contact Points”"}
+  - {cohort: "R12", name: "Ya-Ting Hsu", text: "M.S. in Mechanical Engineering 2025, “Deformable Object Assembly of a Robotic Manipulator Using Sim-to-Real Transfer”"}
+  - {cohort: "R12", name: "Yi-Jung Lee", text: "M.S. in Mechanical Engineering 2025, “Physics-Informed Machine Learning for Surface Roughness Prediction in Robotic Arm Metal Grinding”"}
+  - {cohort: "R12", name: "Wei-Ting Chen", text: "M.S. in Mechanical Engineering 2025, “Development of a Novel Leg-Wheel Hybrid Robot and Its Stair-Climbing Strategy”"}
+  - {cohort: "R12", name: "Yen-Li Lai", text: "M.S. in Mechanical Engineering 2025, “Stair Climbing Strategy of a Leg-Wheel Transformable Robot Using Visual Feedback and Varying Leg-Wheel Contact Points”"}
   - {cohort: "D05", name: "Chun Liu", text: "Ph.D. in Mechanical Engineering expected 2024, “Development of 2-DOF Spherical Mechanisms”"}
   - {cohort: "R11", name: "Fan-Chien, Kao", text: "M.S. in Mechanical Engineering expected 2024, “Deformable Object Assembly of a Robotic Manipulator Using Sim-to-Real Transfer”"}
   - {cohort: "R11", name: "Zhi-Ren Chen", text: "M.S. in Mechanical Engineering expected 2024, “Trajectory Planning of a Leg-Wheel Transformable Robot Jumping on Soft Terrain”"}

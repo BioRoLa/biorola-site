@@ -50,7 +50,9 @@
 
 - id: "D18_JWShiau"
   name: {en: "Jau-Wen Shiau", zh: "蕭昭文"}
-  email: "_@ntu.edu.tw"
+  photo: "profile/D18_JWShiau.jpg"
+  hobby: "打籃球與釣魚"
+  email: "z841120@gmail.com"
   current: phd
 
 - id: "M18_ECTsui"
@@ -58,67 +60,118 @@
   photo: "profile/M18_ECTsui.jpg"
   hobby: "Animation、Movie、Basketball"
   email: "R13522824@ntu.edu.tw"
-  current: ms
+  graduated:
+  - {degree: ms, year: 2026}
 
 - id: "M18_HCLee"
   name: {en: "Hsin-Chen Lee", zh: "李星辰"}
   photo: "profile/M18_HCLee.jpg"
   hobby: "Skate-boarding, reading, building cool stuffs"
   email: "R13522850@ntu.edu.tw"
-  current: ms
+  graduated:
+  - {degree: ms, year: 2026}
 
 - id: "M18_KJHuang"
   name: {en: "Kuan-Jung Huang", zh: "黃冠融"}
   photo: "profile/M18_KJHuang.jpg"
   hobby: "Coffee , RC Airplane"
   email: "R13522819@ntu.edu.tw"
-  current: ms
+  graduated:
+  - {degree: ms, year: 2026}
 
 - id: "M18_SLChien"
   name: {en: "Sheng-Lun Chien", zh: "簡聖倫"}
   photo: "profile/M18_SLChien.jpg"
   email: "R13522822@ntu.edu.tw"
-  current: ms
+  graduated:
+  - {degree: ms, year: 2026}
 
 - id: "M18_YAXiao"
   name: {en: "Yu-An Xiao", zh: "蕭妤安"}
   photo: "profile/M18_YAXiao.jpg"
   email: "R13522820@ntu.edu.tw"
-  current: ms
+  graduated:
+  - {degree: ms, year: 2026}
 
 - id: "M19_YYLai"
   name: {en: "Yi-Yuan Lai", zh: "賴弋元"}
+  photo: "profile/M19_YYLai.jpg"
+  hobby: "Travel, Music, Basketball"
   email: "R14522838@ntu.edu.tw"
   current: ms
 
 - id: "M19_SCLin"
   name: {en: "Shi-Cheng Lin", zh: "林士程"}
+  photo: "profile/M19_SCLin.jpg"
+  hobby: "Animation, Badminton"
   email: "R14522837@ntu.edu.tw"
   current: ms
 
 - id: "M19_CHHsieh"
   name: {en: "Chia-Heng Hsieh", zh: "謝佳亨"}
+  photo: "profile/M19_CHHsieh.jpg"
+  hobby: "Swimming, Sailing, Sleeping, Reading"
   email: "R14522820@ntu.edu.tw"
   current: ms
 
 - id: "M19_CMKuo"
   name: {en: "Che-Ming Kuo", zh: "郭哲明"}
-  email: "R14522829@ntu.edu.tw"
+  photo: "profile/M19_CMKuo.jpg"
+  email: "Jackfur6@gmail.com"
   current: ms
 
 - id: "M19_AlexChen"
   name: {en: "Alex Chen", zh: "陳柏瑜"}
+  photo: "profile/M19_AlexChen.jpg"
+  research: "Leg-wheel robots"
+  hobby: "Biking, Climbing, Cars"
   email: "R14522850@ntu.edu.tw"
   current: ms
 
 - id: "M19_CCTsai"
   name: {en: "Chia-Chen Tsai", zh: "蔡佳臻"}
+  photo: "profile/M19_CCTsai.jpg"
+  hobby: "Piano、Animation"
   email: "R14522802@ntu.edu.tw"
   current: ms
 
 - id: "M19_TLChang"
   name: {en: "Tsai-Lin Chang", zh: "章采霖"}
+  photo: "profile/M19_TLChang.jpg"
   email: "R14522836@ntu.edu.tw"
+  current: ms
+
+- id: "M20_TELin"
+  name: {en: "Tzu-En Lin", zh: "林子恩"}
+  photo: "profile/M20_TELin.jpg"
+  hobby: "羽毛球、棒球、電影"
+  email: "Eric930508@gmail.com"
+  current: ms
+
+- id: "M20_YJLin"
+  name: {en: "Yong-Jun Lin", zh: "林詠鈞"}
+  photo: "profile/M20_YJLin.jpg"
+  email: "R15522826@ntu.edu.tw"
+  current: ms
+
+- id: "M20_TYChien"
+  name: {en: "Ting-Yun Chien", zh: "簡庭筠"}
+  photo: "profile/M20_TYChien.jpg"
+  email: "R15522827@ntu.edu.tw"
+  current: ms
+
+- id: "M20_HYYeh"
+  name: {en: "Huan-Yu Yeh", zh: "葉桓語"}
+  photo: "profile/M20_HYYeh.jpg"
+  hobby: "Movie、Music"
+  email: "noahyeh930609@gmail.com"
+  current: ms
+
+- id: "M20_BWHuang"
+  name: {en: "Bo-Wei Huang", zh: "黃柏崴"}
+  photo: "profile/M20_BWHuang.jpg"
+  hobby: "Traveling、Basketball"
+  email: "R15522818@ntu.edu.tw"
   current: ms
 
 - id: "D10_CLiu"
@@ -857,8 +910,48 @@
   staff:
   - {role: "Research Assistant", period: "2009-2010"}
 
-# ---- Not listed on any page: graduation status unknown. Add `graduated` or
-# `current` to list them again. The M17 cohort probably graduated in 2025. ----
+- id: "M17_YSShen"
+  name: {en: "Yi-Syuan Shen", zh: "沈意軒"}
+  photo: "profile/M17_YSShen.jpg"
+  hobby: "Travelling, Hand-writing, Dancing"
+  email: "R12522823@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2025}
+
+- id: "M17_YTHsu"
+  name: {en: "Ya-Ting Hsu", zh: "許雅婷"}
+  photo: "profile/M17_YTHsu.jpg"
+  hobby: "Coffee, Baking and Movie"
+  email: "R12522806@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2025}
+
+- id: "M17_YJLee"
+  name: {en: "Yi-Jung Lee", zh: "李奕融"}
+  photo: "profile/M17_YJLee.jpg"
+  hobby: "吃零食、打音遊"
+  email: "R12522831@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2025}
+
+- id: "M17_WTChen"
+  name: {en: "Wei-Ting Chen", zh: "陳威廷"}
+  photo: "profile/M17_WTChen.jpeg"
+  hobby: "Basketball"
+  email: "r12522844@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2025}
+
+- id: "M17_YLLai"
+  name: {en: "Yen-Li Lai", zh: "賴彥澧"}
+  photo: "profile/M17_YLLai.jpg"
+  hobby: "Anime"
+  email: "R11522865@ntu.edu.tw"
+  graduated:
+  - {degree: ms, year: 2025}
+
+# ---- Not listed on any page: status unknown. Add `graduated` or `current`
+# to list them again. M17_YTHuang is an older profile of D18_YTHuang. ----
 
 - id: "D10_JHShih"
   name: {en: "Jheng-Hong Shih", zh: "施政宏"}
@@ -923,36 +1016,6 @@
   photo: "profile/M16_CEWei.jpg"
   hobby: "table tennis, magic, reading"
   email: "LukeWeiChiaEn@gmail.com"
-
-- id: "M17_WTChen"
-  name: {en: "Wei-Ting Chen", zh: "陳威廷"}
-  photo: "profile/M17_WTChen.jpeg"
-  hobby: "Basketball"
-  email: "r12522844@ntu.edu.tw"
-
-- id: "M17_YJLee"
-  name: {en: "Yi-Jung Lee", zh: "李奕融"}
-  photo: "profile/M17_YJLee.jpg"
-  hobby: "吃零食、打音遊"
-  email: "R12522831@ntu.edu.tw"
-
-- id: "M17_YLLai"
-  name: {en: "Yen-Li Lai", zh: "賴彥澧"}
-  photo: "profile/M17_YLLai.jpg"
-  hobby: "Anime"
-  email: "R11522865@ntu.edu.tw"
-
-- id: "M17_YSShen"
-  name: {en: "Yi-Syuan Shen", zh: "沈意軒"}
-  photo: "profile/M17_YSShen.jpg"
-  hobby: "Travelling, Hand-writing, Dancing"
-  email: "R12522823@ntu.edu.tw"
-
-- id: "M17_YTHsu"
-  name: {en: "Ya-Ting Hsu", zh: "許雅婷"}
-  photo: "profile/M17_YTHsu.jpg"
-  hobby: "Coffee, Baking and Movie"
-  email: "R12522806@ntu.edu.tw"
 
 - id: "M17_YTHuang"
   name: {en: "Yuan-Tao Huang", zh: "黃淵濤"}
