@@ -8,10 +8,15 @@ current:
   project_en: "Caterpillar robot"
   teams:
   - {cohort: "B12", names: ["覃翊寧", "李盺叡", "何蕙婷", "李昕耘", "林維傑"]}
+- project: "六足機器人"
+  project_en: "Hexapod robot"
+  teams:
+  - {cohort: "B12", names: ["李汪懋", "廖致翔", "林靖軒", "韓長佑", "楊振國"]}
 - project: "無人機"
   project_en: "Drone"
   teams:
   - {cohort: "B12", names: ["吳以路", "鄭亞真", "劉昆泰", "曾以霖", "陳力瑒"]}
+alumni:
 - project: "四腳落地貓咪機器人"
   project_en: "Cat-inspired self-righting robot"
   teams:
@@ -28,24 +33,6 @@ current:
   project_en: "Inspection robot"
   teams:
   - {cohort: "B10", names: ["蕭聰宇"]}
-- project: "六足機器人"
-  project_en: "Hexapod robot"
-  teams:
-  - {cohort: "B12", names: ["李汪懋", "廖致翔", "林靖軒", "韓長佑", "楊振國"]}
-  - {cohort: "B11", names: ["楊舒瑋", "藍芊妤", "林筱恩", "林愛晨"]}
-  - {cohort: "B11", names: ["李國業", "黃鈺棠", "謝文嘉", "魏義庭"]}
-  - {cohort: "B10", names: ["林士程"]}
-  - {cohort: "B10", names: ["郭哲明", "簡榮緯", "蕭聰宇", "林頎衡", "陳泰翔"]}
-  - {cohort: "B10", names: ["黃宣凱", "曾元昱", "賴靜蓉"]}
-- project: "蝸牛機器人"
-  project_en: "Snail robot"
-  teams:
-  - {cohort: "B10", names: ["曾柏穎", "葉晉嘉", "賴弋元", "許瀚元"]}
-- project: "球型機器人"
-  project_en: "Spherical robot"
-  teams:
-  - {cohort: "B10", names: ["張伯宇", "張曜鵬", "王泰傑", "周知顥"]}
-alumni:
 - project: "蝸牛機器人"
   project_en: "Snail robot"
   teams:
@@ -85,6 +72,11 @@ alumni:
 - project: "六足機器人"
   project_en: "Hexapod robot"
   teams:
+  - {cohort: "B11", names: ["楊舒瑋", "藍芊妤", "林筱恩", "林愛晨"]}
+  - {cohort: "B11", names: ["李國業", "黃鈺棠", "謝文嘉", "魏義庭"]}
+  - {cohort: "B10", names: ["林士程"]}
+  - {cohort: "B10", names: ["郭哲明", "簡榮緯", "蕭聰宇", "林頎衡", "陳泰翔"]}
+  - {cohort: "B10", names: ["黃宣凱", "曾元昱", "賴靜蓉"]}
   - {cohort: "B09", names: ["辜冠霖", "曾國睿"]}
   - {cohort: "B08", names: ["黃淵濤", "呂金霖", "張育軒"]}
   - {cohort: "B07", names: ["游承澔", "黃澤樺", "林晉寬", "陳威佑", "高凡千"]}
@@ -108,6 +100,7 @@ alumni:
 - project: "球型機器人"
   project_en: "Spherical robot"
   teams:
+  - {cohort: "B10", names: ["張伯宇", "張曜鵬", "王泰傑", "周知顥"]}
   - {cohort: "B06", names: ["朱勻", "蕭尚亞", "陳韜", "王華豫"]}
   - {cohort: "B99", names: ["王昱凱", "張家瑜", "施佑霖"]}
   - {cohort: "B96", names: ["陳慶沛", "陳為熙", "楊琇惠", "蔡佳璇"]}
