@@ -1,0 +1,12 @@
+---
+# One page per entry in _data/research.yml (research_*.html).
+pagination:
+  data: research
+  size: 1
+  alias: pageFile
+permalink: "{{ pageFile }}"
+eleventyComputed:
+  pageUrl: "{{ pageFile }}"
+  navUrl: "{{ pageFile }}"
+---
+{% include "research.njk" %}

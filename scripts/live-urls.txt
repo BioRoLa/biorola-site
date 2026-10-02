@@ -126,8 +126,6 @@ Templates/biped1.png
 Templates/templete.dwt
 aboutus_contactus.html
 aboutus_honors.html
-aboutus_honors2.html
-aboutus_honors3.html
 aboutus_introduction.html
 aboutus_labtour.html
 aboutus_perspective.html

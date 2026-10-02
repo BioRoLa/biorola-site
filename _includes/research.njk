@@ -1,0 +1,15 @@
+{%- set projects = research[pageFile] %}
+{%- for p in projects %}
+<section class="project">
+  <h2>{{ p.name }}{% if p.years %} <span class="project__years">({{ p.years }})</span>{% endif %}</h2>
+  {%- if p.photo %}<img class="project__photo" src="{{ p.photo }}" alt="{{ p.name }}"{% if not loop.first %} loading="lazy"{% endif %}>{% endif %}
+  {%- set primary = p[lang] or p.en or p.zh %}
+  {%- set primaryLang = lang if p[lang] else ('en' if p.en else 'zh') %}
+  <div{% if primaryLang != lang %} lang="{{ 'zh-Hant-TW' if primaryLang == 'zh' else 'en' }}"{% endif %}>{{ primary | md | safe }}</div>
+  {%- if p.movies %}
+  <p><a href="{{ 'media_movies.html' | langUrl(lang) }}">{{ '觀看影片' if lang == 'zh' else 'Watch movies' }}</a></p>
+  {%- endif %}
+</section>
+{%- else %}
+<p class="coming-soon">{{ '此頁內容準備中。' if lang == 'zh' else 'Content for this page is coming soon.' }}</p>
+{%- endfor %}

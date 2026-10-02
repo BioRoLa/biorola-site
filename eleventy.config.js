@@ -3,7 +3,7 @@ import path from "node:path";
 import yaml from "js-yaml";
 import MarkdownIt from "markdown-it";
 import { HtmlBasePlugin } from "@11ty/eleventy";
-import { honeycomb, langUrl } from "./_includes/nav.js";
+import { honeycomb, langUrl, navLabel } from "./_includes/nav.js";
 import { alumniByYear, currentStudents, listPageFor, staffList } from "./_includes/members.js";
 
 // Not part of the legacy site: repo tooling, and sources for the new pages.
@@ -44,6 +44,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("langUrl", langUrl);
   // {% set hc = nav | honeycomb(navUrl, lang) %}
   eleventyConfig.addFilter("honeycomb", honeycomb);
+  // {{ nav | navLabel("news.html", lang) }}
+  eleventyConfig.addFilter("navLabel", navLabel);
 
   // Member lists, from _data/members.yml
   eleventyConfig.addFilter("currentStudents", currentStudents);
@@ -53,6 +55,7 @@ export default function (eleventyConfig) {
   // Inline Markdown for data text (news items, citations). HTML is allowed for <u>.
   const md = new MarkdownIt({ html: true, linkify: false });
   eleventyConfig.addFilter("mdInline", (text) => md.renderInline(String(text ?? "")));
+  eleventyConfig.addFilter("md", (text) => md.render(String(text ?? "")));
 
   // Data fields may be a string or a list of strings.
   eleventyConfig.addFilter("asList", (v) => (v == null ? [] : Array.isArray(v) ? v : [v]));

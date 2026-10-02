@@ -179,6 +179,94 @@ a:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
   .theses td:last-child { grid-column: 1 / -1; }
 }
 
+/* ---------- Home: tile ring and slideshow ---------- */
+
+.ring { position: relative; margin: 0.5rem auto 1rem; max-width: 917px; }
+
+.tile { position: absolute; width: var(--tile); display: block; }
+.tile img { display: block; width: 100%; height: auto; }
+.tile .tile__hover { position: absolute; inset: 0; opacity: 0; }
+.tile:hover .tile__hover,
+.tile:focus-visible .tile__hover { opacity: 1; }
+.tile:focus-visible { outline: 3px solid var(--focus); outline-offset: -6px; }
+
+/* Seven slides, 6s each, fading with a slow zoom (the old Ken Burns effect). */
+.slideshow {
+  position: absolute;
+  left: 21%;
+  top: 24%;
+  width: 58%;
+  aspect-ratio: 5 / 3;
+  overflow: hidden;
+  background: #000;
+}
+.slideshow img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: slide 42s infinite;
+  animation-delay: calc(var(--i) * 6s);
+}
+@keyframes slide {
+  0% { opacity: 0; transform: scale(1); }
+  3% { opacity: 1; }
+  14.3% { opacity: 1; }
+  17% { opacity: 0; transform: scale(1.12); }
+  100% { opacity: 0; transform: scale(1.12); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .slideshow img { animation: none; }
+  .slideshow img:first-child { opacity: 1; }
+}
+
+/* ---------- About, research, media ---------- */
+
+.year-table { border-collapse: collapse; width: 100%; }
+.year-table td { vertical-align: top; padding: 0.35rem 0.75rem 0.35rem 0; border-bottom: 1px solid #eee; }
+.year-table__year { font-weight: bold; color: var(--muted); white-space: nowrap; }
+
+.floorplan { position: relative; margin: 1rem 0; }
+.floorplan img { display: block; width: 100%; height: auto; }
+.floorplan__spot {
+  position: absolute;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.floorplan__spot:hover,
+.floorplan__spot:focus-visible { outline: 3px solid var(--focus); outline-offset: 0; }
+
+.tour-photos { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.75rem; }
+.tour-photos figure { margin: 0; scroll-margin-top: 1rem; }
+.tour-photos img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.tour-photos figcaption { font-size: 0.9em; color: var(--muted); }
+.tour-photos figure:target { outline: 4px solid var(--focus); outline-offset: 3px; }
+
+.project + .project { margin-top: 2rem; }
+.project__years { font-weight: normal; color: var(--muted); }
+.project__photo { display: block; max-width: 550px; width: 100%; margin: 0.5rem auto 1rem; }
+.coming-soon { color: var(--muted); }
+
+.videos { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; }
+.video { margin: 0; }
+.video iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; }
+.video figcaption { font-size: 0.9em; color: var(--muted); }
+
+.albums {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.albums img { display: block; width: 100%; aspect-ratio: 300 / 196; object-fit: cover; }
+.albums span { display: block; font-size: 0.95em; margin-top: 0.3rem; }
+
+.map { display: block; width: 100%; max-width: 640px; margin-top: 1rem; }
+
 /* ---------- Hexagon sidebar ---------- */
 
 .honeycomb {

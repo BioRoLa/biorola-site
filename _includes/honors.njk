@@ -1,0 +1,5 @@
+<table class="year-table">
+  {%- for h in honors %}
+  <tr><td class="year-table__year">{{ h.year }}</td><td>{{ h.text | mdInline | safe }}</td></tr>
+  {%- endfor %}
+</table>

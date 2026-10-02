@@ -1,0 +1,41 @@
+{# Floor plan with hotspots (positions are % of the image), each linking to a photo below. #}
+{%- set spots = [
+  { x: 42.78, y: 67.58, d: 5.0,  photo: "nDSC_0176.JPG", en: "Work area 1", zh: "工作區 1" },
+  { x: 19.03, y: 82.39, d: 5.83, photo: "nDSC_0174.JPG", en: "Entrance", zh: "入口" },
+  { x: 21.53, y: 67.42, d: 5.83, photo: "nDSC_0198.JPG", en: "Front door", zh: "大門" },
+  { x: 16.53, y: 42.80, d: 4.72, photo: "nDSC_0190.JPG", en: "Cabinets", zh: "儲物櫃" },
+  { x: 28.33, y: 53.10, d: 5.28, photo: "nDSC_0195.JPG", en: "Project 1", zh: "專題區 1" },
+  { x: 40.69, y: 53.58, d: 4.72, photo: "nDSC_0194.JPG", en: "Project 2", zh: "專題區 2" },
+  { x: 29.72, y: 31.54, d: 5.0,  photo: "nDSC_0192.JPG", en: "Project 4", zh: "專題區 4" },
+  { x: 53.75, y: 53.75, d: 5.28, photo: "nDSC_0180.JPG", en: "Work area 2", zh: "工作區 2" },
+  { x: 54.72, y: 24.14, d: 4.72, photo: "nDSC_0182.JPG", en: "Room", zh: "小房間" }
+] %}
+{%- if lang == 'zh' %}
+<ul class="contact-list">
+  <li>地址：106319 臺北市羅斯福路四段一號</li>
+  <li>實驗室 1：<a href="https://map.ntu.edu.tw/index.html?height=363&amp;cx=13529758.984194508&amp;cy=2878083.7140425984&amp;layer=bnR1X2J1aWxkaW5nX2JvdW5k&amp;apKey=MTkwNg==">機械系 宗倬章館 710室</a></li>
+  <li>實驗室 2：<a href="https://map.ntu.edu.tw/index.html?height=363&amp;cx=13529758.984194508&amp;cy=2878083.7140425984&amp;layer=bnR1X2J1aWxkaW5nX2JvdW5k&amp;apKey=MTkwNg==">機械系 宗倬章館 213室</a></li>
+</ul>
+<p>點選平面圖上的眼睛圖示，可查看該區域的照片。</p>
+{%- else %}
+<ul class="contact-list">
+  <li>Address: No. 1, Sec. 4, Roosevelt Road, Taipei 106319, Taiwan</li>
+  <li>Lab 1: <a href="https://map.ntu.edu.tw/index.html?height=435&amp;cx=13529752.92795945&amp;cy=2878095.4798576054&amp;layer=bnR1X2J1aWxkaW5nX2JvdW5k&amp;apKey=MTkwNg==">Dept. of Mechanical Engineering, Tsung Cho Chang Hall Room 710</a></li>
+  <li>Lab 2: <a href="https://map.ntu.edu.tw/index.html?height=435&amp;cx=13529752.92795945&amp;cy=2878095.4798576054&amp;layer=bnR1X2J1aWxkaW5nX2JvdW5k&amp;apKey=MTkwNg==">Dept. of Mechanical Engineering, Tsung Cho Chang Hall Room 213</a></li>
+</ul>
+<p>Click an eye on the floor plan to see a photo of that area.</p>
+{%- endif %}
+<div class="floorplan">
+  <img src="/pic/nlab tour.png" alt="{{ '實驗室平面圖' if lang == 'zh' else 'Lab floor plan' }}" width="1600" height="1381">
+  {%- for s in spots %}
+  <a class="floorplan__spot" href="#tour-{{ loop.index }}" style="left: {{ s.x }}%; top: {{ s.y }}%; width: {{ s.d }}%" aria-label="{{ s[lang] }}"></a>
+  {%- endfor %}
+</div>
+<div class="tour-photos">
+  {%- for s in spots %}
+  <figure id="tour-{{ loop.index }}">
+    <img src="/pic/lab pic/{{ s.photo }}" alt="{{ s[lang] }}" loading="lazy">
+    <figcaption>{{ s[lang] }}</figcaption>
+  </figure>
+  {%- endfor %}
+</div>

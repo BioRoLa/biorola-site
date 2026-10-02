@@ -1,0 +1,6 @@
+{%- for g in links %}
+<h2>{{ g.group[lang] }}</h2>
+<ul>
+  {%- for l in g.links %}<li><a href="{{ l.url }}">{{ l.label[lang] }}</a></li>{% endfor %}
+</ul>
+{%- endfor %}

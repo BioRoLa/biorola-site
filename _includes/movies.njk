@@ -1,0 +1,12 @@
+{%- for g in movies %}
+<h2>{{ g.title }}</h2>
+<div class="videos">
+  {%- for v in g.videos %}
+  <figure class="video">
+    <iframe src="https://www.youtube-nocookie.com/embed/{{ v.youtube }}" title="{{ g.title }}{% if v.title %}: {{ v.title }}{% endif %}" loading="lazy"
+            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+    {%- if v.title %}<figcaption>{{ v.title }}</figcaption>{% endif %}
+  </figure>
+  {%- endfor %}
+</div>
+{%- endfor %}

@@ -67,3 +67,8 @@ export function pageData(lang) {
     },
   };
 }
+
+// Label of the nav page at `url` (for alt text on links into the site).
+export function navLabel(nav, url, lang) {
+  return findInNav(nav, url)?.page.label[lang] ?? url;
+}
