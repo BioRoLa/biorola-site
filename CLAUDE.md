@@ -1,5 +1,5 @@
 # BioRoLa lab website
-Static site for https://biorola.me.ntu.edu.tw, built with Eleventy and deployed to GitHub Pages on every push to main. The domain is a CNAME to biorola.github.io (DNS run by NTU ME IT); the custom domain is set in the repo's Pages settings, not a CNAME file. Migrated from hand-written HTML on a Synology NAS (140.112.16.103), which no longer serves the site; only ChunKaiHuang/ and membersinfo/*_welcome.html are still legacy HTML.
+Static site for https://biorola.me.ntu.edu.tw, built with Eleventy and deployed to GitHub Pages on every push to main. The domain is a CNAME to biorola.github.io (DNS run by NTU ME IT); the custom domain is set in the repo's Pages settings, not a CNAME file. Migrated from hand-written HTML on a Synology NAS (140.112.16.103), which no longer serves the domain; only ChunKaiHuang/ and membersinfo/*_welcome.html are still legacy HTML.
 
 ## Rules
 - Preserve every existing URL (root pages, english/*.html, membersinfo/*.html, ChunKaiHuang/). Old links point to them. `npm run check` fails if a URL in `scripts/live-urls.txt` is missing.
