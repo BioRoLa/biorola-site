@@ -4,7 +4,10 @@
 #   text: Chinese text. Links use Markdown: [link text](https://...)
 #   en:   optional English text; the English page shows `text` when there is none.
 
-announcements: []
+announcements:
+- date: "2026.11.10"
+  text: "**R16 研究生招生相關訊息！** 對仿生機器人實驗室有興趣的同學，請先看過 [FAQ](https://docs.google.com/document/d/1Oxu81FyRuHGaeLTlS3T11fLdFPbD9O_b/edit?usp=sharing&rtpof=true&sd=true)，再填寫 [面試報名表單](https://docs.google.com/forms/d/e/1FAIpQLSf6rhhh4X0XQ1Y7ymHYauYSbpl075atk7hIxCdRaRsrJP8LDQ/viewform)。如有任何問題，歡迎寄信給招生聯絡人 林子恩（[r15522840@ntu.edu.tw](mailto:r15522840@ntu.edu.tw)）。"
+  en: "**R16 graduate admissions:** if you're interested in joining BioRoLa, please read the [FAQ](https://docs.google.com/document/d/1Oxu81FyRuHGaeLTlS3T11fLdFPbD9O_b/edit?usp=sharing&rtpof=true&sd=true) first, then sign up with the [interview form](https://docs.google.com/forms/d/e/1FAIpQLSf6rhhh4X0XQ1Y7ymHYauYSbpl075atk7hIxCdRaRsrJP8LDQ/viewform). Questions are welcome: email our admissions contact, Tzu-En Lin ([r15522840@ntu.edu.tw](mailto:r15522840@ntu.edu.tw))."
 honors:
 - date: "2025"
   text: "恭喜 林沛群 教授榮獲 台灣大學 113學年度 教學優良獎"
